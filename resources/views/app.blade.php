@@ -145,13 +145,13 @@
                 <div class="pt-4 border-t border-zinc-800">
                     <span class="text-xs font-semibold tracking-wider text-zinc-500 uppercase">Pertanyaan Populer</span>
                     <div class="mt-2 space-y-2">
-                        <button onclick="sendQuickMessage('Apa saja layanan utama dari Mitra Irigasi?')"
+                        <button onclick="sendQuickMessage('Siapa saja mitra dari Mitra Irigasi?')"
                             class="w-full text-left text-xs bg-zinc-800 hover:bg-zinc-700 text-zinc-300 p-2.5 rounded-lg border border-zinc-750 transition duration-150">
-                            "Apa saja layanan utama dari Mitra Irigasi?"
+                            "Siapa saja mitra dari Mitra Irigasi?"
                         </button>
-                        <button onclick="sendQuickMessage('Berapa lama garansi alat sensor Mitra-Moist?')"
+                        <button onclick="sendQuickMessage('Apa visi dari Mitra Irigasi')"
                             class="w-full text-left text-xs bg-zinc-800 hover:bg-zinc-700 text-zinc-300 p-2.5 rounded-lg border border-zinc-750 transition duration-150">
-                            "Berapa lama garansi alat sensor Mitra-Moist?"
+                            "Apa visi dari Mitra Irigasi"
                         </button>
                         <button onclick="sendQuickMessage('Bagaimana cara menghubungi tim support?')"
                             class="w-full text-left text-xs bg-zinc-800 hover:bg-zinc-700 text-zinc-300 p-2.5 rounded-lg border border-zinc-750 transition duration-150">

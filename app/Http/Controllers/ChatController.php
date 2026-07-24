@@ -64,7 +64,7 @@ class ChatController extends Controller
                 ],
                 'generationConfig' => [
                     'temperature' => 0.3,
-                    'maxOutputTokens' => 800,
+                    'maxOutputTokens' => 9999999,
                 ]
             ];
 
