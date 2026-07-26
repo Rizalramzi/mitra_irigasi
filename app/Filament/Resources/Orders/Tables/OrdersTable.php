@@ -2,10 +2,8 @@
 
 namespace App\Filament\Resources\Orders\Tables;
 
-use Filament\Actions\BulkActionGroup;
-use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
-use Filament\Tables\Columns\TextColumn;
+use Filament\Tables;
 use Filament\Tables\Table;
 
 class OrdersTable
@@ -14,43 +12,29 @@ class OrdersTable
     {
         return $table
             ->columns([
-                TextColumn::make('order_number')
+                Tables\Columns\TextColumn::make('order_number')
+                    ->label('No. Order')
                     ->searchable(),
-                TextColumn::make('user_id')
-                    ->numeric()
-                    ->sortable(),
-                TextColumn::make('visitor_name')
+                Tables\Columns\TextColumn::make('visitor_name')
+                    ->label('Nama')
                     ->searchable(),
-                TextColumn::make('visitor_phone')
-                    ->searchable(),
-                TextColumn::make('visitor_email')
-                    ->searchable(),
-                TextColumn::make('visitor_purpose')
-                    ->searchable(),
-                TextColumn::make('total_price')
-                    ->money()
-                    ->sortable(),
-                TextColumn::make('status')
-                    ->badge(),
-                TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                Tables\Columns\TextColumn::make('visitor_phone')
+                    ->label('No HP'),
+                Tables\Columns\BadgeColumn::make('status')
+                    ->colors([
+                        'warning' => 'pending',
+                        'success' => 'deal',
+                        'danger' => 'cancelled',
+                    ]),
+                Tables\Columns\TextColumn::make('total_price')
+                    ->label('Harga Deal')
+                    ->money('IDR'),
+                Tables\Columns\TextColumn::make('created_at')
+                    ->label('Tanggal Order')
+                    ->dateTime(),
             ])
-            ->filters([
-                //
-            ])
-            ->recordActions([
+            ->actions([
                 EditAction::make(),
-            ])
-            ->toolbarActions([
-                BulkActionGroup::make([
-                    DeleteBulkAction::make(),
-                ]),
             ]);
     }
 }

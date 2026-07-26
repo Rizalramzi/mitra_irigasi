@@ -25,8 +25,20 @@
                 <div class="hidden md:flex space-x-6">
                     <a href="{{ route('index') }}" class="text-gray-600 hover:text-blue-600 font-medium">Home</a>
                     <a href="{{ route('index') }}" class="text-gray-600 hover:text-blue-600 font-medium">About</a>
-                    <a href="{{ route('index') }}" class="text-gray-600 hover:text-blue-600 font-medium">Products</a>
+                    <a href="{{ route('katalog') }}" class="text-gray-600 hover:text-blue-600 font-medium">Products</a>
                     <a href="{{ route('chatbot') }}" class="text-gray-600 hover:text-blue-600 font-medium">Consultation</a>
+
+                    @auth
+                        <a href="{{ route('cart.index') }}" class="relative text-gray-600 hover:text-blue-600 font-medium flex items-center gap-1">
+                            <span>Keranjang</span>
+                            @php $cartCount = count(session('cart', [])); @endphp
+                            @if($cartCount > 0)
+                                <span class="bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">
+                                    {{ $cartCount }}
+                                </span>
+                            @endif
+                        </a>
+                    @endauth
                 </div>
 
                 <!-- User Profile / Auth Action -->
