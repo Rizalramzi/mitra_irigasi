@@ -19,18 +19,19 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
 
-Route::middleware('auth')->group(function () {
-    Route::get('/chatbot', function () {
-        return view('chatbot');
-    })->name('chatbot');
-    Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
-});
+Route::get('/chatbot', function () {
+    return view('chatbot');
+})->name('chatbot');
 
 Route::get('/katalog', function () {
     $categories = Category::with('products')->get();
     return view('katalog', compact('categories'));
 })->name('katalog');
+
 
 // Route Keranjang & Checkout (Wajib Login)
 Route::middleware('auth')->group(function () {
