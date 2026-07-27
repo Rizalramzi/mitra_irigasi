@@ -7,7 +7,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         <!-- 1. HERO SECTION -->
-        <div class="bg-gradient-to-br from-emerald-900 via-emerald-800 to-slate-900 text-white rounded-3xl p-8 sm:p-14 shadow-xl relative overflow-hidden">
+        <div class="bg-linear-to-br from-emerald-900 via-emerald-800 to-slate-900 text-white rounded-3xl p-8 sm:p-14 shadow-xl relative overflow-hidden">
             <div class="max-w-3xl relative z-10 space-y-4">
                 <span class="inline-block bg-emerald-700/60 text-emerald-200 border border-emerald-500/40 text-xs font-bold px-3.5 py-1.5 rounded-full tracking-wider uppercase">
                     Profil Resmi Perusahaan
