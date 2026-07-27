@@ -16,6 +16,14 @@ Route::middleware('guest')->group(function () {
     Route::post('/login', [AuthController::class, 'login']);
 });
 
+Route::middleware('auth')->group(function () {
+    // Profil User
+    Route::get('/profile', [ProfileController::class, 'show'])->name('profile');
+    Route::put('/profile', [ProfileController::class, 'update'])->name('profile.update');
+
+    // ... route auth lainnya ...
+});
+
 // 2. Public Routes (Bisa diakses Publik)
 Route::get('/', function () {
     return view('index');
