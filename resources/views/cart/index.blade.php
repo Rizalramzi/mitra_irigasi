@@ -3,7 +3,7 @@
 @section('title', 'Keranjang Belanja - Mitra Irigasi')
 
 @section('content')
-<div class="py-8 bg-slate-50 min-h-screen">
+<div x-data="cartPageData()" class="py-8 bg-slate-50 min-h-screen">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- HEADER SECTION -->
@@ -27,15 +27,16 @@
             </a>
         </div>
 
-        <!-- NOTIFIKASI SUCCESS / ERROR -->
-        @if(session('success'))
-            <div class="bg-emerald-50 border-l-4 border-emerald-500 text-emerald-800 p-4 rounded-r-xl shadow-sm mb-6 text-xs sm:text-sm flex items-center gap-2">
-                <svg class="w-5 h-5 text-emerald-600 shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                </svg>
-                <span>{{ session('success') }}</span>
-            </div>
-        @endif
+        <!-- NOTIFIKASI TOAST MELAYANG -->
+        <div 
+            x-show="toast.show" 
+            x-transition 
+            class="fixed bottom-5 right-5 bg-emerald-800 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 z-50 text-xs sm:text-sm font-bold border border-emerald-600"
+            style="display: none;"
+        >
+            <span class="text-base">✓</span>
+            <span x-text="toast.message"></span>
+        </div>
 
         @if(count($cart) > 0)
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
@@ -50,7 +51,7 @@
 
                     <div class="divide-y divide-slate-100">
                         @foreach($cart as $id => $item)
-                            <div class="p-4 sm:p-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                            <div id="cart-row-{{ $id }}" class="p-4 sm:p-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                                 <div class="space-y-1 flex-1">
                                     <span class="bg-emerald-50 text-emerald-700 text-[10px] font-bold px-2 py-0.5 rounded border border-emerald-200 uppercase tracking-wider">
                                         Komponen Irigasi
@@ -64,25 +65,25 @@
                                 </div>
 
                                 <div class="flex items-center justify-between sm:justify-end gap-4 w-full sm:w-auto pt-3 sm:pt-0 border-t sm:border-0 border-slate-100">
-                                    <!-- Form Update Quantity -->
-                                    <form action="{{ route('cart.update', $id) }}" method="POST" class="flex items-center gap-2 bg-slate-50 p-1.5 rounded-xl border border-slate-200">
-                                        @csrf
-                                        @method('PATCH')
-                                        <label for="qty-{{ $id }}" class="text-[11px] font-bold text-slate-500 px-1">
-                                            Jumlah:
-                                        </label>
-                                        <input 
-                                            type="number" 
-                                            id="qty-{{ $id }}"
-                                            name="quantity" 
-                                            value="{{ $item['quantity'] }}" 
-                                            min="1" 
-                                            class="w-14 p-1 text-center text-xs font-bold bg-white border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                                    
+                                    <!-- KONTROL QUANTITY MODEL KATALOG (- Qty +) -->
+                                    <div class="flex items-center bg-white border border-emerald-500 rounded-xl overflow-hidden shadow-sm">
+                                        <button 
+                                            @click="updateQty({{ $id }}, 'decrement')" 
+                                            class="px-3.5 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-black text-xs transition active:scale-95"
                                         >
-                                        <button type="submit" class="text-xs font-bold bg-slate-200 hover:bg-slate-300 text-slate-700 px-2.5 py-1 rounded-lg transition">
-                                            Simpan
+                                            -
                                         </button>
-                                    </form>
+                                        <span class="px-3.5 py-2 text-xs font-extrabold text-slate-800 min-w-9 text-center" id="qty-text-{{ $id }}">
+                                            {{ $item['quantity'] }}
+                                        </span>
+                                        <button 
+                                            @click="updateQty({{ $id }}, 'increment')" 
+                                            class="px-3.5 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-black text-xs transition active:scale-95"
+                                        >
+                                            +
+                                        </button>
+                                    </div>
 
                                     <!-- Form Hapus Item -->
                                     <form action="{{ route('cart.remove', $id) }}" method="POST">
@@ -168,4 +169,49 @@
 
     </div>
 </div>
+
+<script>
+    function cartPageData() {
+        return {
+            toast: { show: false, message: '' },
+
+            showToast(msg) {
+                this.toast.message = msg;
+                this.toast.show = true;
+                setTimeout(() => { this.toast.show = false; }, 2000);
+            },
+
+            async updateQty(productId, action) {
+                const token = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+                try {
+                    const res = await fetch(`/cart/update/${productId}`, {
+                        method: 'PATCH',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRF-TOKEN': token,
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify({ action: action })
+                    });
+                    
+                    const data = await res.json();
+                    
+                    if (data.status === 'success') {
+                        if (data.quantity > 0) {
+                            // Update angka jumlah tanpa reload
+                            const qtyElem = document.getElementById(`qty-text-${productId}`);
+                            if (qtyElem) qtyElem.innerText = data.quantity;
+                            this.showToast('Jumlah produk diperbarui!');
+                        } else {
+                            // Jika quantity menjadi 0, reload halaman agar daftar terupdate
+                            window.location.reload();
+                        }
+                    }
+                } catch (e) {
+                    console.error('Error updating quantity:', e);
+                }
+            }
+        };
+    }
+</script>
 @endsection

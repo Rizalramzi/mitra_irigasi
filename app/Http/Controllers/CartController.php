@@ -2,49 +2,104 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Cart;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CartController extends Controller
 {
-    // Tampilkan Halaman Keranjang
+    // Tampilkan Halaman Keranjang Belanja
     public function index()
     {
-        $cart = session()->get('cart', []);
+        $cartItems = Cart::with('product')->where('user_id', Auth::id())->get();
+
+        // Format ulang struktur agar tetap kompatibel dengan view keranjang yang sudah dibuat
+        $cart = [];
+        foreach ($cartItems as $item) {
+            if ($item->product) {
+                $cart[$item->product_id] = [
+                    'id'       => $item->product_id,
+                    'name'     => $item->product->name,
+                    'function' => $item->product->function,
+                    'photo'    => $item->product->photo,
+                    'quantity' => $item->quantity,
+                ];
+            }
+        }
+
         return view('cart.index', compact('cart'));
     }
 
-    // Tambah Produk ke Keranjang
+    // Tambah / Update Produk via AJAX tanpa reload
     public function add(Request $request, Product $product)
     {
-        $cart = session()->get('cart', []);
+        $userId = Auth::id();
 
-        if (isset($cart[$product->id])) {
-            $cart[$product->id]['quantity']++;
+        $cartItem = Cart::where('user_id', $userId)
+            ->where('product_id', $product->id)
+            ->first();
+
+        if ($cartItem) {
+            $cartItem->increment('quantity');
         } else {
-            $cart[$product->id] = [
-                'id'       => $product->id,
-                'name'     => $product->name,
-                'function' => $product->function,
-                'photo'    => $product->photo,
-                'quantity' => 1,
-            ];
+            $cartItem = Cart::create([
+                'user_id'    => $userId,
+                'product_id' => $product->id,
+                'quantity'   => 1,
+            ]);
         }
 
-        session()->put('cart', $cart);
+        // Ambil total item unik di keranjang user
+        $totalCartCount = Cart::where('user_id', $userId)->count();
 
-        return back()->with('success', 'Produk berhasil ditambahkan ke keranjang!');
+        // Jika request berupa AJAX / JSON
+        if ($request->wantsJson()) {
+            return response()->json([
+                'status'     => 'success',
+                'message'    => 'Produk berhasil ditambahkan!',
+                'quantity'   => $cartItem->quantity,
+                'cart_count' => $totalCartCount,
+            ]);
+        }
+
+        return back()->with('success', 'Produk ditambahkan ke keranjang!');
     }
 
-    // Update Quantity Produk di Keranjang
+    // Update Quantity Langsung (Tambah / Kurang) via AJAX
     public function update(Request $request, Product $product)
     {
-        $cart = session()->get('cart', []);
+        $userId = Auth::id();
+        $action = $request->input('action'); // 'increment', 'decrement', atau set manual quantity
 
-        if (isset($cart[$product->id])) {
-            $quantity = max(1, (int) $request->input('quantity', 1));
-            $cart[$product->id]['quantity'] = $quantity;
-            session()->put('cart', $cart);
+        $cartItem = Cart::where('user_id', $userId)
+            ->where('product_id', $product->id)
+            ->first();
+
+        if ($cartItem) {
+            if ($action === 'decrement') {
+                if ($cartItem->quantity > 1) {
+                    $cartItem->decrement('quantity');
+                } else {
+                    $cartItem->delete();
+                    $cartItem->quantity = 0;
+                }
+            } elseif ($action === 'increment') {
+                $cartItem->increment('quantity');
+            } else {
+                $quantity = max(1, (int) $request->input('quantity', 1));
+                $cartItem->update(['quantity' => $quantity]);
+            }
+        }
+
+        $totalCartCount = Cart::where('user_id', $userId)->count();
+
+        if ($request->wantsJson()) {
+            return response()->json([
+                'status'     => 'success',
+                'quantity'   => $cartItem ? $cartItem->quantity : 0,
+                'cart_count' => $totalCartCount,
+            ]);
         }
 
         return back()->with('success', 'Jumlah produk diperbarui!');
@@ -53,12 +108,9 @@ class CartController extends Controller
     // Hapus Produk dari Keranjang
     public function remove(Product $product)
     {
-        $cart = session()->get('cart', []);
-
-        if (isset($cart[$product->id])) {
-            unset($cart[$product->id]);
-            session()->put('cart', $cart);
-        }
+        Cart::where('user_id', Auth::id())
+            ->where('product_id', $product->id)
+            ->delete();
 
         return back()->with('success', 'Produk dihapus dari keranjang.');
     }

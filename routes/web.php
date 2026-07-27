@@ -34,6 +34,10 @@ Route::get('/katalog', function () {
     return view('katalog', compact('categories'));
 })->name('katalog');
 
+Route::get('/profile', function () {
+    return view('profile');
+})->name('profile');
+
 // 3. API Endpoint Chatbot
 // Route::post('/api/chat', function (Request $request) {
 //     $messages = $request->input('messages', []);

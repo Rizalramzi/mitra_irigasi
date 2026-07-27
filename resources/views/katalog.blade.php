@@ -3,7 +3,17 @@
 @section('title', 'Katalog Peralatan Irigasi - Mitra Irigasi')
 
 @section('content')
-<div x-data="{ search: '', activeCategory: 'all' }" class="py-8 bg-slate-50 min-h-screen">
+@php
+    // Ambil data keranjang user yang sedang login untuk inisialisasi state tombol
+    $userCart = [];
+    if(Auth::check()) {
+        $userCart = \App\Models\Cart::where('user_id', Auth::id())
+                    ->pluck('quantity', 'product_id')
+                    ->toArray();
+    }
+@endphp
+
+<div x-data="katalogData({{ json_encode($userCart) }})" class="py-8 bg-slate-50 min-h-screen">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- BREADCRUMB & HEADER SECTION -->
@@ -20,10 +30,8 @@
                 </p>
             </div>
 
-            <!-- SEARCH BAR & FILTER CATEGORY (WRAP DINAMIS KE BAWAH) -->
+            <!-- SEARCH BAR & FILTER CATEGORY -->
             <div class="mt-6 pt-6 border-t border-slate-100 flex flex-col gap-4">
-                
-                <!-- Search Box (Full Width di Atas / Samping Filter) -->
                 <div class="relative w-full">
                     <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none text-slate-400">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -38,7 +46,6 @@
                     >
                 </div>
 
-                <!-- Category Filter Buttons (Flex-Wrap Dinamis Memanjang ke Bawah) -->
                 <div class="flex flex-wrap items-center gap-2 pt-1">
                     <button 
                         @click="activeCategory = 'all'" 
@@ -58,30 +65,19 @@
                         </button>
                     @endforeach
                 </div>
-
             </div>
         </div>
 
-        <!-- ALERT SUCCESS / ERROR -->
-        @if(session('success'))
-            <div class="bg-emerald-50 border-l-4 border-emerald-500 text-emerald-800 p-4 rounded-r-xl shadow-sm mb-6 flex items-center justify-between text-xs sm:text-sm">
-                <div class="flex items-center gap-2">
-                    <svg class="w-5 h-5 text-emerald-600 shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                    </svg>
-                    <span>{{ session('success') }}</span>
-                </div>
-                <a href="{{ route('cart.index') }}" class="font-bold underline text-emerald-700 hover:text-emerald-900">
-                    Buka Keranjang →
-                </a>
-            </div>
-        @endif
-
-        @if(session('error'))
-            <div class="bg-rose-50 border-l-4 border-rose-500 text-rose-800 p-4 rounded-r-xl shadow-sm mb-6 text-xs sm:text-sm">
-                {{ session('error') }}
-            </div>
-        @endif
+        <!-- NOTIFIKASI TOAST MELAYANG -->
+        <div 
+            x-show="toast.show" 
+            x-transition 
+            class="fixed bottom-5 right-5 bg-emerald-800 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 z-50 text-xs sm:text-sm font-bold border border-emerald-600"
+            style="display: none;"
+        >
+            <span class="text-base">✓</span>
+            <span x-text="toast.message"></span>
+        </div>
 
         <!-- DAFTAR KATEGORI & PRODUK -->
         @forelse($categories as $category)
@@ -90,7 +86,6 @@
                 x-transition
                 class="mb-12"
             >
-                <!-- Category Heading -->
                 <div class="flex items-center gap-3 mb-6">
                     <span class="w-2.5 h-7 bg-emerald-600 rounded-full"></span>
                     <h2 class="text-xl font-extrabold text-slate-800 tracking-tight">
@@ -101,7 +96,6 @@
                     </span>
                 </div>
 
-                <!-- Products Grid -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     @forelse($category->products as $product)
                         <div 
@@ -109,7 +103,6 @@
                             class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between overflow-hidden group"
                         >
                             <div class="p-5">
-                                <!-- Top Info Badge -->
                                 <div class="flex justify-between items-start mb-3">
                                     <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">
                                         Komponen Irigasi
@@ -119,7 +112,6 @@
                                     </span>
                                 </div>
 
-                                <!-- Title & Description -->
                                 <h3 class="font-bold text-slate-900 text-base mb-2 group-hover:text-emerald-600 transition leading-snug">
                                     {{ $product->name }}
                                 </h3>
@@ -127,7 +119,6 @@
                                     {{ $product->description }}
                                 </p>
 
-                                <!-- Function Box -->
                                 <div class="bg-slate-50 rounded-xl p-3 border border-slate-100">
                                     <span class="block text-[10px] font-bold uppercase text-slate-400 tracking-wider mb-0.5">
                                         Fungsi Utama:
@@ -138,26 +129,47 @@
                                 </div>
                             </div>
 
-                            <!-- Footer Card Action -->
-                            <div class="px-5 py-3.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+                            <!-- Footer Card Action dengan AJAX Controller -->
+                            <div class="px-5 py-3.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between min-h-15">
                                 <div>
                                     <span class="block text-[10px] text-slate-400 font-medium">Harga Penawaran</span>
                                     <span class="text-xs font-bold text-emerald-700">Tanya via Admin</span>
                                 </div>
 
                                 @auth
-                                    <form action="{{ route('cart.add', $product) }}" method="POST">
-                                        @csrf
-                                        <button 
-                                            type="submit" 
-                                            class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2 px-3.5 rounded-xl shadow-sm shadow-emerald-200 transition flex items-center gap-1.5"
-                                        >
-                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
-                                            </svg>
-                                            <span>Keranjang</span>
-                                        </button>
-                                    </form>
+                                    <div>
+                                        <!-- Jika produk belum ada di keranjang -->
+                                        <template x-if="!cartItems[{{ $product->id }}] || cartItems[{{ $product->id }}] <= 0">
+                                            <button 
+                                                @click="addToCart({{ $product->id }})" 
+                                                class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2 px-3.5 rounded-xl shadow-sm shadow-emerald-200 transition flex items-center gap-1.5 cursor-pointer"
+                                            >
+                                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                                                </svg>
+                                                <span> Keranjang</span>
+                                            </button>
+                                        </template>
+
+                                        <!-- Jika produk sudah ada di keranjang, tampilkan kontrol quantity (+ / -) -->
+                                        <template x-if="cartItems[{{ $product->id }}] > 0">
+                                            <div class="flex items-center bg-white border border-emerald-500 rounded-xl overflow-hidden shadow-sm">
+                                                <button 
+                                                    @click="updateQty({{ $product->id }}, 'decrement')" 
+                                                    class="px-3 py-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-black text-xs transition cursor-pointer"
+                                                >
+                                                    -
+                                                </button>
+                                                <span class="px-3 py-1 text-xs font-extrabold text-slate-800" x-text="cartItems[{{ $product->id }}]"></span>
+                                                <button 
+                                                    @click="updateQty({{ $product->id }}, 'increment')" 
+                                                    class="px-3 py-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-black text-xs transition cursor-pointer"
+                                                >
+                                                    +
+                                                </button>
+                                            </div>
+                                        </template>
+                                    </div>
                                 @else
                                     <a 
                                         href="{{ route('login') }}" 
@@ -181,24 +193,78 @@
             </div>
         @endforelse
 
-        <!-- INFO BANNER JIKA USER BELUM LOGIN -->
-        @guest
-            <div class="mt-8 bg-emerald-900 text-white rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
-                <div>
-                    <h3 class="text-lg font-bold">Ingin Mengajukan Pemesanan Produk?</h3>
-                    <p class="text-emerald-200 text-xs sm:text-sm mt-1">Silakan masuk atau mendaftar akun visitor terlebih dahulu untuk memilih barang dan mengirimkan draf ke WhatsApp.</p>
-                </div>
-                <div class="flex items-center gap-3 shrink-0">
-                    <a href="{{ route('login') }}" class="bg-white text-emerald-900 font-bold text-xs px-4 py-2.5 rounded-xl hover:bg-emerald-100 transition">
-                        Masuk Akun
-                    </a>
-                    <a href="{{ route('register') }}" class="bg-emerald-600 text-white font-bold text-xs px-4 py-2.5 rounded-xl hover:bg-emerald-700 transition border border-emerald-500">
-                        Daftar Baru
-                    </a>
-                </div>
-            </div>
-        @endguest
-
     </div>
 </div>
+
+<script>
+    function katalogData(initialCart) {
+        return {
+            search: '',
+            activeCategory: 'all',
+            cartItems: initialCart || {},
+            toast: { show: false, message: '' },
+
+            showToast(msg) {
+                this.toast.message = msg;
+                this.toast.show = true;
+                setTimeout(() => { this.toast.show = false; }, 2500);
+            },
+
+            async addToCart(productId) {
+                const token = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+                try {
+                    const res = await fetch(`/cart/add/${productId}`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRF-TOKEN': token,
+                            'Accept': 'application/json'
+                        }
+                    });
+                    const data = await res.json();
+                    if (data.status === 'success') {
+                        this.cartItems[productId] = data.quantity;
+                        this.showToast('Produk ditambahkan ke keranjang!');
+
+                        // KIRIM SINYAL LIVE UPDATE KE NAVBAR
+                        window.dispatchEvent(new CustomEvent('cart-updated', {
+                            detail: { count: data.cart_count }
+                        }));
+                    }
+                } catch (e) {
+                    console.error('Error adding product:', e);
+                }
+            },
+
+            async updateQty(productId, action) {
+                const token = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+                try {
+                    const res = await fetch(`/cart/update/${productId}`, {
+                        method: 'PATCH',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRF-TOKEN': token,
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify({ action: action })
+                    });
+                    const data = await res.json();
+                    if (data.status === 'success') {
+                        this.cartItems[productId] = data.quantity;
+                        if (data.quantity === 0) {
+                            delete this.cartItems[productId];
+                        }
+
+                        // KIRIM SINYAL LIVE UPDATE KE NAVBAR
+                        window.dispatchEvent(new CustomEvent('cart-updated', {
+                            detail: { count: data.cart_count }
+                        }));
+                    }
+                } catch (e) {
+                    console.error('Error updating quantity:', e);
+                }
+            }
+        };
+    }
+</script>
 @endsection
