@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Cart;
 use App\Models\Order;
 use App\Models\OrderItem;
 use Illuminate\Http\Request;
@@ -12,14 +13,16 @@ class OrderController extends Controller
     public function checkoutWhatsApp(Request $request)
     {
         $user = Auth::user();
-        $cart = session()->get('cart', []);
 
-        // Jika keranjang kosong, kembalikan ke halaman katalog dengan notifikasi
-        if (empty($cart)) {
+        // 1. Ambil item keranjang dari DATABASE (bukan Session)
+        $cartItems = Cart::with('product')->where('user_id', $user->id)->get();
+
+        // Jika keranjang di database kosong, kembalikan ke katalog
+        if ($cartItems->isEmpty()) {
             return redirect()->route('katalog')->with('error', 'Keranjang belanja Anda masih kosong.');
         }
 
-        // 1. Simpan Draf Order ke Database
+        // 2. Simpan Draf Order ke Database
         $order = Order::create([
             'order_number'    => 'ORD-' . strtoupper(uniqid()),
             'user_id'         => $user->id,
@@ -32,21 +35,25 @@ class OrderController extends Controller
         ]);
 
         $itemsText = "";
-        foreach ($cart as $productId => $item) {
-            OrderItem::create([
-                'order_id'   => $order->id,
-                'product_id' => $productId,
-                'quantity'   => $item['quantity'],
-            ]);
+        foreach ($cartItems as $item) {
+            if ($item->product) {
+                // Simpan item pesanan
+                OrderItem::create([
+                    'order_id'   => $order->id,
+                    'product_id' => $item->product_id,
+                    'quantity'   => $item->quantity,
+                ]);
 
-            $itemsText .= "- " . $item['name'] . " (Jumlah: " . $item['quantity'] . ")\n";
+                $itemsText .= "- " . $item->product->name . " (Jumlah: " . $item->quantity . ")\n";
+            }
         }
 
-        // 2. Kosongkan Keranjang setelah berhasil checkout
-        session()->forget('cart');
+        // 3. Kosongkan Keranjang di DATABASE setelah checkout
+        Cart::where('user_id', $user->id)->delete();
 
-        // 3. Format Pesan dan Redirect ke WA Admin CV. Wijaya Karya (082142010020)
-        $adminPhone = '6289513622252';
+        // 4. Format Pesan dan Redirect ke WA Admin (0821-4201-0020 / 6282142010020)
+        $adminPhone = '6282142010020'; // atau gunakan 6289513622252 sesuai nomor tujuanmu
+        
         $message = "Halo Mitra Irigasi,\n\n"
             . "Saya mau mengajukan pemesanan/penawaran produk berikut:\n"
             . "Nomor Pesanan: {$order->order_number}\n"

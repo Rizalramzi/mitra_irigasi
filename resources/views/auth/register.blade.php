@@ -107,33 +107,67 @@
                     </div>
 
                     <!-- PASSWORD -->
-                    <div>
+                    <div x-data="{ show: false }">
                         <label for="password" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
                             Password (Min 8 Karakter) <span class="text-rose-500">*</span>
                         </label>
-                        <input 
-                            type="password" 
-                            name="password" 
-                            id="password" 
-                            required 
-                            placeholder="••••••••" 
-                            class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition"
-                        >
+                        <div class="relative">
+                            <input 
+                                :type="show ? 'text' : 'password'" 
+                                name="password" 
+                                id="password" 
+                                required 
+                                placeholder="••••••••" 
+                                class="w-full pl-4 pr-11 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition"
+                            >
+                            <button 
+                                type="button" 
+                                @click="show = !show" 
+                                class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-emerald-600 focus:outline-none transition"
+                                title="Tampilkan/Sembunyikan Password"
+                            >
+                                <svg x-show="show" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                                <svg x-show="!show" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858-5.908a10.03 10.03 0 013.682-.863c4.478 0 8.268 2.943 9.542 7a10.025 10.025 0 01-4.132 5.411m-4.692-4.692a3 3 0 00-4.243-4.243" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3l18 18" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
 
                     <!-- KONFIRMASI PASSWORD -->
-                    <div>
+                    <div x-data="{ show: false }">
                         <label for="password_confirmation" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
                             Ulangi Password <span class="text-rose-500">*</span>
                         </label>
-                        <input 
-                            type="password" 
-                            name="password_confirmation" 
-                            id="password_confirmation" 
-                            required 
-                            placeholder="••••••••" 
-                            class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition"
-                        >
+                        <div class="relative">
+                            <input 
+                                :type="show ? 'text' : 'password'" 
+                                name="password_confirmation" 
+                                id="password_confirmation" 
+                                required 
+                                placeholder="••••••••" 
+                                class="w-full pl-4 pr-11 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition"
+                            >
+                            <button 
+                                type="button" 
+                                @click="show = !show" 
+                                class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-emerald-600 focus:outline-none transition"
+                                title="Tampilkan/Sembunyikan Password"
+                            >
+                                <svg x-show="show" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                                <svg x-show="!show" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858-5.908a10.03 10.03 0 013.682-.863c4.478 0 8.268 2.943 9.542 7a10.025 10.025 0 01-4.132 5.411m-4.692-4.692a3 3 0 00-4.243-4.243" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3l18 18" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
 
                 </div>
