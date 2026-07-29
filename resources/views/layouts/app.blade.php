@@ -52,7 +52,6 @@
                     </div>
                     <div>
                         <span class="text-xl font-extrabold text-slate-900 block leading-none">MITRA IRIGASI</span>
-                        <!-- <span class="text-xs font-semibold text-emerald-600 tracking-wider">CV. WIJAYA KARYA</span> -->
                     </div>
                 </a>
 
@@ -60,7 +59,54 @@
                 <div class="hidden md:flex items-center gap-7 font-semibold text-slate-600 text-sm">
                     <a href="{{ route('index') }}" class="hover:text-emerald-600 transition {{ request()->routeIs('index') ? 'text-emerald-600 font-bold' : '' }}">Beranda</a>
                     <a href="{{ route('about') }}" class="hover:text-emerald-600 transition {{ request()->routeIs('about') ? 'text-emerald-600 font-bold' : '' }}">Tentang Kami</a>
-                    <a href="{{ route('katalog') }}" class="hover:text-emerald-600 transition {{ request()->routeIs('katalog') ? 'text-emerald-600 font-bold' : '' }}">Katalog Peralatan</a>
+                    
+                    <!-- DROPDOWN KATALOG PERALATAN (DESKTOP) -->
+                    <div x-data="{ catalogDropdown: false }" class="relative cursor-pointer" @mouseleave="catalogDropdown = false">
+                        <button 
+                            @click="catalogDropdown = !catalogDropdown" 
+                            @mouseover="catalogDropdown = true"
+                            class="flex items-center gap-1 hover:text-emerald-600 transition focus:outline-none py-2 {{ request()->routeIs('katalog') || request()->routeIs('guide') ? 'text-emerald-600 font-bold' : '' }}"
+                        >
+                            <span>Katalog Peralatan</span>
+                            <svg class="w-4 h-4 transition-transform duration-200" :class="catalogDropdown ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+
+                        <div 
+                            x-show="catalogDropdown" 
+                            x-transition:enter="transition ease-out duration-150"
+                            x-transition:enter-start="transform opacity-0 scale-95 -translate-y-2"
+                            x-transition:enter-end="transform opacity-100 scale-100 translate-y-0"
+                            x-transition:leave="transition ease-in duration-100"
+                            x-transition:leave-start="transform opacity-100 scale-100 translate-y-0"
+                            x-transition:leave-end="transform opacity-0 scale-95 -translate-y-2"
+                            class="absolute left-0 mt-1 w-56 bg-white rounded-2xl shadow-xl border border-slate-100 py-2 z-50 text-xs font-semibold space-y-1"
+                            style="display: none;"
+                        >
+                            <a href="{{ route('katalog') }}" class="flex items-center gap-2.5 px-4 py-2.5 text-slate-700 hover:bg-slate-50 hover:text-emerald-600 transition {{ request()->routeIs('katalog') ? 'text-emerald-600 font-bold bg-emerald-50/50' : '' }}">
+                                <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                                </svg>
+                                <div>
+                                    <span class="block">Produk</span>
+                                    <span class="text-[10px] font-normal text-slate-400">Komponen & alat pengairan</span>
+                                </div>
+                            </a>
+
+                            <a href="{{ route('guide') }}" class="flex items-center gap-2.5 px-4 py-2.5 text-slate-700 hover:bg-slate-50 hover:text-emerald-600 transition {{ request()->routeIs('guide') ? 'text-emerald-600 font-bold bg-emerald-50/50' : '' }}">
+                                <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <span class="block">Panduan</span>
+                                    <span class="text-[10px] font-normal text-slate-400">Video tutorial & edukasi</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
                     <a href="{{ route('chatbot') }}" class="hover:text-emerald-600 transition flex items-center gap-1.5 {{ request()->routeIs('chatbot') ? 'text-emerald-600 font-bold' : '' }}">
                         <span>Tanya Chatbot AI</span>
                     </a>
@@ -73,16 +119,12 @@
                         $cartCount = Auth::check() ? \App\Models\Cart::where('user_id', Auth::id())->count() : 0;
                     @endphp
 
-                    <!-- ICON KERANJANG (SELALU MUNCUL DI DESKTOP) -->
-                    <div x-data="{ count: {{ $cartCount }} }" 
-                        @cart-updated.window="count = $event.detail.count">
-                        
+                    <!-- ICON KERANJANG -->
+                    <div x-data="{ count: {{ $cartCount }} }" @cart-updated.window="count = $event.detail.count">
                         <a href="{{ route('cart.index') }}" class="relative p-2.5 text-slate-700 hover:text-emerald-600 hover:bg-slate-100 rounded-xl transition inline-block" title="Keranjang Belanja">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
                             </svg>
-                            
-                            <!-- Circle Merah Live -->
                             <template x-if="count > 0">
                                 <span x-text="count" class="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] font-extrabold w-5 h-5 flex items-center justify-center rounded-full border-2 border-white shadow-sm animate-pulse"></span>
                             </template>
@@ -91,7 +133,7 @@
 
                     @auth
                         <!-- DROPDOWN USER PROFILE -->
-                        <div x-data="{ dropdownOpen: false }" class="relative">
+                        <div x-data="{ dropdownOpen: false }" class="relative cursor-pointer">
                             <button @click="dropdownOpen = !dropdownOpen" @click.away="dropdownOpen = false" class="flex items-center gap-2.5 p-1.5 rounded-xl hover:bg-slate-100 transition focus:outline-none">
                                 <div class="w-9 h-9 bg-emerald-600 text-white rounded-lg flex items-center justify-center font-extrabold text-xs shadow-sm">
                                     {{ strtoupper(substr(Auth::user()->name, 0, 2)) }}
@@ -107,7 +149,6 @@
                                 </div>
                             </button>
 
-                            <!-- ISI DROPDOWN MENU -->
                             <div x-show="dropdownOpen" 
                                  x-transition:enter="transition ease-out duration-100"
                                  x-transition:enter-start="transform opacity-0 scale-95"
@@ -154,18 +195,13 @@
                             </div>
                         </div>
                     @else
-                        <a href="{{ route('login') }}" class="text-xs font-bold text-slate-700 hover:text-emerald-600 px-3 py-2">
-                            Masuk
-                        </a>
-                        <a href="{{ route('register') }}" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-md shadow-emerald-200 transition">
-                            Daftar Akun
-                        </a>
+                        <a href="{{ route('login') }}" class="text-xs font-bold text-slate-700 hover:text-emerald-600 px-3 py-2">Masuk</a>
+                        <a href="{{ route('register') }}" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-md shadow-emerald-200 transition">Daftar Akun</a>
                     @endauth
                 </div>
 
                 <!-- HAMBURGER MENU MOBILE -->
                 <div class="flex md:hidden items-center gap-2">
-                    <!-- ICON KERANJANG (SELALU MUNCUL DI MOBILE) -->
                     <a href="{{ route('cart.index') }}" class="relative p-2 text-slate-700">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
@@ -192,13 +228,26 @@
         <div x-show="open" class="md:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-3">
             <a href="{{ route('index') }}" class="block py-2 text-sm font-bold text-slate-700">Beranda</a>
             <a href="{{ route('about') }}" class="block py-2 text-sm font-bold text-slate-700">Tentang Kami</a>
-            <a href="{{ route('katalog') }}" class="block py-2 text-sm font-bold text-slate-700">Katalog Peralatan</a>
+            
+            <!-- DROPDOWN MOBILE KATALOG -->
+            <div x-data="{ mobileCatalog: false }" class="space-y-1">
+                <button @click="mobileCatalog = !mobileCatalog" class="w-full flex items-center justify-between py-2 text-sm font-bold text-slate-700">
+                    <span>Katalog Peralatan</span>
+                    <svg class="w-4 h-4 transition-transform duration-200" :class="mobileCatalog ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div x-show="mobileCatalog" class="pl-4 space-y-2 border-l-2 border-emerald-500 my-1">
+                    <a href="{{ route('katalog') }}" class="block py-1.5 text-xs font-semibold text-slate-600 hover:text-emerald-600">• Produk</a>
+                    <a href="{{ route('guide') }}" class="block py-1.5 text-xs font-semibold text-slate-600 hover:text-emerald-600">• Panduan</a>
+                </div>
+            </div>
+
             <a href="{{ route('chatbot') }}" class="block py-2 text-sm font-bold text-slate-700">Tanya Chatbot AI</a>
             <a href="{{ route('cart.index') }}" class="block py-2 text-sm font-bold text-slate-700">Keranjang Belanja</a>
             
             @auth
                 <a href="{{ route('profile') }}" class="block py-2 text-sm font-bold text-slate-700">Profil Saya</a>
-                
                 <form action="{{ route('logout') }}" method="POST" class="pt-2">
                     @csrf
                     <button type="submit" class="w-full text-center bg-rose-600 text-white py-2.5 rounded-lg font-bold text-sm">Keluar Akun</button>

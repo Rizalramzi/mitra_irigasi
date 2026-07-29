@@ -48,4 +48,9 @@ class KatalogController extends Controller
 
         return view('katalog', compact('categories', 'products'));
     }
+
+    public function guide()
+    {
+        return view('guide');
+    }
 }

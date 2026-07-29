@@ -38,8 +38,9 @@ Route::get('/chatbot', function () {
     return view('chatbot');
 })->name('chatbot');
 
-
 Route::get('/katalog', [KatalogController::class, 'index'])->name('katalog');
+
+Route::get('/guide', [KatalogController::class, 'guide'])->name('guide');
 
 Route::get('/profile', function () {
     return view('profile');
