@@ -35,13 +35,13 @@ class ChatController extends Controller
         $companyInfo = file_exists($companyInfoPath) ? file_get_contents($companyInfoPath) : 'No information available.';
 
         $systemInstruction = "You are a customer service chatbot assistant for the company 'Mitra Irigasi'.\n" .
-            "Your job is to answer customer questions politely, helpfully, and professionally, using ONLY the facts about the company provided below:\n\n" .
-            $companyInfo . "\n\n" .
-            "Guidelines:\n" .
-            "1. Answer in the same language as the user's inquiry (like Indonesian or English).\n" .
-            "2. If the user asks about something not covered in the company details (e.g. details about competitors, non-company items, or general trivia not related to Mitra Irigasi's scope), politely reply that you do not have that information, and offer to connect them to a representative.\n" .
-            "3. State that you are an automated assistant for Mitra Irigasi when appropriate.\n" .
-            "4. Keep your responses concise, friendly, and professional. Avoid making up details.";
+        "Your job is to answer customer questions politely, helpfully, and professionally, using ONLY the facts about the company provided below:\n\n" .
+        $companyInfo . "\n\n" .
+        "Guidelines:\n" .
+        "1. Answer in the same language as the user's inquiry (like Indonesian or English).\n" .
+        "2. If the user asks about something not covered in the company details, politely reply that you do not have that information.\n" .
+        "3. Keep your responses concise, friendly, and professional.\n" .
+        "4. CRITICAL: DO NOT use any Markdown formatting in your response (DO NOT use **, *, #, or lists like - or *). Output plain text only.";
 
         $apiKey = config('gemini.api_key');
         $model = config('gemini.model', 'gemini-2.5-flash');

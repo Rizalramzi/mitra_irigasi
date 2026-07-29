@@ -137,67 +137,6 @@
             @include('katalog.partials.pagination', ['products' => $products])
         </div>
 
-        <!-- SECTION VIDEO TUTORIAL -->
-        <div class="mt-16 pt-12 border-t border-slate-200">
-            <div class="text-center max-w-2xl mx-auto mb-10">
-                <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest block mb-1">
-                    Panduan & Edukasi Teknik
-                </span>
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                    Video Tutorial Pemasangan Peralatan Irigasi
-                </h2>
-                <p class="text-slate-500 text-xs sm:text-sm mt-2">
-                    Pelajari cara perakitan, perawatan, dan skema pemasangan sistem irigasi tetes dan sprinkler untuk efisiensi lahan Anda.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- VIDEO TUTORIAL 1 -->
-                <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition group">
-                    <div class="relative aspect-video bg-slate-800 cursor-pointer overflow-hidden flex flex-col items-center justify-center p-6 text-white" @click="playVideo('https://www.youtube.com/embed/vYuoECsqZy8')">
-                        <div class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform mb-2">
-                            <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                        </div>
-                        <span class="text-[11px] font-bold text-slate-300 uppercase tracking-wider">Video Tutorial</span>
-                    </div>
-                    <div class="p-5 space-y-2">
-                        <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Tutorial 01</span>
-                        <h3 class="font-bold text-slate-900 text-sm leading-snug">Panduan Pemasangan Selang Drip Line & Flat Dripper</h3>
-                        <p class="text-slate-500 text-xs leading-relaxed">Cara menyambungkan selang drip ke pipa utama serta trik mengatur tekanan air agar merata.</p>
-                    </div>
-                </div>
-
-                <!-- VIDEO TUTORIAL 2 -->
-                <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition group">
-                    <div class="relative aspect-video bg-slate-800 cursor-pointer overflow-hidden flex flex-col items-center justify-center p-6 text-white" @click="playVideo('https://www.youtube.com/embed/vYuoECsqZy8')">
-                        <div class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform mb-2">
-                            <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                        </div>
-                        <span class="text-[11px] font-bold text-slate-300 uppercase tracking-wider">Video Tutorial</span>
-                    </div>
-                    <div class="p-5 space-y-2">
-                        <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Tutorial 02</span>
-                        <h3 class="font-bold text-slate-900 text-sm leading-snug">Rancangan Nozzle Sprinkler untuk Kebun & Hortikultura</h3>
-                        <p class="text-slate-500 text-xs leading-relaxed">Pilihan radius semprotan micro sprinkler dan cara pemeliharaan nozzle agar tidak tersumbat.</p>
-                    </div>
-                </div>
-
-                <!-- VIDEO TUTORIAL 3 -->
-                <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition group">
-                    <div class="relative aspect-video bg-slate-800 cursor-pointer overflow-hidden flex flex-col items-center justify-center p-6 text-white" @click="playVideo('https://www.youtube.com/embed/vYuoECsqZy8')">
-                        <div class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform mb-2">
-                            <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                        </div>
-                        <span class="text-[11px] font-bold text-slate-300 uppercase tracking-wider">Video Tutorial</span>
-                    </div>
-                    <div class="p-5 space-y-2">
-                        <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Tutorial 03</span>
-                        <h3 class="font-bold text-slate-900 text-sm leading-snug">Pembersihan Disc Filter & Pemasangan Solenoid Valve</h3>
-                        <p class="text-slate-500 text-xs leading-relaxed">Cara melakukan backwash pada sistem filtrasi air agar pipa irigasi awet hingga bertahun-tahun.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
     </div>
 
@@ -281,22 +220,6 @@
         </div>
     </div>
 
-    <!-- MODAL POPUP PLAYER VIDEO TUTORIAL -->
-    <div 
-        x-show="videoModal.show" 
-        x-transition
-        class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-md"
-        style="display: none;"
-    >
-        <div @click.away="closeVideo()" class="bg-black rounded-3xl max-w-3xl w-full overflow-hidden shadow-2xl relative">
-            <button @click="closeVideo()" class="absolute top-3 right-3 text-white bg-slate-800/80 hover:bg-slate-700 p-2 rounded-full z-10 transition">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-            </button>
-            <div class="aspect-video w-full">
-                <iframe :src="videoModal.url" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
 
 </div>
 

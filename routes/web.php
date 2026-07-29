@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\ChatController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\KatalogController;
 use App\Models\Category;
@@ -37,6 +38,9 @@ Route::get('/about', function () {
 Route::get('/chatbot', function () {
     return view('chatbot');
 })->name('chatbot');
+
+// Mengirim Pesan ke Gemini API via Controller
+Route::post('/chatbot/send', [ChatController::class, 'send'])->name('chatbot.send');
 
 Route::get('/katalog', [KatalogController::class, 'index'])->name('katalog');
 
