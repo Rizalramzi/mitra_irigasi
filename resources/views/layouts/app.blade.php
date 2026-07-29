@@ -30,7 +30,7 @@
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center gap-2">
                 <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span>Layanan Konsultasi & Peralatan Irigasi CV. Wijaya Karya</span>
+                <span>Layanan Konsultasi & Peralatan Irigasi Mitra Irigasi</span>
             </div>
             <div class="hidden sm:flex items-center gap-4 text-xs font-medium">
                 <span>Hubungi Admin: <strong>0821-4201-0020</strong></span>
@@ -52,7 +52,7 @@
                     </div>
                     <div>
                         <span class="text-xl font-extrabold text-slate-900 block leading-none">MITRA IRIGASI</span>
-                        <span class="text-xs font-semibold text-emerald-600 tracking-wider">CV. WIJAYA KARYA</span>
+                        <!-- <span class="text-xs font-semibold text-emerald-600 tracking-wider">CV. WIJAYA KARYA</span> -->
                     </div>
                 </a>
 
@@ -68,28 +68,28 @@
 
                 <!-- AUTH BUTTONS, CART ICON & USER DROPDOWN -->
                 <div class="hidden md:flex items-center gap-4">
-                    @auth
-                        @php
-                            // Ambil jumlah unik barang di keranjang dari database
-                            $cartCount = \App\Models\Cart::where('user_id', Auth::id())->count();
-                        @endphp
+                    
+                    @php
+                        $cartCount = Auth::check() ? \App\Models\Cart::where('user_id', Auth::id())->count() : 0;
+                    @endphp
 
-                        <!-- ICON KERANJANG DENGAN BULATAN MERAH (DYNAMIC LIVE UPDATE) -->
-                        <div x-data="{ count: {{ \App\Models\Cart::where('user_id', Auth::id())->count() }} }" 
-                            @cart-updated.window="count = $event.detail.count">
+                    <!-- ICON KERANJANG (SELALU MUNCUL DI DESKTOP) -->
+                    <div x-data="{ count: {{ $cartCount }} }" 
+                        @cart-updated.window="count = $event.detail.count">
+                        
+                        <a href="{{ route('cart.index') }}" class="relative p-2.5 text-slate-700 hover:text-emerald-600 hover:bg-slate-100 rounded-xl transition inline-block" title="Keranjang Belanja">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                            </svg>
                             
-                            <a href="{{ route('cart.index') }}" class="relative p-2.5 text-slate-700 hover:text-emerald-600 hover:bg-slate-100 rounded-xl transition inline-block" title="Keranjang Belanja">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
-                                </svg>
-                                
-                                <!-- Circle Merah Live -->
-                                <template x-if="count > 0">
-                                    <span x-text="count" class="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] font-extrabold w-5 h-5 flex items-center justify-center rounded-full border-2 border-white shadow-sm animate-pulse"></span>
-                                </template>
-                            </a>
-                        </div>
+                            <!-- Circle Merah Live -->
+                            <template x-if="count > 0">
+                                <span x-text="count" class="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] font-extrabold w-5 h-5 flex items-center justify-center rounded-full border-2 border-white shadow-sm animate-pulse"></span>
+                            </template>
+                        </a>
+                    </div>
 
+                    @auth
                         <!-- DROPDOWN USER PROFILE -->
                         <div x-data="{ dropdownOpen: false }" class="relative">
                             <button @click="dropdownOpen = !dropdownOpen" @click.away="dropdownOpen = false" class="flex items-center gap-2.5 p-1.5 rounded-xl hover:bg-slate-100 transition focus:outline-none">
@@ -165,21 +165,17 @@
 
                 <!-- HAMBURGER MENU MOBILE -->
                 <div class="flex md:hidden items-center gap-2">
-                    @auth
-                        @php
-                            $cartCountMobile = \App\Models\Cart::where('user_id', Auth::id())->count();
-                        @endphp
-                        <a href="{{ route('cart.index') }}" class="relative p-2 text-slate-700">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
-                            </svg>
-                            @if($cartCountMobile > 0)
-                                <span class="absolute top-0 right-0 bg-red-500 text-white text-[9px] font-extrabold w-4 h-4 flex items-center justify-center rounded-full">
-                                    {{ $cartCountMobile }}
-                                </span>
-                            @endif
-                        </a>
-                    @endauth
+                    <!-- ICON KERANJANG (SELALU MUNCUL DI MOBILE) -->
+                    <a href="{{ route('cart.index') }}" class="relative p-2 text-slate-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                        </svg>
+                        @if($cartCount > 0)
+                            <span class="absolute top-0 right-0 bg-red-500 text-white text-[9px] font-extrabold w-4 h-4 flex items-center justify-center rounded-full">
+                                {{ $cartCount }}
+                            </span>
+                        @endif
+                    </a>
 
                     <button @click="open = !open" class="text-slate-600 p-2 rounded-lg bg-slate-100 focus:outline-none">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -198,10 +194,10 @@
             <a href="{{ route('about') }}" class="block py-2 text-sm font-bold text-slate-700">Tentang Kami</a>
             <a href="{{ route('katalog') }}" class="block py-2 text-sm font-bold text-slate-700">Katalog Peralatan</a>
             <a href="{{ route('chatbot') }}" class="block py-2 text-sm font-bold text-slate-700">Tanya Chatbot AI</a>
+            <a href="{{ route('cart.index') }}" class="block py-2 text-sm font-bold text-slate-700">Keranjang Belanja</a>
             
             @auth
                 <a href="{{ route('profile') }}" class="block py-2 text-sm font-bold text-slate-700">Profil Saya</a>
-                <a href="{{ route('cart.index') }}" class="block py-2 text-sm font-bold text-slate-700">Keranjang Belanja</a>
                 
                 <form action="{{ route('logout') }}" method="POST" class="pt-2">
                     @csrf
@@ -225,7 +221,7 @@
     <footer class="bg-slate-900 text-slate-300 pt-12 pb-8 mt-16 border-t-4 border-emerald-600">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
-                <h3 class="text-lg font-extrabold text-white mb-3">CV. WIJAYA KARYA</h3>
+                <h3 class="text-lg font-extrabold text-white mb-3">Mitra Irigasi</h3>
                 <p class="text-sm text-slate-400 leading-relaxed">Penyedia peralatan dan komponen sistem irigasi pertanian modern terpercaya. Membantu petani menghemat air dan meningkatkan hasil panen.</p>
             </div>
             <div>

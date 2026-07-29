@@ -21,7 +21,7 @@ class CartController extends Controller
                 $cart[$item->product_id] = [
                     'id'       => $item->product_id,
                     'name'     => $item->product->name,
-                    'function' => $item->product->function,
+                    'description' => $item->product->description,
                     'photo'    => $item->product->photo,
                     'quantity' => $item->quantity,
                 ];

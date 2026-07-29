@@ -14,8 +14,8 @@ class OrderController extends Controller
     {
         $user = Auth::user();
 
-        // 1. Ambil item keranjang dari DATABASE (bukan Session)
-        $cartItems = Cart::with('product')->where('user_id', $user->id)->get();
+        // 1. Ambil item keranjang dari DATABASE beserta relasi Produk & Vendor
+        $cartItems = Cart::with('product.vendor')->where('user_id', $user->id)->get();
 
         // Jika keranjang di database kosong, kembalikan ke katalog
         if ($cartItems->isEmpty()) {
@@ -35,34 +35,44 @@ class OrderController extends Controller
         ]);
 
         $itemsText = "";
+        $i = 1;
+
         foreach ($cartItems as $item) {
             if ($item->product) {
-                // Simpan item pesanan
+                // Simpan item pesanan ke database
                 OrderItem::create([
                     'order_id'   => $order->id,
                     'product_id' => $item->product_id,
                     'quantity'   => $item->quantity,
                 ]);
 
-                $itemsText .= "- " . $item->product->name . " (Jumlah: " . $item->quantity . ")\n";
+                // Ambil kode produk jika ada
+                $code = !empty($item->product->code) ? " [{$item->product->code}]" : "";
+                
+                // Ambil nama vendor jika ada
+                // $vendor = ($item->product->vendor) ? " (Supplier: {$item->product->vendor->name})" : "";
+
+                // Susun baris teks produk
+                $itemsText .= "{$i}. *{$item->product->name}*{$code}\n   • Jumlah: {$item->quantity} pcs\n";
+                $i++;
             }
         }
 
         // 3. Kosongkan Keranjang di DATABASE setelah checkout
         Cart::where('user_id', $user->id)->delete();
 
-        // 4. Format Pesan dan Redirect ke WA Admin (0821-4201-0020 / 6282142010020)
-        $adminPhone = '6282142010020'; // atau gunakan 6289513622252 sesuai nomor tujuanmu
+        // 4. Format Pesan dan Redirect ke WA Admin
+        $adminPhone = '6282142010020';
         
         $message = "Halo Mitra Irigasi,\n\n"
             . "Saya mau mengajukan pemesanan/penawaran produk berikut:\n"
-            . "Nomor Pesanan: {$order->order_number}\n"
-            . "Nama: {$order->visitor_name}\n"
-            . "No HP: {$order->visitor_phone}\n"
-            . "Tujuan: {$order->visitor_purpose}\n\n"
-            . "Daftar Produk yang Dipesan:\n"
+            . "• *Nomor Pesanan:* {$order->order_number}\n"
+            . "• *Nama Pemohon:* {$order->visitor_name}\n"
+            . "• *No. WhatsApp:* {$order->visitor_phone}\n"
+            . "• *Tujuan Pengadaan:* {$order->visitor_purpose}\n\n"
+            . "*Daftar Produk yang Dipesan:*\n"
             . $itemsText . "\n"
-            . "Mohon dikirimkan penawaran harganya. Terima kasih!";
+            . "Mohon dikirimkan informasi ketersediaan stok dan penawaran harganya. Terima kasih!";
 
         $whatsappUrl = "https://wa.me/{$adminPhone}?text=" . urlencode($message);
 

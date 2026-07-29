@@ -41,11 +41,12 @@
                     <input 
                         type="text" 
                         x-model="search" 
-                        placeholder="Cari nama alat (misal: Sprinkler, PE, Filter)..." 
-                        class="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition"
+                        placeholder="Cari nama alat atau deskripsi (misal: Sprinkler, PE, Filter)..." 
+                        class="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-2xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition"
                     >
                 </div>
 
+                <!-- FILTER TOMBOL KATEGORI -->
                 <div class="flex flex-wrap items-center gap-2 pt-1">
                     <button 
                         @click="activeCategory = 'all'" 
@@ -59,9 +60,12 @@
                         <button 
                             @click="activeCategory = 'cat-{{ $category->id }}'" 
                             :class="activeCategory === 'cat-{{ $category->id }}' ? 'bg-emerald-600 text-white font-bold shadow-sm' : 'bg-slate-100 text-slate-600 hover:bg-slate-200 font-semibold'"
-                            class="px-4 py-2.5 rounded-xl text-xs transition cursor-pointer"
+                            class="px-4 py-2.5 rounded-xl text-xs transition cursor-pointer flex items-center gap-1.5"
                         >
-                            {{ $category->name }}
+                            <span>{{ $category->name }}</span>
+                            <span class="bg-black/10 px-1.5 py-0.2 text-[10px] rounded-full">
+                                {{ $category->products->count() }}
+                            </span>
                         </button>
                     @endforeach
                 </div>
@@ -79,159 +83,132 @@
             <span x-text="toast.message"></span>
         </div>
 
-        <!-- DAFTAR KATEGORI & PRODUK -->
-        @forelse($categories as $category)
-            <div 
-                x-show="activeCategory === 'all' || activeCategory === 'cat-{{ $category->id }}'"
-                x-transition
-                class="mb-12"
-            >
-                <div class="flex items-center gap-3 mb-6">
-                    <span class="w-2.5 h-7 bg-emerald-600 rounded-full"></span>
-                    <h2 class="text-xl font-extrabold text-slate-800 tracking-tight">
-                        {{ $category->name }}
-                    </h2>
-                    <span class="bg-slate-200 text-slate-700 text-[11px] font-bold px-2.5 py-0.5 rounded-full">
-                        {{ $category->products->count() }} Item
-                    </span>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    @forelse($category->products as $product)
-                        <div 
-                            x-show="search === '' || '{{ strtolower($product->name) }}'.includes(search.toLowerCase()) || '{{ strtolower($product->function) }}'.includes(search.toLowerCase())"
-                            class="bg-white rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group"
-                        >
-                            <div>
-                                <!-- FOTO PRODUK RASIO 1:1 WITH PLACEHOLDER -->
-                                <div 
-                                    @click="openModal({{ json_encode($product) }}, '{{ $category->name }}')" 
-                                    class="relative aspect-square bg-slate-100 overflow-hidden cursor-pointer flex items-center justify-center border-b border-slate-100"
-                                >
-                                    @if($product->photo)
-                                        <img 
-                                            src="{{ asset('storage/' . $product->photo) }}" 
-                                            alt="{{ $product->name }}" 
-                                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                        >
-                                    @else
-                                        <!-- SVG Placeholder untuk Produk -->
-                                        <div class="w-full h-full bg-slate-100 flex flex-col items-center justify-center p-6 text-slate-400 group-hover:bg-slate-200/60 transition duration-300">
-                                            <div class="w-16 h-16 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center mb-2 shadow-inner">
-                                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                                                </svg>
-                                            </div>
-                                            <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Foto Produk</span>
-                                            <span class="text-[10px] text-slate-400">Mitra Irigasi</span>
-                                        </div>
-                                    @endif
-
-                                    <!-- Overlay Kategori & Badges -->
-                                    <div class="absolute top-3 left-3 flex flex-col gap-1.5 items-start">
-                                        <span class="bg-emerald-600/90 backdrop-blur-md text-white text-[10px] font-extrabold px-2.5 py-1 rounded-lg uppercase tracking-wider shadow-sm">
-                                            {{ $category->name }}
-                                        </span>
-                                    </div>
-
-                                    <div class="absolute bottom-3 right-3">
-                                        <span class="bg-white/90 backdrop-blur-md text-slate-700 text-[11px] font-bold px-3 py-1.5 rounded-xl shadow-sm flex items-center gap-1 group-hover:bg-emerald-600 group-hover:text-white transition">
-                                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
-                                            </svg>
-                                            Detail
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <!-- KONTEN DESKRIPSI RINGKAS -->
-                                <div class="p-5">
-                                    <h3 
-                                        @click="openModal({{ json_encode($product) }}, '{{ $category->name }}')" 
-                                        class="font-extrabold text-slate-900 text-base mb-2 group-hover:text-emerald-600 transition cursor-pointer leading-snug line-clamp-1"
+        <!-- LAYOUT GRID UNIFIED ALL PRODUCTS -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            @forelse($categories as $category)
+                @foreach($category->products as $product)
+                    <div 
+                        x-show="(activeCategory === 'all' || activeCategory === 'cat-{{ $category->id }}') && (search === '' || '{{ strtolower($product->name) }}'.includes(search.toLowerCase()) || '{{ strtolower($product->description) }}'.includes(search.toLowerCase()))"
+                        x-transition
+                        class="bg-white rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group"
+                    >
+                        <div>
+                            <!-- FOTO PRODUK RASIO 1:1 WITH PLACEHOLDER -->
+                            <div 
+                                @click="openModal({{ json_encode($product) }}, '{{ $category->name }}')" 
+                                class="relative aspect-square bg-slate-100 overflow-hidden cursor-pointer flex items-center justify-center border-b border-slate-100"
+                            >
+                                @if($product->photo)
+                                    <img 
+                                        src="{{ asset('storage/' . $product->photo) }}" 
+                                        alt="{{ $product->name }}" 
+                                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                     >
-                                        {{ $product->name }}
-                                    </h3>
-
-                                    <p class="text-slate-500 text-xs line-clamp-2 mb-4 leading-relaxed">
-                                        {{ $product->description }}
-                                    </p>
-
-                                    <div class="bg-slate-50 rounded-2xl p-3 border border-slate-100">
-                                        <span class="block text-[10px] font-extrabold uppercase text-slate-400 tracking-wider mb-0.5">
-                                            Fungsi Utama:
-                                        </span>
-                                        <span class="text-xs font-semibold text-slate-700 block line-clamp-1">
-                                            {{ $product->function }}
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- FOOTER CARD ACTION -->
-                            <div class="px-5 py-3.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between min-h-15">
-                                <div>
-                                    <span class="block text-[10px] text-slate-400 font-medium">Penawaran Harga</span>
-                                    <span class="text-xs font-bold text-emerald-700">Nego via WA</span>
-                                </div>
-
-                                @auth
-                                    <div>
-                                        <!-- Tombol Tambah ke Keranjang -->
-                                        <template x-if="!cartItems[{{ $product->id }}] || cartItems[{{ $product->id }}] <= 0">
-                                            <button 
-                                                @click="addToCart({{ $product->id }})" 
-                                                class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2 px-3.5 rounded-xl shadow-sm shadow-emerald-200 transition flex items-center gap-1.5 cursor-pointer"
-                                            >
-                                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
-                                                </svg>
-                                                <span>+ Keranjang</span>
-                                            </button>
-                                        </template>
-
-                                        <!-- Kontrol Quantity (+ / -) jika sudah di keranjang -->
-                                        <template x-if="cartItems[{{ $product->id }}] > 0">
-                                            <div class="flex items-center bg-white border border-emerald-500 rounded-xl overflow-hidden shadow-sm">
-                                                <button 
-                                                    @click="updateQty({{ $product->id }}, 'decrement')" 
-                                                    class="px-3 py-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-black text-xs transition cursor-pointer"
-                                                >
-                                                    -
-                                                </button>
-                                                <span class="px-3 py-1 text-xs font-extrabold text-slate-800" x-text="cartItems[{{ $product->id }}]"></span>
-                                                <button 
-                                                    @click="updateQty({{ $product->id }}, 'increment')" 
-                                                    class="px-3 py-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-black text-xs transition cursor-pointer"
-                                                >
-                                                    +
-                                                </button>
-                                            </div>
-                                        </template>
-                                    </div>
                                 @else
-                                    <a 
-                                        href="{{ route('login') }}" 
-                                        class="bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold text-xs py-2 px-3 rounded-xl transition"
-                                    >
-                                        Login Dulu
-                                    </a>
-                                @endauth
+                                    <!-- SVG Placeholder untuk Produk -->
+                                    <div class="w-full h-full bg-slate-100 flex flex-col items-center justify-center p-6 text-slate-400 group-hover:bg-slate-200/60 transition duration-300">
+                                        <div class="w-16 h-16 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center mb-2 shadow-inner">
+                                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                            </svg>
+                                        </div>
+                                        <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Foto Produk</span>
+                                        <span class="text-[10px] text-slate-400">Mitra Irigasi</span>
+                                    </div>
+                                @endif
+
+                                <!-- BADGE KATEGORI SAJA -->
+                                <div class="absolute top-3 left-3 flex flex-col gap-1.5 items-start">
+                                    <span class="bg-emerald-600/90 backdrop-blur-md text-white text-[10px] font-extrabold px-2.5 py-1 rounded-lg uppercase tracking-wider shadow-sm">
+                                        {{ $category->name }}
+                                    </span>
+                                </div>
+
+                                <!-- BUTTON DETAIL -->
+                                <div class="absolute bottom-3 right-3">
+                                    <span class="bg-white/90 backdrop-blur-md text-slate-700 text-[11px] font-bold px-3 py-1.5 rounded-xl shadow-sm flex items-center gap-1 group-hover:bg-emerald-600 group-hover:text-white transition">
+                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                        </svg>
+                                        Detail
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- KONTEN DESKRIPSI -->
+                            <div class="p-5">
+                                <h3 
+                                    @click="openModal({{ json_encode($product) }}, '{{ $category->name }}')" 
+                                    class="font-extrabold text-slate-900 text-base mb-2 group-hover:text-emerald-600 transition cursor-pointer leading-snug line-clamp-1"
+                                >
+                                    {{ $product->name }}
+                                </h3>
+
+                                <p class="text-slate-500 text-xs line-clamp-2 leading-relaxed">
+                                    {{ $product->description }}
+                                </p>
                             </div>
                         </div>
-                    @empty
-                        <div class="col-span-full bg-white p-8 rounded-2xl border border-slate-200 text-center">
-                            <p class="text-slate-400 text-sm italic">Belum ada produk untuk kategori ini.</p>
+
+                        <!-- FOOTER CARD ACTION -->
+                        <div class="px-5 py-3.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between min-h-15">
+                            <div>
+                                <span class="block text-[10px] text-slate-400 font-medium">Penawaran Harga</span>
+                                <span class="text-xs font-bold text-emerald-700">Nego via WA</span>
+                            </div>
+
+                            @auth
+                                <div>
+                                    <!-- Tombol Tambah ke Keranjang -->
+                                    <template x-if="!cartItems[{{ $product->id }}] || cartItems[{{ $product->id }}] <= 0">
+                                        <button 
+                                            @click="addToCart({{ $product->id }})" 
+                                            class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2 px-3.5 rounded-xl shadow-sm shadow-emerald-200 transition flex items-center gap-1.5 cursor-pointer"
+                                        >
+                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                                            </svg>
+                                            <span>Keranjang</span>
+                                        </button>
+                                    </template>
+
+                                    <!-- Kontrol Quantity (+ / -) jika sudah di keranjang -->
+                                    <template x-if="cartItems[{{ $product->id }}] > 0">
+                                        <div class="flex items-center bg-white border border-emerald-500 rounded-xl overflow-hidden shadow-sm">
+                                            <button 
+                                                @click="updateQty({{ $product->id }}, 'decrement')" 
+                                                class="px-3 py-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-black text-xs transition cursor-pointer"
+                                            >
+                                                -
+                                            </button>
+                                            <span class="px-3 py-1 text-xs font-extrabold text-slate-800" x-text="cartItems[{{ $product->id }}]"></span>
+                                            <button 
+                                                @click="updateQty({{ $product->id }}, 'increment')" 
+                                                class="px-3 py-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-black text-xs transition cursor-pointer"
+                                            >
+                                                +
+                                            </button>
+                                        </div>
+                                    </template>
+                                </div>
+                            @else
+                                <a 
+                                    href="{{ route('login') }}" 
+                                    class="bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold text-xs py-2 px-3 rounded-xl transition"
+                                >
+                                    Login Dulu
+                                </a>
+                            @endauth
                         </div>
-                    @endforelse
+                    </div>
+                @endforeach
+            @empty
+                <div class="col-span-full bg-white p-12 rounded-3xl border border-slate-200 text-center">
+                    <p class="text-slate-500 font-medium text-sm">Belum ada data produk katalog yang tersedia.</p>
                 </div>
-            </div>
-        @empty
-            <div class="bg-white p-12 rounded-2xl border border-slate-200 text-center">
-                <p class="text-slate-500 font-medium text-sm">Belum ada data kategori & produk katalog yang tersedia.</p>
-            </div>
-        @endforelse
+            @endforelse
+        </div>
 
         <!-- SECTION VIDEO TUTORIAL PRODUK IRIGASI (PLACEHOLDER STATE) -->
         <div class="mt-16 pt-12 border-t border-slate-200">
@@ -248,13 +225,13 @@
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- VIDEO PLACEHOLDER 1: Drip Irrigation -->
+                <!-- VIDEO TUTORIAL 1 -->
                 <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition group">
-                    <div class="relative aspect-video bg-slate-800 cursor-pointer overflow-hidden flex flex-col items-center justify-center p-6 text-white" @click="playVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')">
+                    <div class="relative aspect-video bg-slate-800 cursor-pointer overflow-hidden flex flex-col items-center justify-center p-6 text-white" @click="playVideo('https://www.youtube.com/embed/vYuoECsqZy8')">
                         <div class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform mb-2">
                             <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                         </div>
-                        <span class="text-[11px] font-bold text-slate-300 uppercase tracking-wider">Video Placeholder</span>
+                        <span class="text-[11px] font-bold text-slate-300 uppercase tracking-wider">Video Tutorial</span>
                     </div>
                     <div class="p-5 space-y-2">
                         <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Tutorial 01</span>
@@ -263,13 +240,13 @@
                     </div>
                 </div>
 
-                <!-- VIDEO PLACEHOLDER 2: Sprinkler System -->
+                <!-- VIDEO TUTORIAL 2 -->
                 <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition group">
-                    <div class="relative aspect-video bg-slate-800 cursor-pointer overflow-hidden flex flex-col items-center justify-center p-6 text-white" @click="playVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')">
+                    <div class="relative aspect-video bg-slate-800 cursor-pointer overflow-hidden flex flex-col items-center justify-center p-6 text-white" @click="playVideo('https://www.youtube.com/embed/vYuoECsqZy8')">
                         <div class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform mb-2">
                             <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                         </div>
-                        <span class="text-[11px] font-bold text-slate-300 uppercase tracking-wider">Video Placeholder</span>
+                        <span class="text-[11px] font-bold text-slate-300 uppercase tracking-wider">Video Tutorial</span>
                     </div>
                     <div class="p-5 space-y-2">
                         <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Tutorial 02</span>
@@ -278,13 +255,13 @@
                     </div>
                 </div>
 
-                <!-- VIDEO PLACEHOLDER 3: Filter & Otomasi -->
+                <!-- VIDEO TUTORIAL 3 -->
                 <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition group">
-                    <div class="relative aspect-video bg-slate-800 cursor-pointer overflow-hidden flex flex-col items-center justify-center p-6 text-white" @click="playVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')">
+                    <div class="relative aspect-video bg-slate-800 cursor-pointer overflow-hidden flex flex-col items-center justify-center p-6 text-white" @click="playVideo('https://www.youtube.com/embed/vYuoECsqZy8')">
                         <div class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform mb-2">
                             <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                         </div>
-                        <span class="text-[11px] font-bold text-slate-300 uppercase tracking-wider">Video Placeholder</span>
+                        <span class="text-[11px] font-bold text-slate-300 uppercase tracking-wider">Video Tutorial</span>
                     </div>
                     <div class="p-5 space-y-2">
                         <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Tutorial 03</span>
@@ -339,7 +316,9 @@
                 <!-- RINCIAN DETAIL -->
                 <div class="space-y-4">
                     <div>
-                        <span class="bg-emerald-100 text-emerald-800 text-[10px] font-extrabold px-2.5 py-1 rounded-md uppercase tracking-wider" x-text="modal.categoryName"></span>
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span class="bg-emerald-100 text-emerald-800 text-[10px] font-extrabold px-2.5 py-1 rounded-md uppercase tracking-wider" x-text="modal.categoryName"></span>
+                        </div>
                         <h2 class="text-xl font-extrabold text-slate-900 mt-2 leading-snug" x-text="modal.product.name"></h2>
                     </div>
 
@@ -348,12 +327,7 @@
                         <p class="text-slate-600 text-xs leading-relaxed" x-text="modal.product.description"></p>
                     </div>
 
-                    <div class="bg-slate-50 p-3.5 rounded-2xl border border-slate-100 space-y-1">
-                        <span class="text-[10px] font-extrabold text-slate-400 uppercase tracking-wider block">Fungsi & Kegunaan Utama</span>
-                        <p class="text-xs font-semibold text-slate-800" x-text="modal.product.function"></p>
-                    </div>
-
-                    <div class="pt-2 border-t border-slate-100 flex items-center justify-between">
+                    <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
                         <div>
                             <span class="text-[10px] text-slate-400 block font-medium">Status Penawaran</span>
                             <span class="text-xs font-bold text-emerald-700">Nego via WhatsApp</span>
@@ -398,7 +372,7 @@
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
             </button>
             <div class="aspect-video w-full">
-                <iframe src="https://www.youtube.com/embed/vYuoECsqZy8" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe :src="videoModal.url" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
