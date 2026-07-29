@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\KatalogController;
 use App\Models\Category;
 use Illuminate\Http\Request;
 
@@ -37,10 +38,8 @@ Route::get('/chatbot', function () {
     return view('chatbot');
 })->name('chatbot');
 
-Route::get('/katalog', function () {
-    $categories = Category::with('products')->get();
-    return view('katalog', compact('categories'));
-})->name('katalog');
+
+Route::get('/katalog', [KatalogController::class, 'index'])->name('katalog');
 
 Route::get('/profile', function () {
     return view('profile');

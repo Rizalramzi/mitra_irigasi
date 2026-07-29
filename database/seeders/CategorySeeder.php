@@ -13,20 +13,21 @@ class CategorySeeder extends Seeder
      */
     public function run(): void
     {
-        $categories = [
-            'Valve',
-            'Filter',
+        $categoryNames = [
             'Connector',
-            'Sprinkler',
-            'Drip Irrigation',
-            'Hose/Tube',
             'Controller',
+            'Dripline',
+            'Dripper',
+            'Fertilizer Injector',
+            'Filter',
+            'Sprinkler',
+            'Valve',
         ];
 
-        foreach ($categories as $categoryName) {
+        foreach ($categoryNames as $catName) {
             Category::firstOrCreate(
-                ['slug' => Str::slug($categoryName)],
-                ['name' => $categoryName]
+                ['slug' => Str::slug($catName)],
+                ['name' => $catName]
             );
         }
     }

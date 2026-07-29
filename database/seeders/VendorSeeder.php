@@ -12,15 +12,15 @@ class VendorSeeder extends Seeder
      */
     public function run(): void
     {
-        $vendors = [
-            'Yuyao Zanchen Auto Contrl',
+        $vendorNames = [
             'ChinaDrip',
-            'Fuzhou ARTHAS Fluid Equip Tech',
-            'Ningbo Shangda Plastic Hardware',
+            'Fuzhou ARTHAS Fluid Equip.Tech',
             'HYRT Irrigation',
+            'Ningbo Shangda Plastic Hardware',
+            'Yuyao Zanchen Auto.Contrl',
         ];
 
-        foreach ($vendors as $vendorName) {
+        foreach ($vendorNames as $vendorName) {
             Vendor::firstOrCreate([
                 'name' => $vendorName,
             ]);

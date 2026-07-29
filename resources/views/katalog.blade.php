@@ -4,7 +4,6 @@
 
 @section('content')
 @php
-    // Ambil data keranjang user yang sedang login untuk inisialisasi state tombol
     $userCart = [];
     if(Auth::check()) {
         $userCart = \App\Models\Cart::where('user_id', Auth::id())
@@ -16,7 +15,7 @@
 <div x-data="katalogData({{ json_encode($userCart) }})" class="py-8 bg-slate-50 min-h-screen">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <!-- BREADCRUMB & HEADER SECTION -->
+        <!-- HEADER SECTION -->
         <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm mb-8">
             <div class="max-w-3xl">
                 <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest block mb-1">
@@ -30,7 +29,7 @@
                 </p>
             </div>
 
-            <!-- SEARCH BAR & FILTER CATEGORY -->
+            <!-- SEARCH BAR & FILTER CATEGORY (AJAX - INSTANT REFRESH) -->
             <div class="mt-6 pt-6 border-t border-slate-100 flex flex-col gap-4">
                 <div class="relative w-full">
                     <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none text-slate-400">
@@ -40,177 +39,105 @@
                     </span>
                     <input 
                         type="text" 
-                        x-model="search" 
-                        placeholder="Cari nama alat atau deskripsi (misal: Sprinkler, PE, Filter)..." 
-                        class="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-2xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition"
+                        x-model="search"
+                        @input.debounce.300ms="filterCategory(currentCategory)"
+                        placeholder="Ketik nama alat atau kode untuk mencari (otomatis)..." 
+                        class="w-full pl-10 pr-10 py-3 bg-slate-50 border border-slate-200 rounded-2xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition"
                     >
+                    <!-- SPINNER KECIL DI DALAM SEARCH BAR SAAT MENGETIK -->
+                    <div x-show="loading" class="absolute inset-y-0 right-0 flex items-center pr-3.5 pointer-events-none" style="display: none;">
+                        <svg class="animate-spin h-4 w-4 text-emerald-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                    </div>
                 </div>
 
-                <!-- FILTER TOMBOL KATEGORI -->
+                <!-- FILTER TOMBOL KATEGORI INSTAN -->
                 <div class="flex flex-wrap items-center gap-2 pt-1">
                     <button 
-                        @click="activeCategory = 'all'" 
-                        :class="activeCategory === 'all' ? 'bg-emerald-600 text-white font-bold shadow-sm' : 'bg-slate-100 text-slate-600 hover:bg-slate-200 font-semibold'"
-                        class="px-4 py-2.5 rounded-xl text-xs transition cursor-pointer"
+                        @click="filterCategory('all')" 
+                        :class="currentCategory === 'all' ? 'bg-emerald-600 text-white font-bold shadow-sm' : 'bg-slate-100 text-slate-600 hover:bg-slate-200 font-semibold'"
+                        class="px-4 py-2.5 rounded-xl text-xs transition cursor-pointer flex items-center gap-2"
                     >
-                        Semua Produk
+                        <span>Semua Produk</span>
+                        <template x-if="loading && currentCategory === 'all'">
+                            <svg class="animate-spin h-3.5 w-3.5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            </svg>
+                        </template>
                     </button>
 
                     @foreach($categories as $category)
                         <button 
-                            @click="activeCategory = 'cat-{{ $category->id }}'" 
-                            :class="activeCategory === 'cat-{{ $category->id }}' ? 'bg-emerald-600 text-white font-bold shadow-sm' : 'bg-slate-100 text-slate-600 hover:bg-slate-200 font-semibold'"
+                            @click="filterCategory('{{ $category->slug }}')" 
+                            :class="currentCategory === '{{ $category->slug }}' ? 'bg-emerald-600 text-white font-bold shadow-sm' : 'bg-slate-100 text-slate-600 hover:bg-slate-200 font-semibold'"
                             class="px-4 py-2.5 rounded-xl text-xs transition cursor-pointer flex items-center gap-1.5"
                         >
                             <span>{{ $category->name }}</span>
-                            <span class="bg-black/10 px-1.5 py-0.2 text-[10px] rounded-full">
-                                {{ $category->products->count() }}
+                            <span x-show="!(loading && currentCategory === '{{ $category->slug }}')" class="bg-black/10 px-1.5 py-0.2 text-[10px] rounded-full">
+                                {{ $category->products_count }}
                             </span>
+                            <!-- Spinner di Tombol Kategori Aktif -->
+                            <template x-if="loading && currentCategory === '{{ $category->slug }}'">
+                                <svg class="animate-spin h-3.5 w-3.5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                            </template>
                         </button>
                     @endforeach
                 </div>
             </div>
         </div>
 
-        <!-- NOTIFIKASI TOAST MELAYANG -->
-        <div 
-            x-show="toast.show" 
-            x-transition 
-            class="fixed bottom-5 right-5 bg-emerald-800 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 z-50 text-xs sm:text-sm font-bold border border-emerald-600"
-            style="display: none;"
-        >
+        <!-- NOTIFIKASI TOAST -->
+        <div x-show="toast.show" x-transition class="fixed bottom-5 right-5 bg-emerald-800 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 z-50 text-xs sm:text-sm font-bold border border-emerald-600" style="display: none;">
             <span class="text-base">✓</span>
             <span x-text="toast.message"></span>
         </div>
 
-        <!-- LAYOUT GRID UNIFIED ALL PRODUCTS -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-            @forelse($categories as $category)
-                @foreach($category->products as $product)
-                    <div 
-                        x-show="(activeCategory === 'all' || activeCategory === 'cat-{{ $category->id }}') && (search === '' || '{{ strtolower($product->name) }}'.includes(search.toLowerCase()) || '{{ strtolower($product->description) }}'.includes(search.toLowerCase()))"
-                        x-transition
-                        class="bg-white rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group"
-                    >
-                        <div>
-                            <!-- FOTO PRODUK RASIO 1:1 WITH PLACEHOLDER -->
-                            <div 
-                                @click="openModal({{ json_encode($product) }}, '{{ $category->name }}')" 
-                                class="relative aspect-square bg-slate-100 overflow-hidden cursor-pointer flex items-center justify-center border-b border-slate-100"
-                            >
-                                @if($product->photo)
-                                    <img 
-                                        src="{{ asset('storage/' . $product->photo) }}" 
-                                        alt="{{ $product->name }}" 
-                                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                    >
-                                @else
-                                    <!-- SVG Placeholder untuk Produk -->
-                                    <div class="w-full h-full bg-slate-100 flex flex-col items-center justify-center p-6 text-slate-400 group-hover:bg-slate-200/60 transition duration-300">
-                                        <div class="w-16 h-16 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center mb-2 shadow-inner">
-                                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                                            </svg>
-                                        </div>
-                                        <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Foto Produk</span>
-                                        <span class="text-[10px] text-slate-400">Mitra Irigasi</span>
-                                    </div>
-                                @endif
-
-                                <!-- BADGE KATEGORI SAJA -->
-                                <div class="absolute top-3 left-3 flex flex-col gap-1.5 items-start">
-                                    <span class="bg-emerald-600/90 backdrop-blur-md text-white text-[10px] font-extrabold px-2.5 py-1 rounded-lg uppercase tracking-wider shadow-sm">
-                                        {{ $category->name }}
-                                    </span>
-                                </div>
-
-                                <!-- BUTTON DETAIL -->
-                                <div class="absolute bottom-3 right-3">
-                                    <span class="bg-white/90 backdrop-blur-md text-slate-700 text-[11px] font-bold px-3 py-1.5 rounded-xl shadow-sm flex items-center gap-1 group-hover:bg-emerald-600 group-hover:text-white transition">
-                                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
-                                        </svg>
-                                        Detail
-                                    </span>
-                                </div>
-                            </div>
-
-                            <!-- KONTEN DESKRIPSI -->
-                            <div class="p-5">
-                                <h3 
-                                    @click="openModal({{ json_encode($product) }}, '{{ $category->name }}')" 
-                                    class="font-extrabold text-slate-900 text-base mb-2 group-hover:text-emerald-600 transition cursor-pointer leading-snug line-clamp-1"
-                                >
-                                    {{ $product->name }}
-                                </h3>
-
-                                <p class="text-slate-500 text-xs line-clamp-2 leading-relaxed">
-                                    {{ $product->description }}
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- FOOTER CARD ACTION -->
-                        <div class="px-5 py-3.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between min-h-15">
-                            <div>
-                                <span class="block text-[10px] text-slate-400 font-medium">Penawaran Harga</span>
-                                <span class="text-xs font-bold text-emerald-700">Nego via WA</span>
-                            </div>
-
-                            @auth
-                                <div>
-                                    <!-- Tombol Tambah ke Keranjang -->
-                                    <template x-if="!cartItems[{{ $product->id }}] || cartItems[{{ $product->id }}] <= 0">
-                                        <button 
-                                            @click="addToCart({{ $product->id }})" 
-                                            class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2 px-3.5 rounded-xl shadow-sm shadow-emerald-200 transition flex items-center gap-1.5 cursor-pointer"
-                                        >
-                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
-                                            </svg>
-                                            <span>Keranjang</span>
-                                        </button>
-                                    </template>
-
-                                    <!-- Kontrol Quantity (+ / -) jika sudah di keranjang -->
-                                    <template x-if="cartItems[{{ $product->id }}] > 0">
-                                        <div class="flex items-center bg-white border border-emerald-500 rounded-xl overflow-hidden shadow-sm">
-                                            <button 
-                                                @click="updateQty({{ $product->id }}, 'decrement')" 
-                                                class="px-3 py-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-black text-xs transition cursor-pointer"
-                                            >
-                                                -
-                                            </button>
-                                            <span class="px-3 py-1 text-xs font-extrabold text-slate-800" x-text="cartItems[{{ $product->id }}]"></span>
-                                            <button 
-                                                @click="updateQty({{ $product->id }}, 'increment')" 
-                                                class="px-3 py-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-black text-xs transition cursor-pointer"
-                                            >
-                                                +
-                                            </button>
-                                        </div>
-                                    </template>
-                                </div>
-                            @else
-                                <a 
-                                    href="{{ route('login') }}" 
-                                    class="bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold text-xs py-2 px-3 rounded-xl transition"
-                                >
-                                    Login Dulu
-                                </a>
-                            @endauth
-                        </div>
+        <!-- CONTAINER GRID PRODUK DENGAN OVERLAY LOADING CIRCLE -->
+        <div class="relative min-h-87.5">
+            <!-- OVERLAY LOADING CIRCLE UTAMA (GLASSMORPHISM EFFECT) -->
+            <div 
+                x-show="loading" 
+                x-transition:enter="transition ease-out duration-200"
+                x-transition:enter-start="opacity-0"
+                x-transition:enter-end="opacity-100"
+                x-transition:leave="transition ease-in duration-150"
+                x-transition:leave-start="opacity-100"
+                x-transition:leave-end="opacity-0"
+                class="absolute inset-0 bg-slate-50/80 backdrop-blur-sm z-20 flex flex-col items-center justify-center rounded-3xl" 
+                style="display: none;"
+            >
+                <div class="bg-white p-6 rounded-3xl shadow-xl border border-slate-100 flex flex-col items-center gap-3 transform scale-100">
+                    <div class="relative">
+                        <!-- Outer Ring -->
+                        <div class="w-12 h-12 rounded-full border-4 border-emerald-100 animate-pulse"></div>
+                        <!-- Inner Spinning Circle -->
+                        <div class="w-12 h-12 rounded-full border-4 border-emerald-600 border-t-transparent animate-spin absolute inset-0"></div>
                     </div>
-                @endforeach
-            @empty
-                <div class="col-span-full bg-white p-12 rounded-3xl border border-slate-200 text-center">
-                    <p class="text-slate-500 font-medium text-sm">Belum ada data produk katalog yang tersedia.</p>
+                    <div class="text-center">
+                        <span class="block text-xs font-extrabold text-slate-800">Memuat Katalog...</span>
+                        <span class="text-[10px] text-slate-400 font-medium">Mitra Irigasi</span>
+                    </div>
                 </div>
-            @endforelse
+            </div>
+
+            <!-- List Produk Grid -->
+            <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                @include('katalog.partials.product_list', ['products' => $products])
+            </div>
         </div>
 
-        <!-- SECTION VIDEO TUTORIAL PRODUK IRIGASI (PLACEHOLDER STATE) -->
+        <!-- CONTAINER PAGINATION -->
+        <div id="pagination-container" class="mt-8 mb-16">
+            @include('katalog.partials.pagination', ['products' => $products])
+        </div>
+
+        <!-- SECTION VIDEO TUTORIAL -->
         <div class="mt-16 pt-12 border-t border-slate-200">
             <div class="text-center max-w-2xl mx-auto mb-10">
                 <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest block mb-1">
@@ -287,7 +214,6 @@
         style="display: none;"
     >
         <div @click.away="closeModal()" class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative overflow-hidden max-h-[90vh] overflow-y-auto border border-slate-100">
-            <!-- Tombol Close Modal -->
             <button @click="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 bg-slate-100 p-2 rounded-full transition">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
@@ -295,7 +221,6 @@
             </button>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 items-start">
-                <!-- FOTO 1:1 DI MODAL WITH PLACEHOLDER -->
                 <div class="aspect-square bg-slate-100 rounded-2xl overflow-hidden border border-slate-200 flex items-center justify-center">
                     <template x-if="modal.product.photo">
                         <img :src="'/storage/' + modal.product.photo" :alt="modal.product.name" class="w-full h-full object-cover">
@@ -308,17 +233,13 @@
                                 </svg>
                             </div>
                             <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Foto Produk</span>
-                            <span class="text-[10px] text-slate-400">Mitra Irigasi</span>
                         </div>
                     </template>
                 </div>
 
-                <!-- RINCIAN DETAIL -->
                 <div class="space-y-4">
                     <div>
-                        <div class="flex items-center gap-2 flex-wrap">
-                            <span class="bg-emerald-100 text-emerald-800 text-[10px] font-extrabold px-2.5 py-1 rounded-md uppercase tracking-wider" x-text="modal.categoryName"></span>
-                        </div>
+                        <span class="bg-emerald-100 text-emerald-800 text-[10px] font-extrabold px-2.5 py-1 rounded-md uppercase tracking-wider" x-text="modal.categoryName"></span>
                         <h2 class="text-xl font-extrabold text-slate-900 mt-2 leading-snug" x-text="modal.product.name"></h2>
                     </div>
 
@@ -382,12 +303,43 @@
 <script>
     function katalogData(initialCart) {
         return {
-            search: '',
-            activeCategory: 'all',
+            search: '{{ request("search") }}',
+            currentCategory: '{{ request("category", "all") }}',
+            loading: false,
             cartItems: initialCart || {},
             toast: { show: false, message: '' },
             modal: { show: false, product: {}, categoryName: '' },
             videoModal: { show: false, url: '' },
+
+            filterCategory(slug) {
+                this.currentCategory = slug;
+                const url = `/katalog?category=${slug}&search=${encodeURIComponent(this.search)}`;
+                this.fetchProducts(url);
+            },
+
+            async fetchProducts(url) {
+                this.loading = true;
+                try {
+                    const res = await fetch(url, {
+                        headers: {
+                            'X-Requested-With': 'XMLHttpRequest',
+                            'Accept': 'application/json'
+                        }
+                    });
+                    const data = await res.json();
+                    
+                    // Update DOM secara langsung tanpa reload halaman
+                    document.getElementById('product-grid').innerHTML = data.html;
+                    document.getElementById('pagination-container').innerHTML = data.pagination;
+
+                    // Update URL browser tanpa memicu reload
+                    window.history.pushState({}, '', url);
+                } catch (e) {
+                    console.error('Error fetching products:', e);
+                } finally {
+                    this.loading = false;
+                }
+            },
 
             showToast(msg) {
                 this.toast.message = msg;
@@ -430,10 +382,7 @@
                     if (data.status === 'success') {
                         this.cartItems[productId] = data.quantity;
                         this.showToast('Produk ditambahkan ke keranjang!');
-
-                        window.dispatchEvent(new CustomEvent('cart-updated', {
-                            detail: { count: data.cart_count }
-                        }));
+                        window.dispatchEvent(new CustomEvent('cart-updated', { detail: { count: data.cart_count } }));
                     }
                 } catch (e) {
                     console.error('Error adding product:', e);
@@ -455,13 +404,8 @@
                     const data = await res.json();
                     if (data.status === 'success') {
                         this.cartItems[productId] = data.quantity;
-                        if (data.quantity === 0) {
-                            delete this.cartItems[productId];
-                        }
-
-                        window.dispatchEvent(new CustomEvent('cart-updated', {
-                            detail: { count: data.cart_count }
-                        }));
+                        if (data.quantity === 0) delete this.cartItems[productId];
+                        window.dispatchEvent(new CustomEvent('cart-updated', { detail: { count: data.cart_count } }));
                     }
                 } catch (e) {
                     console.error('Error updating quantity:', e);
