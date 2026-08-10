@@ -3,10 +3,10 @@
 @section('title', 'Panduan & Edukasi Teknik Irigasi - Mitra Irigasi')
 
 @section('content')
-<div x-data="guidesData()" class="py-10 bg-slate-50 min-h-screen">
+<div x-data="guidesApp()" class="py-10 bg-slate-50 min-h-screen">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <!-- BREADCRUMB & HEADER SECTION -->
+        <!-- HEADER SECTION -->
         <div class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm mb-12">
             <div class="max-w-3xl">
                 <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest block mb-1">
@@ -16,16 +16,14 @@
                     Panduan Teknis Irigasi Lahan
                 </h1>
                 <p class="text-slate-500 text-xs sm:text-sm mt-2 leading-relaxed">
-                    Temukan panduan langkah demi langkah pembuatan sistem irigasi otomatis serta tutorial penggunaan alat-alat pengairan Mitra Irigasi.
+                    Pilih modul kit tutorial di bawah ini untuk melihat daftar alat, bahan, dan panduan pengerjaan langkah demi langkah.
                 </p>
             </div>
         </div>
 
-        <!-- ========================================== -->
-        <!-- SECTION 1: STARTER KIT & PANDUAN TEKS (STEP BY STEP) -->
-        <!-- ========================================== -->
+        <!-- SECTION 1: STARTER KIT CARDS -->
         <div class="mb-16">
-            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+            <div class="mb-6 flex items-center justify-between">
                 <div>
                     <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest block mb-1">
                         Section 01
@@ -33,218 +31,52 @@
                     <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                         Starter Kit & Proyek DIY Irigasi
                     </h2>
-                    <p class="text-slate-500 text-xs sm:text-sm mt-1">
-                        Panduan praktis perakitan dan sistem otomasi pengairan sederhana untuk kebun & lahan Anda.
-                    </p>
                 </div>
-
-                <!-- TAB SWITCHER PROYEK -->
-                <div class="flex items-center gap-2 bg-slate-200/80 p-1.5 rounded-2xl self-start sm:self-auto overflow-x-auto max-w-full">
-                    <button 
-                        @click="activeTab = 'otomatis'" 
-                        :class="activeTab === 'otomatis' ? 'bg-white text-emerald-700 shadow-sm font-extrabold' : 'text-slate-600 font-semibold hover:text-slate-900'"
-                        class="px-4 py-2 rounded-xl text-xs transition whitespace-nowrap cursor-pointer"
-                    >
-                        ⚡ Irigasi Otomatis Sederhana
-                    </button>
-                    <button 
-                        @click="activeTab = 'drip'" 
-                        :class="activeTab === 'drip' ? 'bg-white text-emerald-700 shadow-sm font-extrabold' : 'text-slate-600 font-semibold hover:text-slate-900'"
-                        class="px-4 py-2 rounded-xl text-xs transition whitespace-nowrap cursor-pointer"
-                    >
-                        💧 Rakit Drip Line Kebun
-                    </button>
-                </div>
+                <span class="text-xs text-slate-400 font-semibold hidden sm:block">
+                    Klik kartu untuk membuka detail tutorial
+                </span>
             </div>
 
-            <!-- CONTENT PROYEK 1: IRIGASI OTOMATIS SEDERHANA -->
-            <div x-show="activeTab === 'otomatis'" x-transition class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm">
-                <div class="flex items-center gap-3 mb-6 pb-6 border-b border-slate-100">
-                    <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center font-extrabold text-xl shadow-inner">
-                        🛠️
-                    </div>
-                    <div>
-                        <h3 class="text-lg sm:text-xl font-extrabold text-slate-900">Proyek: Membuat Pertanian Otomatis Sederhana</h3>
-                        <p class="text-slate-500 text-xs">Mengatur penyiraman tanaman secara otomatis menggunakan timer digital dan solenoid valve.</p>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <!-- ALAT & BAHAN -->
-                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80">
-                        <h4 class="text-xs font-extrabold text-slate-800 uppercase tracking-wider mb-4 flex items-center gap-2">
-                            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-                            Alat & Bahan Yang Dibutuhkan
-                        </h4>
-                        <ul class="space-y-3 text-xs text-slate-700">
-                            <li class="flex items-start gap-2.5">
-                                <span class="text-emerald-600 font-bold">✓</span>
-                                <div>
-                                    <strong class="block text-slate-900">Timer Digital 220V / Battery</strong>
-                                    <span class="text-[11px] text-slate-500">Pengatur jadwal waktu siram.</span>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-2.5">
-                                <span class="text-emerald-600 font-bold">✓</span>
-                                <div>
-                                    <strong class="block text-slate-900">Solenoid Valve 3/4 Inch</strong>
-                                    <span class="text-[11px] text-slate-500">Kran listrik pembuka/penutup aliran air.</span>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-2.5">
-                                <span class="text-emerald-600 font-bold">✓</span>
-                                <div>
-                                    <strong class="block text-slate-900">Disc Filter 3/4 Inch</strong>
-                                    <span class="text-[11px] text-slate-500">Mencegah kotoran menyumbat katup & nozzle.</span>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-2.5">
-                                <span class="text-emerald-600 font-bold">✓</span>
-                                <div>
-                                    <strong class="block text-slate-900">Pipa Utama PE / PVC & Connector</strong>
-                                    <span class="text-[11px] text-slate-500">Penyalur air ke titik tanaman.</span>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <div class="mt-6 pt-4 border-t border-slate-200">
-                            <a href="{{ route('katalog') }}" class="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center gap-1">
-                                <span>Cari alat ini di Katalog Produk</span>
-                                <span>→</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- LANGKAH-LANGKAH PENGERJAAN -->
-                    <div class="lg:col-span-2 space-y-6">
-                        <h4 class="text-xs font-extrabold text-slate-800 uppercase tracking-wider flex items-center gap-2">
-                            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-                            Langkah-Langkah Pembuatan
-                        </h4>
-
+            <!-- GRID ROW STARTER KIT -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                @foreach($starterKits as $kit)
+                    <div 
+                        @click="openKitModal({{ json_encode($kit) }})"
+                        class="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm hover:shadow-xl hover:border-emerald-500/50 transition-all duration-300 cursor-pointer flex flex-col justify-between group relative overflow-hidden"
+                    >
                         <div class="space-y-4">
-                            <!-- STEP 1 -->
-                            <div class="flex gap-4">
-                                <div class="w-8 h-8 rounded-xl bg-emerald-600 text-white font-extrabold text-xs flex items-center justify-center shrink-0 shadow-md shadow-emerald-100">
-                                    1
+                            <div class="flex items-center justify-between">
+                                <div class="w-12 h-12 bg-emerald-50 text-emerald-700 rounded-2xl flex items-center justify-center font-extrabold text-2xl shadow-inner group-hover:scale-110 transition-transform">
+                                    {{ $kit->icon ?? '🛠️' }}
                                 </div>
-                                <div class="space-y-1 pt-0.5">
-                                    <h5 class="text-xs font-bold text-slate-900">Pemasangan Unit Filtrasi Air</h5>
-                                    <p class="text-xs text-slate-600 leading-relaxed">
-                                        Pasang **Disc Filter** di bagian paling awal sumber air (setelah pompa/toren) sebelum masuk ke komponen elektrikal. Pastikan arah panah aliran air pada filter sesuai.
-                                    </p>
-                                </div>
+                                <span class="text-[10px] font-extrabold text-emerald-700 bg-emerald-100 px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                    {{ $kit->category }}
+                                </span>
                             </div>
 
-                            <!-- STEP 2 -->
-                            <div class="flex gap-4">
-                                <div class="w-8 h-8 rounded-xl bg-emerald-600 text-white font-extrabold text-xs flex items-center justify-center shrink-0 shadow-md shadow-emerald-100">
-                                    2
-                                </div>
-                                <div class="space-y-1 pt-0.5">
-                                    <h5 class="text-xs font-bold text-slate-900">Instalasi Katup Solenoid Valve & Timer</h5>
-                                    <p class="text-xs text-slate-600 leading-relaxed">
-                                        Hubungkan output kabel dari **Timer Digital** ke terminal **Solenoid Valve**. Atur program jam siram pada timer (contoh: Pagi jam 07.00 selama 15 menit dan Sore jam 16.00 selama 15 menit).
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- STEP 3 -->
-                            <div class="flex gap-4">
-                                <div class="w-8 h-8 rounded-xl bg-emerald-600 text-white font-extrabold text-xs flex items-center justify-center shrink-0 shadow-md shadow-emerald-100">
-                                    3
-                                </div>
-                                <div class="space-y-1 pt-0.5">
-                                    <h5 class="text-xs font-bold text-slate-900">Penyambungan Pipa Distribusi ke Lahan</h5>
-                                    <p class="text-xs text-slate-600 leading-relaxed">
-                                        Sambungkan pipa PE dari keluaran solenoid menuju barisan tanaman. Pasang penutup pipa (end cap) di ujung akhir pipa agar tekanan air stabil.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- STEP 4 -->
-                            <div class="flex gap-4">
-                                <div class="w-8 h-8 rounded-xl bg-emerald-600 text-white font-extrabold text-xs flex items-center justify-center shrink-0 shadow-md shadow-emerald-100">
-                                    4
-                                </div>
-                                <div class="space-y-1 pt-0.5">
-                                    <h5 class="text-xs font-bold text-slate-900">Uji Coba System & Flushing</h5>
-                                    <p class="text-xs text-slate-600 leading-relaxed">
-                                        Buka ujung pipa lalu jalankan sistem selama 1 menit untuk membilas sisa kotoran pengerjaan. Setelah itu tutup kembali dan sistem siap beroperasi otomatis.
-                                    </p>
-                                </div>
+                            <div>
+                                <h3 class="text-base font-extrabold text-slate-900 group-hover:text-emerald-600 transition leading-snug">
+                                    {{ $kit->title }}
+                                </h3>
+                                <p class="text-slate-500 text-xs mt-2 line-clamp-2 leading-relaxed">
+                                    {{ $kit->subtitle }}
+                                </p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- CONTENT PROYEK 2: RAKIT DRIP LINE KEBUN -->
-            <div x-show="activeTab === 'drip'" x-transition class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm">
-                <div class="flex items-center gap-3 mb-6 pb-6 border-b border-slate-100">
-                    <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center font-extrabold text-xl shadow-inner">
-                        🌱
-                    </div>
-                    <div>
-                        <h3 class="text-lg sm:text-xl font-extrabold text-slate-900">Proyek: Perakitan Selang Drip Line Kebun Hortikultura</h3>
-                        <p class="text-slate-500 text-xs">Instalasi jalur penyiraman tetes hemat air efisien untuk tanaman cabai, melon, atau tomat.</p>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <!-- ALAT & BAHAN -->
-                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80">
-                        <h4 class="text-xs font-extrabold text-slate-800 uppercase tracking-wider mb-4 flex items-center gap-2">
-                            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-                            Alat & Bahan
-                        </h4>
-                        <ul class="space-y-3 text-xs text-slate-700">
-                            <li class="flex items-start gap-2.5">
-                                <span class="text-emerald-600 font-bold">✓</span>
-                                <div>
-                                    <strong class="block text-slate-900">Selang Drip Tape / PE 16mm</strong>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-2.5">
-                                <span class="text-emerald-600 font-bold">✓</span>
-                                <div>
-                                    <strong class="block text-slate-900">Offtake Connector + Rubber Ring</strong>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-2.5">
-                                <span class="text-emerald-600 font-bold">✓</span>
-                                <div>
-                                    <strong class="block text-slate-900">Pelubang Pipa (Punch Tool 8mm)</strong>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-2.5">
-                                <span class="text-emerald-600 font-bold">✓</span>
-                                <div>
-                                    <strong class="block text-slate-900">Dripper / Emitter Adjustable</strong>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- LANGKAH-LANGKAH -->
-                    <div class="lg:col-span-2 space-y-4">
-                        <h4 class="text-xs font-extrabold text-slate-800 uppercase tracking-wider flex items-center gap-2">
-                            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-                            Langkah Perakitan
-                        </h4>
-                        <div class="space-y-3 text-xs text-slate-600 leading-relaxed">
-                            <p>1. **Lubangi Pipa Utama (PVC/PE):** Gunakan *Punch Tool* ukuran 8mm untuk membuat lubang konektor pada pipa pembagi utama.</p>
-                            <p>2. **Pasang Karet Offtake & Connector:** Masukkan karet seal (*grommet*) lalu tancapkan *offtake valve* hingga terdengar bunyi klik rapat.</p>
-                            <p>3. **Gelar Selang Drip:** Bentangkan selang drip sejajar bedengan tanaman. Tancapkan emitter/dripper tepat di dekat perakaran masing-masing tanaman.</p>
+                        <div class="pt-5 mt-5 border-t border-slate-100 flex items-center justify-between text-xs">
+                            <span class="text-slate-400 font-medium text-[11px]">{{ $kit->duration }}</span>
+                            <span class="font-bold text-emerald-600 group-hover:translate-x-1 transition-transform flex items-center gap-1">
+                                <span>Buka Tutorial</span>
+                                <span>→</span>
+                            </span>
                         </div>
                     </div>
-                </div>
+                @endforeach
             </div>
         </div>
 
-        <!-- ========================================== -->
-        <!-- SECTION 2: VIDEO PANDUAN PENGGUNAAN ALAT -->
-        <!-- ========================================== -->
+        <!-- SECTION 2: VIDEO TUTORIAL -->
         <div class="pt-8 border-t border-slate-200">
             <div class="mb-8">
                 <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest block mb-1">
@@ -258,111 +90,126 @@
                 </p>
             </div>
 
-            <!-- GRID VIDEO TUTORIAL -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- VIDEO 1 -->
-                <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-                    <div>
-                        <div 
-                            class="relative aspect-video bg-slate-900 cursor-pointer overflow-hidden flex flex-col items-center justify-center p-6 text-white group-hover:brightness-105 transition" 
-                            @click="openVideo('https://www.youtube.com/embed/vYuoECsqZy8')"
-                        >
-                            <div class="w-14 h-14 bg-emerald-600/90 group-hover:bg-emerald-600 backdrop-blur-md text-white rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform mb-2">
-                                <svg class="w-7 h-7 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                @foreach($videos as $video)
+                    <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <div>
+                            <div 
+                                class="relative aspect-video bg-slate-900 cursor-pointer overflow-hidden flex flex-col items-center justify-center p-6 text-white group-hover:brightness-105 transition" 
+                                @click="openVideo('{{ $video->youtube_url }}')"
+                            >
+                                <div class="w-14 h-14 bg-emerald-600/90 group-hover:bg-emerald-600 backdrop-blur-md text-white rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform mb-2">
+                                    <svg class="w-7 h-7 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                                <span class="text-[10px] font-extrabold text-emerald-400 uppercase tracking-widest bg-emerald-950/80 px-2.5 py-1 rounded-md border border-emerald-800">
+                                    Putar Video
+                                </span>
                             </div>
-                            <span class="text-[10px] font-extrabold text-emerald-400 uppercase tracking-widest bg-emerald-950/80 px-2.5 py-1 rounded-md border border-emerald-800">
-                                Putar Video
-                            </span>
-                        </div>
-                        <div class="p-6 space-y-2">
-                            <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Video Alat #01</span>
-                            <h3 class="font-extrabold text-slate-900 text-base leading-snug group-hover:text-emerald-600 transition">
-                                Cara Kalibrasi & Setting Timer Irigasi Digital
-                            </h3>
-                            <p class="text-slate-500 text-xs leading-relaxed">
-                                Petunjuk lengkap menyetting jam, durasi siram, dan penggantian baterai pada controller timer irigasi otomatis.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-500">
-                        <span>Durasi: 05:20</span>
-                        <span class="text-emerald-700 font-bold">Timer Controller</span>
-                    </div>
-                </div>
-
-                <!-- VIDEO 2 -->
-                <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-                    <div>
-                        <div 
-                            class="relative aspect-video bg-slate-900 cursor-pointer overflow-hidden flex flex-col items-center justify-center p-6 text-white group-hover:brightness-105 transition" 
-                            @click="openVideo('https://www.youtube.com/embed/vYuoECsqZy8')"
-                        >
-                            <div class="w-14 h-14 bg-emerald-600/90 group-hover:bg-emerald-600 backdrop-blur-md text-white rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform mb-2">
-                                <svg class="w-7 h-7 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            <div class="p-6 space-y-2">
+                                <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">{{ $video->category }}</span>
+                                <h3 class="font-extrabold text-slate-900 text-base leading-snug group-hover:text-emerald-600 transition">
+                                    {{ $video->title }}
+                                </h3>
+                                <p class="text-slate-500 text-xs leading-relaxed">
+                                    {{ $video->subtitle }}
+                                </p>
                             </div>
-                            <span class="text-[10px] font-extrabold text-emerald-400 uppercase tracking-widest bg-emerald-950/80 px-2.5 py-1 rounded-md border border-emerald-800">
-                                Putar Video
-                            </span>
                         </div>
-                        <div class="p-6 space-y-2">
-                            <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Video Alat #02</span>
-                            <h3 class="font-extrabold text-slate-900 text-base leading-snug group-hover:text-emerald-600 transition">
-                                Cara Backwash & Pembersihan Disc Filter
-                            </h3>
-                            <p class="text-slate-500 text-xs leading-relaxed">
-                                Panduan membongkar ring piringan disc filter untuk dibersihkan dari endapan lumpur agar aliran air kembali kencang.
-                            </p>
+                        <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-500">
+                            <span>Durasi: {{ $video->duration }}</span>
+                            <span class="text-emerald-700 font-bold">{{ $video->category }}</span>
                         </div>
                     </div>
-                    <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-500">
-                        <span>Durasi: 04:15</span>
-                        <span class="text-emerald-700 font-bold">Filter Irigasi</span>
-                    </div>
-                </div>
-
-                <!-- VIDEO 3 -->
-                <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-                    <div>
-                        <div 
-                            class="relative aspect-video bg-slate-900 cursor-pointer overflow-hidden flex flex-col items-center justify-center p-6 text-white group-hover:brightness-105 transition" 
-                            @click="openVideo('https://www.youtube.com/embed/vYuoECsqZy8')"
-                        >
-                            <div class="w-14 h-14 bg-emerald-600/90 group-hover:bg-emerald-600 backdrop-blur-md text-white rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform mb-2">
-                                <svg class="w-7 h-7 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                            </div>
-                            <span class="text-[10px] font-extrabold text-emerald-400 uppercase tracking-widest bg-emerald-950/80 px-2.5 py-1 rounded-md border border-emerald-800">
-                                Putar Video
-                            </span>
-                        </div>
-                        <div class="p-6 space-y-2">
-                            <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Video Alat #03</span>
-                            <h3 class="font-extrabold text-slate-900 text-base leading-snug group-hover:text-emerald-600 transition">
-                                Pengaturan Debit Air Micro Sprinkler & Fogger
-                            </h3>
-                            <p class="text-slate-500 text-xs leading-relaxed">
-                                Cara memutar head sprinkler untuk mengatur jangkauan radius kabut semprotan sesuai lebar lahan kebun.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-500">
-                        <span>Durasi: 06:40</span>
-                        <span class="text-emerald-700 font-bold">Sprinkler & Nozzle</span>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
 
     </div>
 
-    <!-- MODAL POPUP PLAYER VIDEO TUTORIAL -->
+    <!-- MODAL STARTER KIT TUTORIAL -->
     <div 
-        x-show="videoModal.show" 
+        x-show="kitModal.show" 
         x-transition:enter="transition ease-out duration-300"
         x-transition:enter-start="opacity-0 scale-95"
         x-transition:enter-end="opacity-100 scale-100"
         x-transition:leave="transition ease-in duration-200"
         x-transition:leave-start="opacity-100 scale-100"
         x-transition:leave-end="opacity-0 scale-95"
+        class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm"
+        style="display: none;"
+    >
+        <div @click.away="kitModal.show = false" class="bg-white rounded-3xl max-w-3xl w-full p-6 sm:p-8 shadow-2xl relative overflow-hidden max-h-[90vh] overflow-y-auto border border-slate-100">
+            <button @click="kitModal.show = false" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 bg-slate-100 p-2 rounded-full transition">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+
+            <div class="space-y-6">
+                <div class="flex items-center gap-3 border-b border-slate-100 pb-5 pr-8">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center font-extrabold text-2xl shrink-0">
+                        <span x-text="kitModal.data.icon || '🛠️'"></span>
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-extrabold text-emerald-600 uppercase tracking-widest" x-text="kitModal.data.category"></span>
+                        <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug" x-text="kitModal.data.title"></h2>
+                        <p class="text-xs text-slate-500 mt-1" x-text="kitModal.data.subtitle"></p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200/80 space-y-4">
+                        <h4 class="text-xs font-extrabold text-slate-800 uppercase tracking-wider flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                            Alat & Bahan
+                        </h4>
+                        <ul class="space-y-3 text-xs text-slate-700">
+                            <template x-for="(item, idx) in kitModal.data.tools_and_materials" :key="idx">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-emerald-600 font-bold">✓</span>
+                                    <div>
+                                        <strong class="block text-slate-900" x-text="item.name"></strong>
+                                        <span class="text-[11px] text-slate-500" x-text="item.desc"></span>
+                                    </div>
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+
+                    <div class="md:col-span-2 space-y-4">
+                        <h4 class="text-xs font-extrabold text-slate-800 uppercase tracking-wider flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                            Langkah-Langkah Pengerjaan
+                        </h4>
+
+                        <div class="space-y-4">
+                            <template x-for="(step, sIdx) in kitModal.data.steps" :key="sIdx">
+                                <div class="flex gap-3">
+                                    <div class="w-7 h-7 rounded-xl bg-emerald-600 text-white font-extrabold text-xs flex items-center justify-center shrink-0 shadow-sm mt-0.5" x-text="sIdx + 1"></div>
+                                    <div class="space-y-0.5">
+                                        <h5 class="text-xs font-bold text-slate-900" x-text="step.title"></h5>
+                                        <p class="text-xs text-slate-600 leading-relaxed" x-text="step.description"></p>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-slate-100 flex justify-between items-center">
+                    <span class="text-xs text-slate-400" x-text="kitModal.data.duration"></span>
+                    <a href="{{ route('katalog') }}" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition">
+                        Cari Alat di Katalog
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL VIDEO PLAYER -->
+    <div 
+        x-show="videoModal.show" 
+        x-transition
         class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-md"
         style="display: none;"
     >
@@ -378,12 +225,19 @@
 </div>
 
 <script>
-    function guidesData() {
+    function guidesApp() {
         return {
-            activeTab: 'otomatis',
+            kitModal: {
+                show: false,
+                data: {}
+            },
             videoModal: {
                 show: false,
                 url: ''
+            },
+            openKitModal(kitData) {
+                this.kitModal.data = kitData;
+                this.kitModal.show = true;
             },
             openVideo(url) {
                 this.videoModal.url = url;

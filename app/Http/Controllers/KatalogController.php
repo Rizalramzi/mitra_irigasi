@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Product;
+use App\Models\Guide;
 use Illuminate\Http\Request;
 
 class KatalogController extends Controller
@@ -51,6 +52,16 @@ class KatalogController extends Controller
 
     public function guide()
     {
-        return view('guide');
+        $starterKits = Guide::where('type', 'starter_kit')
+            ->where('is_active', true)
+            ->latest()
+            ->get();
+
+        $videos = Guide::where('type', 'video')
+            ->where('is_active', true)
+            ->latest()
+            ->get();
+
+        return view('guide', compact('starterKits', 'videos'));
     }
 }
