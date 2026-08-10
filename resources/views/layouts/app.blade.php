@@ -7,8 +7,8 @@
     
     <title>@yield('title', 'Mitra Irigasi - Solusi Air Pertanian')</title>
 
-    <!-- FAVICON TETES AIR WARNA BIRU -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232563EB'><path d='M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z'/></svg>">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="{{ asset('storage/logo_mitra_irigasi.png') }}">
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,11 +45,7 @@
                 
                 <!-- BRAND / LOGO -->
                 <a href="{{ route('index') }}" class="flex items-center gap-3 group">
-                    <div class="w-11 h-11 bg-emerald-600 rounded-xl flex items-center justify-center text-white shadow-md shadow-emerald-200 group-hover:bg-emerald-700 transition">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 3v18m0-18C8 7 4 11 4 16b8 8 0 0016 0c0-5-4-9-8-13z" />
-                        </svg>
-                    </div>
+                    <img src="{{ asset('storage/logo_mitra_irigasi.png') }}" alt="Mitra Irigasi Logo" class="w-12 h-12 object-contain group-hover:scale-105 transition-transform duration-200">
                     <div>
                         <span class="text-xl font-extrabold text-slate-900 block leading-none">MITRA IRIGASI</span>
                     </div>

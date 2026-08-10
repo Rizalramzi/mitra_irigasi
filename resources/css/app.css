@@ -5,7 +5,26 @@
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
+:root {
+    --main-color: #4169E1;
+    --main-color-hover: #003399;
+    --main-color-light: #e5edff;
+    --main-color-dark: #002266;
+}
+
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+
+    --color-emerald-50: var(--main-color-light);
+    --color-emerald-100: var(--main-color-light);
+    --color-emerald-200: var(--main-color-light);
+    --color-emerald-300: var(--main-color-light);
+    --color-emerald-400: var(--main-color);
+    --color-emerald-500: var(--main-color);
+    --color-emerald-600: var(--main-color);
+    --color-emerald-700: var(--main-color-hover);
+    --color-emerald-800: var(--main-color-dark);
+    --color-emerald-900: var(--main-color-dark);
+    --color-emerald-950: var(--main-color-dark);
 }
