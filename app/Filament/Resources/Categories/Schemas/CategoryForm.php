@@ -12,9 +12,14 @@ class CategoryForm
         return $schema
             ->components([
                 TextInput::make('name')
-                    ->required(),
+                    ->required()
+                    ->live(onBlur: true)
+                    ->afterStateUpdated(fn (string $operation, $state, $set) => $operation === 'create' ? $set('slug', \Illuminate\Support\Str::slug($state)) : null),
                 TextInput::make('slug')
-                    ->required(),
+                    ->disabled(fn (string $operation) => $operation === 'edit')
+                    ->dehydrated()
+                    ->required()
+                    ->unique(ignoreRecord: true),
             ]);
     }
 }

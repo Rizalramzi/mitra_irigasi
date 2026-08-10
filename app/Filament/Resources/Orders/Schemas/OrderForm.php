@@ -34,6 +34,30 @@ class OrderForm
                             ->disabled(),
                     ])->columns(2),
 
+                Section::make('Produk Yang Dipesan')
+                    ->schema([
+                        Forms\Components\Repeater::make('items')
+                            ->relationship('items')
+                            ->schema([
+                                Forms\Components\Select::make('product_id')
+                                    ->relationship('product', 'name')
+                                    ->disabled()
+                                    ->label('Produk')
+                                    ->columnSpan(2),
+                                Forms\Components\TextInput::make('quantity')
+                                    ->numeric()
+                                    ->disabled()
+                                    ->label('Jumlah')
+                                    ->columnSpan(1),
+                            ])
+                            ->columns(3)
+                            ->disabled()
+                            ->addable(false)
+                            ->deletable(false)
+                            ->reorderable(false)
+                            ->label(''),
+                    ]),
+
                 Section::make('Proses Transaksi Admin')
                     ->schema([
                         Forms\Components\Select::make('status')
