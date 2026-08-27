@@ -107,6 +107,67 @@
             </div>
         </div>
 
+        <!-- RIWAYAT PESANAN (HANYA MUNCUL DI NON-EDITING) -->
+        <div x-show="!isEditing" x-transition class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm mt-6 space-y-6">
+            <h2 class="text-base font-bold text-slate-900 border-b border-slate-100 pb-3">
+                Riwayat Pesanan Saya
+            </h2>
+
+            @if(isset($orders) && count($orders) > 0)
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse text-xs sm:text-sm">
+                        <thead>
+                            <tr class="border-b border-slate-100 text-slate-400 font-bold uppercase tracking-wider">
+                                <th class="py-3 px-2">No. Pesanan</th>
+                                <th class="py-3 px-2">Tanggal</th>
+                                <th class="py-3 px-2 text-center">Status</th>
+                                <th class="py-3 px-2 text-right">Total Deal</th>
+                                <th class="py-3 px-2 text-right">Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100">
+                            @foreach($orders as $row)
+                                <tr class="hover:bg-slate-50/50 transition">
+                                    <td class="py-3 px-2 font-bold text-slate-800">{{ $row->order_number }}</td>
+                                    <td class="py-3 px-2 text-slate-500">{{ $row->created_at ? $row->created_at->format('d/m/Y') : '-' }}</td>
+                                    <td class="py-3 px-2 text-center">
+                                        @if($row->status === 'pending')
+                                            <span class="inline-block bg-amber-50 text-amber-700 text-[10px] font-bold px-2 py-0.5 rounded-lg border border-amber-200 uppercase">Pending</span>
+                                        @elseif($row->status === 'deal')
+                                            <span class="inline-block bg-emerald-50 text-emerald-700 text-[10px] font-bold px-2 py-0.5 rounded-lg border border-emerald-200 uppercase">Deal</span>
+                                        @else
+                                            <span class="inline-block bg-rose-50 text-rose-700 text-[10px] font-bold px-2 py-0.5 rounded-lg border border-rose-200 uppercase">Batal</span>
+                                        @endif
+                                    </td>
+                                    <td class="py-3 px-2 text-right font-bold text-slate-800">
+                                        @if($row->status === 'deal' && $row->total_price)
+                                            Rp {{ number_format($row->total_price, 0, ',', '.') }}
+                                        @else
+                                            -
+                                        @endif
+                                    </td>
+                                    <td class="py-3 px-2 text-right">
+                                        <a href="{{ route('orders.track', ['order_number' => $row->order_number]) }}" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white text-[11px] font-bold px-3 py-1.5 rounded-lg transition shadow-sm">
+                                            Lacak
+                                        </a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            @else
+                <div class="text-center py-8">
+                    <div class="w-12 h-12 bg-slate-50 text-slate-400 rounded-xl flex items-center justify-center mx-auto mb-3 border border-slate-100">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+                        </svg>
+                    </div>
+                    <p class="text-slate-400 text-xs">Belum ada riwayat pesanan yang diajukan.</p>
+                </div>
+            @endif
+        </div>
+
         <!-- MODE FORM EDITING -->
         <div x-show="isEditing" x-transition style="display: none;" class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm">
             <h2 class="text-base font-bold text-slate-900 border-b border-slate-100 pb-3 mb-6">

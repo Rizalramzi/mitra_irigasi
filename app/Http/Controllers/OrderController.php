@@ -78,4 +78,21 @@ class OrderController extends Controller
 
         return redirect()->away($whatsappUrl);
     }
+
+    public function track(Request $request)
+    {
+        $orderNumber = $request->query('order_number');
+        $order = null;
+
+        if ($orderNumber) {
+            $orderNumber = strtoupper(trim($orderNumber));
+            $order = Order::with('items.product')->where('order_number', $orderNumber)->first();
+
+            if (!$order) {
+                return redirect()->route('orders.track')->with('error', 'Nomor pesanan tidak ditemukan. Silakan periksa kembali.');
+            }
+        }
+
+        return view('order.track', compact('order'));
+    }
 }
