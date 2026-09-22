@@ -292,21 +292,34 @@
                             Butuh bantuan dengan pesanan Anda? Hubungi admin.
                         </span>
                         
-                        @php
-                            $adminPhone = '6282142010020';
-                            $waMessage = "Halo Admin Mitra Irigasi, saya ingin bertanya tentang status pesanan: " . $order->order_number . " atas nama " . $order->visitor_name;
-                            $waUrl = "https://wa.me/" . $adminPhone . "?text=" . urlencode($waMessage);
-                        @endphp
-                        <a 
-                            href="{{ $waUrl }}" 
-                            target="_blank" 
-                            class="bg-[#25D366] hover:bg-[#128C7E] text-white text-xs font-bold px-5 py-3 rounded-xl transition-all shadow-md flex items-center gap-2"
-                        >
-                            <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24">
-                                <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 001.333 4.993L2 22l5.233-1.371a9.948 9.948 0 004.77 1.21h.005c5.505 0 9.989-4.478 9.99-9.983A9.97 9.97 0 0012.012 2zm5.727 14.129c-.315.89-.924 1.6-1.745 2.03-.497.26-1.077.411-1.672.411-2.28 0-4.52-1.282-6.027-3.473a9.7 9.7 0 01-1.89-4.004A3.9 3.9 0 017.5 9.1c.148-.255.433-.42.748-.42.25 0 .428.05.589.26l1.01 1.34c.145.2.148.455.01.625l-.47.575c-.15.185-.145.41.01.615.71.93 1.55 1.63 2.505 2.115.165.085.348.095.51.01l.73-.61c.15-.125.365-.15.535-.075l1.455.725c.34.17.435.485.45.694.02.261-.06.67-.32 1.205z"/>
-                            </svg>
-                            <span>Hubungi Admin WA</span>
-                        </a>
+                        <div class="flex flex-wrap items-center gap-2.5">
+                            <a 
+                                href="{{ route('orders.invoice', ['order_number' => $order->order_number]) }}" 
+                                target="_blank" 
+                                class="bg-white hover:bg-slate-100 text-slate-800 text-xs font-bold px-4 py-3 rounded-xl border border-slate-200 transition-all shadow-xs flex items-center gap-2"
+                            >
+                                <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/>
+                                </svg>
+                                <span>Cetak Invoice</span>
+                            </a>
+                            
+                            @php
+                                $adminPhone = '6282142010020';
+                                $waMessage = "Halo Admin Mitra Irigasi, saya ingin bertanya tentang status pesanan: " . $order->order_number . " atas nama " . $order->visitor_name;
+                                $waUrl = "https://wa.me/" . $adminPhone . "?text=" . urlencode($waMessage);
+                            @endphp
+                            <a 
+                                href="{{ $waUrl }}" 
+                                target="_blank" 
+                                class="bg-[#25D366] hover:bg-[#128C7E] text-white text-xs font-bold px-5 py-3 rounded-xl transition-all shadow-md flex items-center gap-2"
+                            >
+                                <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24">
+                                    <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 001.333 4.993L2 22l5.233-1.371a9.948 9.948 0 004.77 1.21h.005c5.505 0 9.989-4.478 9.99-9.983A9.97 9.97 0 0012.012 2zm5.727 14.129c-.315.89-.924 1.6-1.745 2.03-.497.26-1.077.411-1.672.411-2.28 0-4.52-1.282-6.027-3.473a9.7 9.7 0 01-1.89-4.004A3.9 3.9 0 017.5 9.1c.148-.255.433-.42.748-.42.25 0 .428.05.589.26l1.01 1.34c.145.2.148.455.01.625l-.47.575c-.15.185-.145.41.01.615.71.93 1.55 1.63 2.505 2.115.165.085.348.095.51.01l.73-.61c.15-.125.365-.15.535-.075l1.455.725c.34.17.435.485.45.694.02.261-.06.67-.32 1.205z"/>
+                                </svg>
+                                <span>Hubungi Admin WA</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -2,6 +2,8 @@
 
 namespace App\Filament\Resources\Orders\Tables;
 
+use App\Models\Order;
+use Filament\Actions\Action;
 use Filament\Actions\EditAction;
 use Filament\Tables;
 use Filament\Tables\Table;
@@ -35,6 +37,12 @@ class OrdersTable
             ])
             ->actions([
                 EditAction::make(),
+                Action::make('invoice')
+                    ->label('Cetak Invoice')
+                    ->icon('heroicon-o-document-text')
+                    ->color('success')
+                    ->url(fn (Order $record): string => route('orders.invoice', ['order_number' => $record->order_number]))
+                    ->openUrlInNewTab(),
             ]);
     }
 }

@@ -47,6 +47,7 @@ Route::get('/katalog', [KatalogController::class, 'index'])->name('katalog');
 Route::get('/guide', [KatalogController::class, 'guide'])->name('guide');
 
 Route::get('/orders/track', [OrderController::class, 'track'])->name('orders.track');
+Route::get('/orders/{order_number}/invoice', [OrderController::class, 'invoice'])->name('orders.invoice');
 
 Route::get('/profile', function () {
     $orders = [];

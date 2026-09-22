@@ -147,9 +147,14 @@
                                         @endif
                                     </td>
                                     <td class="py-3 px-2 text-right">
-                                        <a href="{{ route('orders.track', ['order_number' => $row->order_number]) }}" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white text-[11px] font-bold px-3 py-1.5 rounded-lg transition shadow-sm">
-                                            Lacak
-                                        </a>
+                                        <div class="inline-flex items-center gap-1.5 justify-end">
+                                            <a href="{{ route('orders.track', ['order_number' => $row->order_number]) }}" class="inline-block bg-slate-100 hover:bg-slate-200 text-slate-700 text-[11px] font-bold px-2.5 py-1.5 rounded-lg transition border border-slate-200">
+                                                Lacak
+                                            </a>
+                                            <a href="{{ route('orders.invoice', ['order_number' => $row->order_number]) }}" target="_blank" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white text-[11px] font-bold px-2.5 py-1.5 rounded-lg transition shadow-xs">
+                                                Invoice
+                                            </a>
+                                        </div>
                                     </td>
                                 </tr>
                             @endforeach

@@ -95,4 +95,12 @@ class OrderController extends Controller
 
         return view('order.track', compact('order'));
     }
+
+    public function invoice($order_number)
+    {
+        $orderNumber = strtoupper(trim($order_number));
+        $order = Order::with('items.product')->where('order_number', $orderNumber)->firstOrFail();
+
+        return view('order.invoice', compact('order'));
+    }
 }
