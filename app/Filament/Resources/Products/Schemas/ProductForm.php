@@ -2,11 +2,13 @@
 
 namespace App\Filament\Resources\Products\Schemas;
 
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Textarea;
-use Filament\Forms\Components\Select;
+use App\Services\ImageWebpConverter;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Textarea;
+use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Schema;
+use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
 
 class ProductForm
 {
@@ -38,7 +40,10 @@ class ProductForm
                     ->maxLength(255),
                 FileUpload::make('photo')
                     ->image()
-                    ->directory('products'),
+                    ->disk('public')
+                    ->directory('products')
+                    ->visibility('public')
+                    ->saveUploadedFileUsing(fn (TemporaryUploadedFile $file): string => ImageWebpConverter::convertAndStore($file, 'products', 'public')),
                 Textarea::make('description')
                     ->columnSpanFull(),
             ]);
