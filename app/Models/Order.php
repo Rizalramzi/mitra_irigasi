@@ -16,10 +16,27 @@ class Order extends Model
         'visitor_email',
         'visitor_address',
         'visitor_purpose',
+        'subtotal',
+        'discount_percent',
         'total_price',
         'status',
         'admin_notes',
     ];
+
+    protected $casts = [
+        'subtotal' => 'float',
+        'discount_percent' => 'float',
+        'total_price' => 'float',
+    ];
+
+    public function getDiscountAmountAttribute(): float
+    {
+        if (!$this->subtotal || !$this->discount_percent) {
+            return 0.0;
+        }
+
+        return round($this->subtotal * ($this->discount_percent / 100), 2);
+    }
 
     public function user(): BelongsTo
     {

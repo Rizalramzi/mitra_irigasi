@@ -255,11 +255,27 @@
 
                         <!-- TOTAL DEAL DI ADMIN -->
                         @if($order->status === 'deal')
-                            <div class="pt-4 border-t border-slate-200 flex justify-between items-center">
-                                <span class="text-xs font-bold text-slate-500 uppercase">Harga Kesepakatan (Nett)</span>
-                                <strong class="text-lg sm:text-xl font-extrabold text-emerald-600">
-                                    Rp {{ number_format($order->total_price, 2, ',', '.') }}
-                                </strong>
+                            <div class="pt-4 border-t border-slate-200 space-y-2">
+                                @if($order->subtotal)
+                                    <div class="flex justify-between items-center text-xs text-slate-500">
+                                        <span>Subtotal (Harga Awal)</span>
+                                        <span class="font-semibold text-slate-700">Rp {{ number_format($order->subtotal, 0, ',', '.') }}</span>
+                                    </div>
+                                @endif
+
+                                @if($order->discount_percent > 0)
+                                    <div class="flex justify-between items-center text-xs text-emerald-600">
+                                        <span>Diskon ({{ $order->discount_percent }}%)</span>
+                                        <span class="font-bold">- Rp {{ number_format($order->discount_amount, 0, ',', '.') }}</span>
+                                    </div>
+                                @endif
+
+                                <div class="flex justify-between items-center pt-2 border-t border-slate-100">
+                                    <span class="text-xs font-bold text-slate-700 uppercase">Harga Kesepakatan Akhir</span>
+                                    <strong class="text-lg sm:text-xl font-extrabold text-emerald-600">
+                                        Rp {{ number_format($order->total_price, 0, ',', '.') }}
+                                    </strong>
+                                </div>
                             </div>
                         @else
                             <div class="pt-4 border-t border-slate-200">

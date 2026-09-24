@@ -59,9 +59,18 @@ class AuthController extends Controller
         if (Auth::attempt($credentials, $request->remember)) {
             $request->session()->regenerate();
 
+            /** @var \App\Models\User $user */
+            $user = Auth::user();
+
             // Jika role admin (admin_1, admin_2, admin), arahkan ke Filament Admin Panel
-            if (in_array(Auth::user()->role, ['admin', 'admin_1', 'admin_2'], true)) {
+            if ($user && $user->isAdmin()) {
                 return redirect()->intended('/admin');
+            }
+
+            // Untuk Visitor: jika url.intended sebelumnya mengarah ke /admin, bersihkan agar tidak terlempar ke /admin
+            $intended = session()->get('url.intended');
+            if ($intended && str_contains($intended, '/admin')) {
+                session()->forget('url.intended');
             }
 
             return redirect()->intended('/');

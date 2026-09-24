@@ -28,8 +28,12 @@ class OrdersTable
                         'success' => 'deal',
                         'danger' => 'cancelled',
                     ]),
+                Tables\Columns\TextColumn::make('discount_percent')
+                    ->label('Diskon (%)')
+                    ->formatStateUsing(fn ($state) => $state > 0 ? "{$state}%" : '-')
+                    ->sortable(),
                 Tables\Columns\TextColumn::make('total_price')
-                    ->label('Harga Deal')
+                    ->label('Harga Deal Final')
                     ->money('IDR'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->label('Tanggal Order')

@@ -43,6 +43,8 @@ class OrderInvoiceTest extends TestCase
             'visitor_address' => 'Jl. Pertanian No. 45',
             'visitor_purpose' => $user->visitor_purpose,
             'status'          => 'deal',
+            'subtotal'        => 2000000,
+            'discount_percent' => 25,
             'total_price'     => 1500000,
             'admin_notes'     => 'Spesifikasi pompa 2 HP disetujui.',
         ]);
@@ -76,6 +78,8 @@ class OrderInvoiceTest extends TestCase
         $response->assertSee('PMP-002');
         $response->assertSee('2 pcs');
         $response->assertSee('DEAL / DISETUJUI');
+        $response->assertSee('2.000.000');
+        $response->assertSee('25%');
         $response->assertSee('1.500.000');
         $response->assertSee('Spesifikasi pompa 2 HP disetujui.');
         $response->assertSee('MITRA IRIGASI');
