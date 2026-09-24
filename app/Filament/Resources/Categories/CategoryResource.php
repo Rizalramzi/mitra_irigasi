@@ -22,6 +22,13 @@ class CategoryResource extends Resource
 
     protected static ?string $recordTitleAttribute = 'generate';
 
+    public static function canViewAny(): bool
+    {
+        /** @var \App\Models\User|null $user */
+        $user = auth()->user();
+        return $user ? $user->hasPermission('categories') : false;
+    }
+
     public static function form(Schema $schema): Schema
     {
         return CategoryForm::configure($schema);

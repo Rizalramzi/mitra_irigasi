@@ -13,16 +13,33 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        // 1. Akun Admin Utama (MinRig)
-        User::create([
-            'name'            => 'MinRig',
-            'email'           => 'mitrairigasi.id@gmail.com',
-            'password'        => Hash::make('11111111'),
-            'role'            => 'admin',
-            'phone_number'    => '082142010020',
-            'address'         => 'Kantor CV. Wijaya Karya - Mitra Irigasi',
-            'visitor_purpose' => 'Konsultasi teknis',
-        ]);
+        // 1. Akun Admin 1 (Super Admin)
+        User::updateOrCreate(
+            ['email' => 'mitrairigasi.id@gmail.com'],
+            [
+                'name'            => 'MinRig (Admin 1)',
+                'password'        => Hash::make('11111111'),
+                'role'            => 'admin_1',
+                'phone_number'    => '082142010020',
+                'address'         => 'Kantor CV. Wijaya Karya - Mitra Irigasi',
+                'visitor_purpose' => 'Konsultasi teknis',
+                'permissions'     => null,
+            ]
+        );
+
+        // 2. Akun Admin 2 (Sub Admin - Contoh: Akses Produk & Pesanan)
+        User::updateOrCreate(
+            ['email' => 'admin2@mitrairigasi.com'],
+            [
+                'name'            => 'Staf Admin 2',
+                'password'        => Hash::make('11111111'),
+                'role'            => 'admin_2',
+                'phone_number'    => '082199887766',
+                'address'         => 'Kantor CV. Wijaya Karya - Mitra Irigasi',
+                'visitor_purpose' => 'Konsultasi teknis',
+                'permissions'     => ['products', 'orders'],
+            ]
+        );
 
         // 2. Data 5 Akun Visitor
         $visitors = [
@@ -65,15 +82,17 @@ class UserSeeder extends Seeder
 
         // Loop & Simpan Data Visitor
         foreach ($visitors as $visitor) {
-            User::create([
-                'name'            => $visitor['name'],
-                'email'           => $visitor['email'],
-                'password'        => Hash::make('11111111'), // Password default visitor
-                'role'            => 'visitor',
-                'phone_number'    => $visitor['phone_number'],
-                'address'         => $visitor['address'],
-                'visitor_purpose' => $visitor['visitor_purpose'],
-            ]);
+            User::updateOrCreate(
+                ['email' => $visitor['email']],
+                [
+                    'name'            => $visitor['name'],
+                    'password'        => Hash::make('11111111'), // Password default visitor
+                    'role'            => 'visitor',
+                    'phone_number'    => $visitor['phone_number'],
+                    'address'         => $visitor['address'],
+                    'visitor_purpose' => $visitor['visitor_purpose'],
+                ]
+            );
         }
     }
 }

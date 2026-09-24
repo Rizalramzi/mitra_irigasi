@@ -22,6 +22,13 @@ class ProductResource extends Resource
 
     protected static ?string $recordTitleAttribute = 'Product';
 
+    public static function canViewAny(): bool
+    {
+        /** @var \App\Models\User|null $user */
+        $user = auth()->user();
+        return $user ? $user->hasPermission('products') : false;
+    }
+
     public static function form(Schema $schema): Schema
     {
         return ProductForm::configure($schema);

@@ -22,6 +22,13 @@ class VendorResource extends Resource
 
     protected static ?string $recordTitleAttribute = 'name';
 
+    public static function canViewAny(): bool
+    {
+        /** @var \App\Models\User|null $user */
+        $user = auth()->user();
+        return $user ? $user->hasPermission('vendors') : false;
+    }
+
     public static function form(Schema $schema): Schema
     {
         return VendorForm::configure($schema);

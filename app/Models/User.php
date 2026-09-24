@@ -20,6 +20,7 @@ class User extends Authenticatable implements FilamentUser
         'address',
         'visitor_purpose',
         'role',
+        'permissions',
     ];
 
     protected $hidden = [
@@ -32,12 +33,42 @@ class User extends Authenticatable implements FilamentUser
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'permissions' => 'array',
         ];
     }
 
-    // Membatasi hanya role 'admin' yang bisa masuk Filament Dashboard
+    // Membatasi hanya role admin (admin_1, admin_2, admin) yang bisa masuk Filament Dashboard
     public function canAccessPanel(Panel $panel): bool
     {
-        return trim($this->role) === 'admin';
+        return in_array(trim($this->role), ['admin', 'admin_1', 'admin_2'], true);
+    }
+
+    public function isAdmin1(): bool
+    {
+        return in_array(trim($this->role), ['admin', 'admin_1'], true);
+    }
+
+    public function isAdmin2(): bool
+    {
+        return trim($this->role) === 'admin_2';
+    }
+
+    public function isVisitor(): bool
+    {
+        return trim($this->role) === 'visitor';
+    }
+
+    public function hasPermission(string $featureKey): bool
+    {
+        if ($this->isAdmin1()) {
+            return true;
+        }
+
+        if ($this->isAdmin2()) {
+            $perms = $this->permissions ?? [];
+            return in_array($featureKey, $perms, true);
+        }
+
+        return false;
     }
 }

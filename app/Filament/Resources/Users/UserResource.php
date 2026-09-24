@@ -22,6 +22,41 @@ class UserResource extends Resource
 
     protected static ?string $recordTitleAttribute = 'name';
 
+    public static function canViewAny(): bool
+    {
+        /** @var \App\Models\User|null $user */
+        $user = auth()->user();
+        return $user ? $user->hasPermission('users') : false;
+    }
+
+    public static function canEdit(\Illuminate\Database\Eloquent\Model $record): bool
+    {
+        /** @var \App\Models\User|null $user */
+        $user = auth()->user();
+        if (!$user) return false;
+
+        // Jika target record adalah Admin 1, hanya Admin 1 yang bisa mengedit
+        if ($record instanceof User && $record->isAdmin1() && !$user->isAdmin1()) {
+            return false;
+        }
+
+        return true;
+    }
+
+    public static function canDelete(\Illuminate\Database\Eloquent\Model $record): bool
+    {
+        /** @var \App\Models\User|null $user */
+        $user = auth()->user();
+        if (!$user) return false;
+
+        // Admin 2 tidak diperbolehkan menghapus Admin 1
+        if ($record instanceof User && $record->isAdmin1() && !$user->isAdmin1()) {
+            return false;
+        }
+
+        return true;
+    }
+
     public static function form(Schema $schema): Schema
     {
         return UserForm::configure($schema);

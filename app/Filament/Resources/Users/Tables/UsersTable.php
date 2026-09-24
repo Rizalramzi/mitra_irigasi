@@ -23,10 +23,17 @@ class UsersTable
                     ->sortable(),
                 TextColumn::make('role')
                     ->badge()
+                    ->formatStateUsing(fn (string $state): string => match ($state) {
+                        'admin_1', 'admin' => 'Admin 1 (Super)',
+                        'admin_2'          => 'Admin 2 (Sub)',
+                        'visitor'          => 'Visitor',
+                        default            => ucfirst($state),
+                    })
                     ->color(fn (string $state): string => match ($state) {
-                        'admin' => 'danger',
-                        'visitor' => 'success',
-                        default => 'grey',
+                        'admin_1', 'admin' => 'danger',
+                        'admin_2'          => 'warning',
+                        'visitor'          => 'success',
+                        default            => 'gray',
                     })
                     ->sortable(),
                 TextColumn::make('phone_number')
@@ -39,7 +46,8 @@ class UsersTable
             ->filters([
                 SelectFilter::make('role')
                     ->options([
-                        'admin' => 'Admin',
+                        'admin_1' => 'Admin 1 (Super Admin)',
+                        'admin_2' => 'Admin 2 (Sub Admin)',
                         'visitor' => 'Visitor',
                     ]),
             ])

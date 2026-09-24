@@ -59,8 +59,8 @@ class AuthController extends Controller
         if (Auth::attempt($credentials, $request->remember)) {
             $request->session()->regenerate();
 
-            // Jika role admin, arahkan ke Filament Admin Panel
-            if (Auth::user()->role === 'admin') {
+            // Jika role admin (admin_1, admin_2, admin), arahkan ke Filament Admin Panel
+            if (in_array(Auth::user()->role, ['admin', 'admin_1', 'admin_2'], true)) {
                 return redirect()->intended('/admin');
             }
 
