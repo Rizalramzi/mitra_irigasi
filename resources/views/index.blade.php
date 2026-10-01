@@ -212,7 +212,7 @@
                     <p class="text-emerald-200 text-xs sm:text-sm leading-relaxed">
                         Tim teknis Mitra Irigasi siap membantu Anda merancang tata letak selang, pompa, dan jumlah nozzle yang pas agar efisien.
                     </p>
-                    <a href="https://wa.me/6282142010020?text=Halo%20Admin%20Mitra%20Irigasi,%20saya%20mau%20konsultasi%20kebutuhan%20lahan" target="_blank" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-extrabold text-sm px-6 py-3.5 rounded-xl transition shadow-md">
+                    <a href="https://wa.me/6282142010020?text=Halo%20Admin%20Mitra%20Irigasi,%20saya%20mau%20konsultasi%20kebutuhan%20lahan" target="_blank" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-extrabold text-sm px-6 py-3.5 rounded-xl transition shadow-md">
                         Hubungi Admin Direct WA →
                     </a>
                 </div>
