@@ -6,6 +6,7 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\KatalogController;
+use App\Http\Controllers\ProfileController;
 use App\Models\Category;
 use Illuminate\Http\Request;
 
@@ -48,16 +49,6 @@ Route::get('/guide', [KatalogController::class, 'guide'])->name('guide');
 
 Route::get('/orders/track', [OrderController::class, 'track'])->name('orders.track');
 Route::get('/orders/{order_number}/invoice', [OrderController::class, 'invoice'])->name('orders.invoice');
-
-Route::get('/profile', function () {
-    $orders = [];
-    if (\Illuminate\Support\Facades\Auth::check()) {
-        $orders = \App\Models\Order::where('user_id', \Illuminate\Support\Facades\Auth::id())
-            ->orderBy('created_at', 'desc')
-            ->get();
-    }
-    return view('profile', compact('orders'));
-})->name('profile');
 
 // 3. API Endpoint Chatbot
 // Route::post('/api/chat', function (Request $request) {

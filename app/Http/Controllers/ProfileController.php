@@ -11,7 +11,14 @@ class ProfileController extends Controller
     // Tampilkan Halaman Profil
     public function show()
     {
-        return view('profile');
+        $orders = [];
+        if (Auth::check()) {
+            $orders = \App\Models\Order::where('user_id', Auth::id())
+                ->orderBy('created_at', 'desc')
+                ->get();
+        }
+
+        return view('profile', compact('orders'));
     }
 
     // Update Data Profil User

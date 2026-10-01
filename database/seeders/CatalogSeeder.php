@@ -15,15 +15,14 @@ class CatalogSeeder extends Seeder
      */
     public function run(): void
     {
-        // 1. Ambil ID Categories
+        // 1. Ambil ID Categories berdasarkan nama
         $categories = Category::pluck('id', 'name')->toArray();
 
-        // 2. Ambil ID Vendors
+        // 2. Ambil ID Vendors berdasarkan nama
         $vendors = Vendor::pluck('id', 'name')->toArray();
 
-        // 3. Data Produk dari Excel + Deskripsi Dummy Teknis
+        // 3. Data produk dari products (2).sql
         $productsData = [
-            // --- VALVE ---
             [
                 'category_name' => 'Valve',
                 'vendor_name'   => 'Yuyao Zanchen Auto.Contrl',
@@ -94,7 +93,7 @@ class CatalogSeeder extends Seeder
                 'code'          => '151TD',
                 'name'          => 'Pressure Reducing Solenoid Valve 1-1/2" 24VAC',
                 'description'   => 'Kombinasi katup solenoid 1.5 inci 24VAC dan pengatur tekanan otomatis. Membuka aliran sekaligus menstabilkan tekanan air.',
-                'photo'         => 'products/151TD.webp',
+                'photo'         => 'products/Nsh6bI7NBq2MMrv7dZlHwjCelyIwftENYJ42UvDl.webp',
             ],
             [
                 'category_name' => 'Valve',
@@ -102,7 +101,7 @@ class CatalogSeeder extends Seeder
                 'code'          => '201TD',
                 'name'          => 'Pressure Reducing Solenoid Valve 2" 24VAC',
                 'description'   => 'Katup solenoid 2 inci dengan fitur pengatur tekanan bawaan. Sangat cocok untuk fertigasi presisi pada greenhouse.',
-                'photo'         => 'products/201TD.webp',
+                'photo'         => 'products/vBqmq6uwq4GJTsdqhrfjLC7EVXoFCTbCJ6T7mcAc.webp',
             ],
             [
                 'category_name' => 'Valve',
@@ -110,7 +109,7 @@ class CatalogSeeder extends Seeder
                 'code'          => '301TD',
                 'name'          => 'Pressure Reducing Solenoid Valve 3" 24VAC',
                 'description'   => 'Katup kombinasi solenoid dan penstabil tekanan 3 inci untuk sistem irigasi komersial bertekanan variabel.',
-                'photo'         => 'products/301TD.webp',
+                'photo'         => 'products/3UDxnbukPOmF8Qrjw2jNMiBRpnsZI55d7hUO139t.webp',
             ],
             [
                 'category_name' => 'Valve',
@@ -148,12 +147,10 @@ class CatalogSeeder extends Seeder
                 'category_name' => 'Valve',
                 'vendor_name'   => 'Fuzhou ARTHAS Fluid Equip.Tech',
                 'code'          => 'KA-11-32',
-                'name'          => 'Kinetic Air Release Valve 1" model C21',
+                'name'          => 'Combination Air Release Valve 1" model C21',
                 'description'   => 'Air Valve kinetik ukuran 1 inci. Menjaga efisiensi sistem perpipaan dengan membuang udara terperangkap secara kontinyu.',
-                'photo'         => 'products/KA-11-32.webp',
+                'photo'         => 'products/BvUrvgABVq8drTIo82L0dhnuKNN29J4JaXkwlSKC.webp',
             ],
-
-            // --- FILTER ---
             [
                 'category_name' => 'Filter',
                 'vendor_name'   => 'Fuzhou ARTHAS Fluid Equip.Tech',
@@ -224,10 +221,8 @@ class CatalogSeeder extends Seeder
                 'code'          => 'F90TD',
                 'name'          => 'Disc Filter T-type 130 micron 3", max.50m³/h',
                 'description'   => 'Filter disc model T ukuran 3 inci debit jumbo (50 m³/jam). Ideal untuk pusat kontrol irigasi utama pabrik/perkebunan.',
-                'photo'         => 'products/F90TD.webp',
+                'photo'         => 'products/laBeZzdigl10hAB6SPQyx2QFE6a70HTVuR39dDqX.webp',
             ],
-
-            // --- SPRINKLER ---
             [
                 'category_name' => 'Sprinkler',
                 'vendor_name'   => 'Ningbo Shangda Plastic Hardware',
@@ -276,8 +271,6 @@ class CatalogSeeder extends Seeder
                 'description'   => 'Micro-sprinkler compensated (PC) debit stabil 35 liter/jam. Dilengkapi tiang pancang 8mm dan adaptor drat 1/2".',
                 'photo'         => 'products/MSPC0135T.webp',
             ],
-
-            // --- CONNECTOR ---
             [
                 'category_name' => 'Connector',
                 'vendor_name'   => 'ChinaDrip',
@@ -300,7 +293,7 @@ class CatalogSeeder extends Seeder
                 'code'          => 'LC0217B',
                 'name'          => 'Lock Ring Coupling Tape Dn17',
                 'description'   => 'Sambungan lurus (straight coupling) khusus selang pita drip tape 17mm dengan ring pengunci putar.',
-                'photo'         => 'products/LC0217B.webp',
+                'photo'         => 'products/JFJhR0VSwVYuRmwprKwNkj9QD7wvzCK4GwwzAn6X.webp',
             ],
             [
                 'category_name' => 'Connector',
@@ -470,8 +463,6 @@ class CatalogSeeder extends Seeder
                 'description'   => 'Adaptor drat luar 2 inci untuk sambungan pipa fleksibel LayFlat.',
                 'photo'         => 'products/7960632.webp',
             ],
-
-            // --- CONTROLLER ---
             [
                 'category_name' => 'Controller',
                 'vendor_name'   => 'HYRT Irrigation',
@@ -480,8 +471,6 @@ class CatalogSeeder extends Seeder
                 'description'   => 'Timer pengatur waktu irigasi otomatis multi-zona (4 hingga 11 stasiun). Mengontrol jadwal siram solenoid valve secara bergantian.',
                 'photo'         => 'products/HY10469.webp',
             ],
-
-            // --- DRIPPER ---
             [
                 'category_name' => 'Dripper',
                 'vendor_name'   => 'ChinaDrip',
@@ -498,8 +487,6 @@ class CatalogSeeder extends Seeder
                 'description'   => 'Emitter penetes tahan tekanan (Pressure Compensating) 4 liter/jam. Bisa dibuka-pasang untuk dibersihkan jika tersumbat.',
                 'photo'         => 'products/PCT0104.webp',
             ],
-
-            // --- DRIPLINE ---
             [
                 'category_name' => 'Dripline',
                 'vendor_name'   => 'ChinaDrip',
@@ -532,8 +519,6 @@ class CatalogSeeder extends Seeder
                 'description'   => 'Selang dripline tebal (1.2mm) tahan pemakaian bertahun-tahun. Fitur Anti-Siphon dan jarak emiter 50cm untuk kebun buah/kopi.',
                 'photo'         => 'products/PCAS01161205020.webp',
             ],
-
-            // --- FERTILIZER INJECTOR ---
             [
                 'category_name' => 'Fertilizer Injector',
                 'vendor_name'   => 'HYRT Irrigation',
