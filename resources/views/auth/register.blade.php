@@ -101,7 +101,7 @@
                         >
                             <option value="">-- Pilih Tujuan --</option>
                             <option value="Pesan barang" {{ old('visitor_purpose') == 'Pesan barang' ? 'selected' : '' }}>Pesan Barang Peralatan</option>
-                            <option value="Konsultasi teknis" {{ old('visitor_purpose') == 'Konsultasi teknis' ? 'selected' : '' }}>Konsultasi Teknis Lahan</option>
+                            <option value="Konsultasi teknis" {{ old('visitor_purpose') == 'Konsultasi teknis' || old('visitor_purpose') == 'Konsultasi teknis' ? 'selected' : '' }}>Konsultasi teknis Lahan</option>
                             <option value="Lain-lain" {{ old('visitor_purpose') == 'Lain-lain' ? 'selected' : '' }}>Lain-lain</option>
                         </select>
                     </div>
