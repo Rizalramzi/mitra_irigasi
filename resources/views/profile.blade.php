@@ -3,7 +3,13 @@
 @section('title', 'Profil Saya - Mitra Irigasi')
 
 @section('content')
-<div x-data="{ isEditing: {{ $errors->any() ? 'true' : 'false' }} }" class="py-8 bg-slate-50 min-h-screen">
+<div x-data="{ 
+    isEditing: {{ $errors->any() && !$errors->has('current_password') && !$errors->has('password') ? 'true' : 'false' }}, 
+    isChangingPassword: {{ $errors->has('current_password') || $errors->has('password') ? 'true' : 'false' }},
+    showCurrent: false,
+    showNew: false,
+    showConfirm: false
+}" class="py-8 bg-slate-50 min-h-screen">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- HEADER PROFIL -->
@@ -25,18 +31,29 @@
                 </div>
             </div>
 
-            <button 
-                @click="isEditing = !isEditing" 
-                class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs px-4 py-2.5 rounded-xl border border-slate-200 transition flex items-center gap-2 shrink-0"
-            >
-                <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
-                </svg>
-                <span x-text="isEditing ? 'Batal Edit' : 'Edit Profil'"></span>
-            </button>
+            <div class="flex flex-wrap items-center justify-center sm:justify-end gap-2 shrink-0">
+                <button 
+                    @click="isEditing = !isEditing; isChangingPassword = false" 
+                    class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs px-3.5 py-2.5 rounded-xl border border-slate-200 transition flex items-center gap-1.5"
+                >
+                    <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+                    </svg>
+                    <span x-text="isEditing ? 'Batal Edit' : 'Edit Profil'"></span>
+                </button>
+                <button 
+                    @click="isChangingPassword = !isChangingPassword; isEditing = false" 
+                    class="bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-bold text-xs px-3.5 py-2.5 rounded-xl border border-emerald-200 transition flex items-center gap-1.5"
+                >
+                    <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                    </svg>
+                    <span x-text="isChangingPassword ? 'Batal Password' : 'Ubah Password'"></span>
+                </button>
+            </div>
         </div>
 
-        <!-- NOTIFIKASI SUCCESS -->
+        <!-- NOTIFIKASI SUCCESS PROFIL -->
         @if(session('success'))
             <div class="bg-emerald-50 border-l-4 border-emerald-500 text-emerald-800 p-4 rounded-r-xl shadow-sm mb-6 text-xs sm:text-sm flex items-center gap-2">
                 <svg class="w-5 h-5 text-emerald-600 shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -46,10 +63,20 @@
             </div>
         @endif
 
+        <!-- NOTIFIKASI SUCCESS PASSWORD -->
+        @if(session('success_password'))
+            <div class="bg-emerald-50 border-l-4 border-emerald-500 text-emerald-800 p-4 rounded-r-xl shadow-sm mb-6 text-xs sm:text-sm flex items-center gap-2">
+                <svg class="w-5 h-5 text-emerald-600 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>{{ session('success_password') }}</span>
+            </div>
+        @endif
+
         <!-- ERROR VALIDASI -->
         @if($errors->any())
             <div class="bg-rose-50 border-l-4 border-rose-500 text-rose-800 p-4 rounded-r-xl shadow-sm mb-6 text-xs sm:text-sm">
-                <strong class="font-bold block mb-1">Gagal memperbarui profil:</strong>
+                <strong class="font-bold block mb-1">Terjadi kesalahan input:</strong>
                 <ul class="list-disc list-inside space-y-0.5">
                     @foreach($errors->all() as $error)
                         <li>{{ $error }}</li>
@@ -58,8 +85,8 @@
             </div>
         @endif
 
-        <!-- MODE DISPLAY DATA (NON-EDITING) -->
-        <div x-show="!isEditing" x-transition class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm space-y-6">
+        <!-- MODE DISPLAY DATA (NON-EDITING & NON-PASSWORD) -->
+        <div x-show="!isEditing && !isChangingPassword" x-transition class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm space-y-6">
             <h2 class="text-base font-bold text-slate-900 border-b border-slate-100 pb-3">
                 Informasi Pengguna
             </h2>
@@ -107,8 +134,8 @@
             </div>
         </div>
 
-        <!-- RIWAYAT PESANAN (HANYA MUNCUL DI NON-EDITING) -->
-        <div x-show="!isEditing" x-transition class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm mt-6 space-y-6">
+        <!-- RIWAYAT PESANAN (HANYA MUNCUL DI NON-EDITING & NON-PASSWORD) -->
+        <div x-show="!isEditing && !isChangingPassword" x-transition class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm mt-6 space-y-6">
             <h2 class="text-base font-bold text-slate-900 border-b border-slate-100 pb-3">
                 Riwayat Pesanan Saya
             </h2>
@@ -165,7 +192,7 @@
                 <div class="text-center py-8">
                     <div class="w-12 h-12 bg-slate-50 text-slate-400 rounded-xl flex items-center justify-center mx-auto mb-3 border border-slate-100">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 022 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
                         </svg>
                     </div>
                     <p class="text-slate-400 text-xs">Belum ada riwayat pesanan yang diajukan.</p>
@@ -173,7 +200,7 @@
             @endif
         </div>
 
-        <!-- MODE FORM EDITING -->
+        <!-- MODE FORM EDITING PROFIL -->
         <div x-show="isEditing" x-transition style="display: none;" class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm">
             <h2 class="text-base font-bold text-slate-900 border-b border-slate-100 pb-3 mb-6">
                 Edit Data Profil
@@ -275,6 +302,105 @@
                         class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-6 py-3 rounded-xl shadow-md shadow-emerald-200 transition"
                     >
                         Simpan Perubahan
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- MODE FORM UBAH PASSWORD -->
+        <div x-show="isChangingPassword" x-transition style="display: none;" class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+            <div class="flex items-center gap-3 border-b border-slate-100 pb-3 mb-6">
+                <div class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-base font-bold text-slate-900">Ubah Password Akun</h2>
+                    <p class="text-xs text-slate-500">Pastikan password baru Anda kuat dan mudah diingat.</p>
+                </div>
+            </div>
+
+            <form action="{{ route('profile.password.update') }}" method="POST" class="space-y-5">
+                @csrf
+                @method('PUT')
+
+                <!-- PASSWORD SAAT INI -->
+                <div>
+                    <label for="current_password" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                        Password Saat Ini <span class="text-rose-500">*</span>
+                    </label>
+                    <div class="relative">
+                        <input 
+                            :type="showCurrent ? 'text' : 'password'" 
+                            name="current_password" 
+                            id="current_password" 
+                            required 
+                            class="w-full px-4 py-3 pr-16 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition"
+                            placeholder="Masukkan password saat ini"
+                        >
+                        <button type="button" @click="showCurrent = !showCurrent" class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-xs font-semibold px-1 py-1">
+                            <span x-text="showCurrent ? 'Sembunyikan' : 'Lihat'"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <!-- PASSWORD BARU -->
+                    <div>
+                        <label for="password" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                            Password Baru <span class="text-rose-500">*</span>
+                        </label>
+                        <div class="relative">
+                            <input 
+                                :type="showNew ? 'text' : 'password'" 
+                                name="password" 
+                                id="password" 
+                                required 
+                                class="w-full px-4 py-3 pr-16 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition"
+                                placeholder="Minimal 8 karakter"
+                            >
+                            <button type="button" @click="showNew = !showNew" class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-xs font-semibold px-1 py-1">
+                                <span x-text="showNew ? 'Sembunyikan' : 'Lihat'"></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- KONFIRMASI PASSWORD BARU -->
+                    <div>
+                        <label for="password_confirmation" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                            Konfirmasi Password Baru <span class="text-rose-500">*</span>
+                        </label>
+                        <div class="relative">
+                            <input 
+                                :type="showConfirm ? 'text' : 'password'" 
+                                name="password_confirmation" 
+                                id="password_confirmation" 
+                                required 
+                                class="w-full px-4 py-3 pr-16 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition"
+                                placeholder="Ulangi password baru"
+                            >
+                            <button type="button" @click="showConfirm = !showConfirm" class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-xs font-semibold px-1 py-1">
+                                <span x-text="showConfirm ? 'Sembunyikan' : 'Lihat'"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TOMBOL ACTION PASSWORD -->
+                <div class="pt-4 flex justify-end gap-3 border-t border-slate-100">
+                    <button 
+                        type="button" 
+                        @click="isChangingPassword = false" 
+                        class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs px-5 py-3 rounded-xl transition"
+                    >
+                        Batal
+                    </button>
+                    <button 
+                        type="submit" 
+                        class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-6 py-3 rounded-xl shadow-md shadow-emerald-200 transition"
+                    >
+                        Perbarui Password
                     </button>
                 </div>
             </form>

@@ -23,6 +23,7 @@ Route::middleware('auth')->group(function () {
     // Profil User
     Route::get('/profile', [ProfileController::class, 'show'])->name('profile');
     Route::put('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::put('/profile/password', [ProfileController::class, 'updatePassword'])->name('profile.password.update');
 
     // ... route auth lainnya ...
 });
