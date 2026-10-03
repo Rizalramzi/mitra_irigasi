@@ -64,11 +64,15 @@ class ChatController extends Controller
                 ],
                 'generationConfig' => [
                     'temperature' => 0.3,
-                    'maxOutputTokens' => 9999999,
+                    'maxOutputTokens' => 2048,
                 ]
             ];
 
-            Log::debug('Sending request to Gemini API for Mitra Irigasi...', ['url' => "https://generativelanguage.googleapis.com/v1beta/models/{$model}:generateContent"]);
+            try {
+                Log::debug('Sending request to Gemini API for Mitra Irigasi...', ['url' => "https://generativelanguage.googleapis.com/v1beta/models/{$model}:generateContent"]);
+            } catch (\Throwable $e) {
+                // Ignore log file permission errors
+            }
             
             $response = Http::withHeaders([
                 'Content-Type' => 'application/json',
@@ -82,13 +86,23 @@ class ChatController extends Controller
                 ]);
             }
 
-            Log::error('Gemini API Response failure: ' . $response->status(), ['body' => $response->body()]);
+            try {
+                Log::error('Gemini API Response failure: ' . $response->status(), ['body' => $response->body()]);
+            } catch (\Throwable $e) {
+                // Ignore log file permission errors
+            }
+
             return response()->json([
                 'reply' => "Waduh, koneksi ke asisten AI sedang mengalami gangguan (status code: " . $response->status() . "). Silakan coba beberapa saat lagi."
             ], 500);
 
         } catch (\Exception $e) {
-            Log::error('Gemini Controller Exception: ' . $e->getMessage(), ['trace' => $e->getTraceAsString()]);
+            try {
+                Log::error('Gemini Controller Exception: ' . $e->getMessage(), ['trace' => $e->getTraceAsString()]);
+            } catch (\Throwable $logException) {
+                // Ignore log file permission errors
+            }
+
             return response()->json([
                 'reply' => "Terjadi kesalahan internal pada server saat memproses pertanyaan Anda."
             ], 500);
