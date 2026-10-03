@@ -40,6 +40,7 @@ class ProductForm
                     ->maxLength(255),
                 FileUpload::make('photo')
                     ->image()
+                    ->acceptedFileTypes(['image/jpeg', 'image/png', 'image/webp', 'image/gif', 'image/svg+xml'])
                     ->disk('public')
                     ->directory('products')
                     ->visibility('public')
