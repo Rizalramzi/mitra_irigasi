@@ -51,6 +51,13 @@ Route::get('/guide', [KatalogController::class, 'guide'])->name('guide');
 Route::get('/orders/track', [OrderController::class, 'track'])->name('orders.track');
 Route::get('/orders/{order_number}/invoice', [OrderController::class, 'invoice'])->name('orders.invoice');
 
+// Route Dynamic Sitemap XML
+Route::get('/sitemap.xml', function () {
+    $categories = Category::withCount('products')->get();
+    $content = view('sitemap', compact('categories'));
+    return response($content, 200)->header('Content-Type', 'text/xml');
+})->name('sitemap');
+
 // 3. API Endpoint Chatbot
 // Route::post('/api/chat', function (Request $request) {
 //     $messages = $request->input('messages', []);

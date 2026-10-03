@@ -5,7 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
-    <title>@yield('title', 'Mitra Irigasi - Solusi Air Pertanian')</title>
+    <!-- PRIMARY METADATA -->
+    <title>@yield('title', 'Mitra Irigasi - Solusi Peralatan & Sistem Irigasi Pertanian Modern')</title>
+    <meta name="description" content="@yield('meta_description', 'Mitra Irigasi adalah penyedia peralatan dan sistem irigasi pertanian modern di Indonesia. Temukan produk sprinkler, irigasi tetes (drip), solenoid valve, controller, serta layanan konsultasi pengairan lahan.')">
+    <meta name="keywords" content="@yield('meta_keywords', 'irigasi, sistem irigasi tetes, sprinkler, drip irrigation, alat pertanian, solenoid valve, pengairan lahan, mitra irigasi')">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Mitra Irigasi">
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    <!-- OPEN GRAPH / FACEBOOK / WHATSAPP -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="@yield('og_title', 'Mitra Irigasi - Solusi Peralatan & Sistem Irigasi Pertanian Modern')">
+    <meta property="og:description" content="@yield('og_description', 'Penyedia peralatan dan komponen sistem irigasi pertanian modern terpercaya di Indonesia. Efisiensi air, hemat tenaga kerja, dan tingkatkan hasil panen.')">
+    <meta property="og:image" content="@yield('og_image', asset('storage/logo_mitra_irigasi.png'))">
+    <meta property="og:site_name" content="Mitra Irigasi">
+    <meta property="og:locale" content="id_ID">
+
+    <!-- TWITTER CARDS -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{ url()->current() }}">
+    <meta name="twitter:title" content="@yield('twitter_title', 'Mitra Irigasi - Solusi Peralatan & Sistem Irigasi Pertanian Modern')">
+    <meta name="twitter:description" content="@yield('twitter_description', 'Penyedia peralatan dan komponen sistem irigasi pertanian modern terpercaya di Indonesia.')">
+    <meta name="twitter:image" content="@yield('twitter_image', asset('storage/logo_mitra_irigasi.png'))">
 
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="{{ asset('storage/logo_mitra_irigasi.png') }}">
@@ -19,9 +41,46 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
+    <!-- STRUCTURED DATA (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Mitra Irigasi",
+      "url": "https://mitra-irigasi.com",
+      "logo": "{{ asset('storage/logo_mitra_irigasi.png') }}",
+      "description": "Penyedia peralatan dan komponen sistem irigasi pertanian modern terpercaya di Indonesia.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+62-821-4201-0020",
+        "contactType": "customer service",
+        "areaServed": "ID",
+        "availableLanguage": ["Indonesian"]
+      },
+      "sameAs": [
+        "https://www.tiktok.com/@mitrairigasi",
+        "https://www.instagram.com/mitrairigasi"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Mitra Irigasi",
+      "url": "https://mitra-irigasi.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://mitra-irigasi.com/katalog?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
     </style>
+    @stack('scripts')
 </head>
 <body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen antialiased">
 

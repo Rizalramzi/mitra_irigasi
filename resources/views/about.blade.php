@@ -1,6 +1,20 @@
 @extends('layouts.app')
 
-@section('title', 'Tentang Kami - Mitra Irigasi')
+@section('title', 'Tentang Kami - Mitra Irigasi Indonesia')
+@section('meta_description', 'Profil dan komitmen Mitra Irigasi sebagai spesialis penyedia teknologi dan peralatan irigasi presisi untuk petani & pengelola kebun di Indonesia.')
+@section('meta_keywords', 'tentang mitra irigasi, profile mitra irigasi, supplier irigasi indonesia, penyedia sprinkler, distributor drip irrigation')
+
+@push('scripts')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "Tentang Mitra Irigasi",
+  "description": "Spesialis teknologi dan perlengkapan irigasi presisi untuk petani dan pengelola kebun di seluruh Indonesia.",
+  "url": "https://mitra-irigasi.com/about"
+}
+</script>
+@endpush
 
 @section('content')
 <div class="py-10 bg-slate-50 min-h-screen">

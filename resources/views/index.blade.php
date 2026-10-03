@@ -1,6 +1,39 @@
 @extends('layouts.app')
 
-@section('title', 'Mitra Irigasi - Solusi Peralatan Irigasi Pertanian')
+@section('title', 'Mitra Irigasi - Solusi Peralatan & Sistem Irigasi Pertanian Modern')
+@section('meta_description', 'Penyedia peralatan dan komponen sistem irigasi pertanian modern terpercaya di Indonesia. Drip irrigation, sprinkler, solenoid valve, controller & konsultasi pengairan lahan.')
+@section('meta_keywords', 'irigasi, sistem irigasi tetes, sprinkler, drip irrigation, alat pertanian, solenoid valve, mitra irigasi, fertigasi, pengairan lahan')
+
+@push('scripts')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Bagaimana cara melakukan pemesanan barang?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Pilih produk dari halaman Katalog, masukkan ke Keranjang Belanja, lalu klik tombol Checkout WA. Draf pesanan Anda akan otomatis terkirim ke WhatsApp Admin untuk konfirmasi ketersediaan dan harga final."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Apakah harga peralatan bisa dinegosiasikan?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ya, untuk pembelian jumlah banyak (grosir) atau proyek pengairan lahan luas, Admin Mitra Irigasi akan memberikan harga penawaran khusus."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Apakah menerima pengiriman ke luar daerah?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tentu saja! Kami siap mengirimkan paket perlengkapan irigasi ke seluruh wilayah Indonesia melalui ekspedisi cargo terpercaya."
+    }
+  }]
+}
+</script>
+@endpush
 
 @section('content')
 

@@ -1,0 +1,1739 @@
+# Profil Mitra Irigasi
+
+Mitra Irigasi adalah perusahaan penyedia solusi irigasi cerdas (smart irrigation), manajemen sumber daya air, dan otomatisasi pertanian terkemuka di Indonesia.
+
+Nama: MinRig
+Tujuan: Untuk asisten bagi pelanggan yang ingin konsultasi secara real-time
+Karakteristik: Keren, elegan, profesional, mudah dipahami oleh para petani indonesia
+
+
+## Visi Perusahaan
+- Menyediakan sarana irigasi modern bagi petani lokal Indonesia dengan teknologi tepat guna, harga terjangkau dan mudah aplikasinya.
+- Memberikan bimbingan dan konsultasi sistem irigasi modern kepada petani lokal Indonesia.
+
+## Kontak & Informasi Perusahaan
+- *Alamat*:  Jl. Laguna Raya L6 no.11-15, Pakuwon City, Kejawan Putih, Mulyorejo, Surabaya, Jawa Timur, 60112 
+- *Email*: mitrairigasi.id@gmail.com
+- *Whatsapp*: +62 821-4201-0020
+
+**SHANDOND HYRT WATER-SAVING IRRIGATION CO.,LTD.**
+
+_China Water Saving Irrigation_
+
+**KATALOG PRODUK**
+
+**Daftar Lengkap Produk HYRT — Edisi 2026**
+
+Disusun berdasarkan HYRT Catalog 2025
+
+# BAB 1 Valve (Katup & Pengontrol Aliran Irigasi)
+
+_VALVE merupakan jajaran komponen pengontrol, pengatur, dan pengaman aliran air yang dirancang khusus untuk mengendalikan tekanan, melepaskan akumulasi udara, serta mengatur distribusi debit air secara presisi dalam jaringan perpipaan. Komponen ini mencakup Kinetic Air Release Valve (katup pelepasan & pengisian udara), Pressure Relief Valve (katup pelepas tekanan berlebih), Pressure Reducing Valve (katup pengatur/penurun tekanan), serta Hydraulic & Solenoid Valve (katup kontrol otomatis)._
+
+**Keunggulan Kategori VALVE:**
+
+- Material Engineering Grade: Dibuat dari polimer teknis berkualitas tinggi (seperti Glass-filled Nylon, PA, dan PP) serta komponen stainless steel (SUS304) yang sangat tahan terhadap korosi, radiasi sinar UV, dan paparan zat kimia pupuk (fertigation).
+- Pengendalian Presisi & Perlindungan Sistem: Mampu merespons fluktuasi tekanan hidrolik dengan cepat untuk mencegah bahaya lonjakan tekanan (water hammer), jebakan vakum, serta kebocoran pada pipa.
+- Operasi Mandiri & Efisiensi Energi: Beroperasi secara otomatis memanfaatkan tekanan air internal sistem tanpa memerlukan konsumsi daya listrik tambahan (pada tipe hidrolik/mekanis) sehingga hemat energi dan andal untuk jangka panjang.
+
+**Aplikasi Utama:**
+
+Digunakan sebagai pengaman dan pengatur aliran pada jaringan pipa utama (mainline), stasiun sistem filtrasi (headworks), percabangan zona irigasi tetes (drip), sprinkler, hingga pengolahan air industri dan perkebunan skala besar.
+
+## 1\. Kinetic Air Release Valve ¾" (KA-11-25)
+
+Kinetic Air Release Valve ¾" (kode item KA-11-25 / Model C21) adalah katup udara kinetik berukuran ¾ inci (DN20) yang dirancang khusus untuk mengoptimalkan efisiensi aliran air dan melindungi sistem perpipaan irigasi pertanian, lanskap, jaringan filtrasi, serta distribusi air industri. Katup ini bekerja secara otomatis untuk mengeluarkan udara dalam jumlah besar saat pipa diisi air (pipeline filling) dan memasukkan udara secara cepat saat pipa dikosongkan (draining) guna mencegah terbentuknya tekanan vakum (negative pressure) yang dapat merusak struktur pipa.
+
+**Keunggulan Produk:**
+
+- Desain Aerodinamis Canggih & Anti-Closure: Menggunakan teknologi aerodinamis modern dengan one-piece float ball yang presisi untuk mencegah katup menutup secara tidak sengaja (premature closing) akibat terdorong aliran udara berkecepatan tinggi.
+- Perlindungan Vakum Maksimal (Vacuum Breaking): Memasukkan udara dalam volume besar secara instan saat terjadi penyedotan balik atau penurunan tekanan mendadak, mencegah pipa menyok (collapse) atau kempis.
+- Penyegelan Tekanan Rendah (Dynamic Sealing): Mampu menyegel dengan rapat bebas bocor bahkan pada tekanan air sangat rendah (mulai dari 0.2 bar / 2.9 psi).
+- Dilengkapi Insect Screen & Hood Pelindung: Dilengkapi kassa penahan serangga dan tudung buangan terintegrasi untuk mencegah masuknya serangga, debu, atau kotoran dari luar yang dapat menyumbat lubang katup.
+- Material Rekayasa Tahan Kimia & UV: Dibuat dari gabungan material Poliamida (PA) dan Polipropilena (PP) berkualitas tinggi yang tahan korosi, paparan sinar matahari (outdoor UV), serta aman terhadap paparan pupuk cair (fertigation).
+
+**Detail Produk:**
+
+- Nama Produk: Kinetic Air Release Valve ¾"
+- Kategori: Kinetic Air Valve / Katup Udara Kinetik
+- Kode Item (Item No.): KA-11-25
+- Model: C21 / KA11 Series
+- Ukuran Sambungan (Connection Size): ¾ Inci (DN20)
+- Tipe Drat (Connections): BSPT / NPT
+- Luas Lubang Udara (Orifice Size): 288 mm²
+- Tekanan Kerja (Working Pressure): 0.2 – 16.0 Bar (2.9 – 232 psi)
+- Material Bodi: Poliamida (PA) & Polipropilena (PP)
+- Komponen Internal: One-piece Float Ball, Dynamic Seal, Insect Screen
+- Dimensi (P × L × T): 109 mm × 78 mm × 66 mm
+- Berat Bersih: 185 Gram
+
+## 2\. Kinetic Air Release Valve 1" (KA-11-32)
+
+Kinetic Air Release Valve 1" (kode item KA-11-32 / Model C21) adalah katup udara kinetik berukuran 1 inci (DN25) yang berfungsi mengamankan dan meningkatkan efisiensi operasional jaringan irigasi, sistem filtrasi air, dan pipa distribusi utama. Dengan ukuran sambungan 1 inci, katup ini sangat ideal dipasang pada manifold atau titik-titik tertinggi perpipaan untuk melepaskan penumpukan kantong udara saat pengisian air serta mencegah jebakan vakum saat sistem dikosongkan002E
+
+**Keunggulan Produk:**
+
+- Kapasitas Pelepasan Udara Optimal: Menawarkan performa pelepasan dan pengisian udara yang cepat dengan luas orifice 288 mm², disesuaikan untuk kebutuhan sambungan 1 inci.
+- Sistem Mekanis Anti-Blowout: Pelampung tunggal terintegrasi menjaga agar lubang pembuangan tidak tersumbat secara mendadak oleh dorongan angin kencang sebelum seluruh udara dalam pipa keluar sepenuhnya.
+- Mencegah Water Hammer & Fluktuasi Tekanan: Membantu menstabilkan arus hidrolik dalam pipa, mengurangi risiko lonjakan tekanan (water hammer), dan menjaga keutuhan alat ukur seperti water meter.
+- Perpindahan Udara & Penyegelan Presisi: Mampu menahan tekanan kerja dinamis hingga 16 bar sekaligus menjaga kekedapan sempurna pada tekanan rendah minimum 0.2 bar.
+- Konstruksi Tahan Lama & Bebas Perawatan: Bodi berbahan plastik rekayasa tebal (PA & PP) yang tahan terhadap cairan kimia, asam, basa, serta kondisi lingkungan industri maupun lapangan terbuka.
+
+**Detail Produk:**
+
+- Nama Produk: Kinetic Air Release Valve 1"
+- Kategori: Kinetic Air Valve / Katup Udara Kinetik
+- Kode Item (Item No.): KA-11-32
+- Model: C21 / KA11 Series
+- Ukuran Sambungan (Connection Size): 1 Inci (DN25)
+- Tipe Drat (Connections): BSPT / NPT
+- Luas Lubang Udara (Orifice Size): 288 mm²
+- Tekanan Kerja (Working Pressure): 0.2 – 16.0 Bar (2.9 – 232 psi)
+- Material Bodi: Poliamida (PA) & Polipropilena (PP)
+- Komponen Internal: One-piece Float Ball, Dynamic Seal, Insect Screen
+- Dimensi (P × L × T): 109 mm × 78 mm × 66 mm
+- Berat Bersih: 185 Gram
+
+# BAB 2 Screen Filter (Sistem Filtrasi Jaring Presisi)
+
+_SCREEN FILTER merupakan jajaran peralatan penyaringan air berbasis jaring (screen mesh) presisi yang dirancang khusus untuk menyaring kotoran fisik, endapan lumpur, pasir, dan partikel tersuspensi dari sumber air guna melindungi emiter irigasi serta jaringan perpipaan dari penyumbatan. Kategori ini mencakup Manual Screen Filter (tipe Y-Type dan T-Type), Semi-Automatic Screen Filter (Spiral Clean / Suction System), hingga Automatic Backwash Screen Filter untuk kebutuhan debit air kontinu._
+
+**Keunggulan Kategori SCREEN FILTER:**
+
+- Elemen Saringan Stainless Steel & Material Engineering Grade: Menggunakan jaring saringan berbahan stainless steel berkualitas tinggi (SUS304/SUS316) yang dibalut kerangka polimer rekayasa (Polipropilena/Poliamida) tahan korosi, paparan sinar UV, serta bahan kimia pupuk (fertigation).
+- Filtrasi Presisi & Aliran Lancar: Menyediakan opsi tingkat kerapatan penyaringan beragam (20 hingga 400 mikron / 40 hingga 300 mesh) dengan struktur jaring woven 3D yang mampu menahan kotoran secara maksimal tanpa memicu penurunan tekanan (pressure drop) berlebih.
+- Mekanisme Pembersihan Praktis & Hemat Air: Tersedia pilihan metode pembersihan mulai dari pembongkaran manual yang cepat melalui tutup ulir ergonomis, sistem Spiral Clean yang dapat membersihkan jaring tanpa membongkar filter, hingga sistem backwash otomatis dengan konsumsi air pembilas minimal.
+- Konstruksi Kedap & Tahan Tekanan Tinggi: Dirancang untuk mampu menahan tekanan kerja hingga 8 bar, dilengkapi sistem penyegelan gasket presisi untuk mencegah kebocoran pada jaringan perpipaan utama maupun cabang.
+
+**Aplikasi Utama:**
+
+Digunakan sebagai unit penyaring utama (headworks) maupun penyaring sekunder (field/secondary filter) pada sistem irigasi tetes (drip irrigation), micro-sprinkler, pertanian lahan terbuka, rumah kaca (greenhouse), penyiraman lanskap/taman, hingga sistem penyaringan air bersih industri.
+
+## 1\. Screen Filter Y-Type 1" (F32YS)
+
+Screen Filter Y-Type 1" (kode item F32YS) adalah unit penyaring air kompak berukuran 1 inci yang dirancang untuk menyaring kotoran dan partikel fisik tersuspensi pada sistem irigasi berkapasitas kecil hingga sedang. Dilengkapi elemen screen kawat stainless steel berkualitas tinggi dengan kerapatan 130 mikron (120 mesh), filter ini mampu mengalirkan debit air hingga 6.0 m³/jam pada tekanan kerja maksimum 8 bar.
+
+**Keunggulan Produk:**
+
+- Elemen Filter Stainless Steel: Jaring saringan berbahan stainless steel tahan karat, asam, dan basa yang kuat serta awet untuk pemakaian jangka panjang.
+- Desain Ringkas & Hemat Ruang: Konstruksi tipe Y yang ekonomis memudahkan pemasangan di area instalasi yang sempit atau terbatas.
+- Preset Port Pressure Gauge: Dilengkapi 2 port khusus terintegrasi pada bodi untuk kemudahan pemasangan alat pengukur tekanan (pressure gauge).
+- Kemudahan Perawatan: Sistem penutup ulir (threaded closure system) memudahkan proses pembongkaran elemen penyaring saat pembilasan atau pembersihan.
+- Tahan Kimia & UV: Bodi berbahan polipropilena (polypropylene injection molding) yang tahan korosi dan bahan kimia pupuk (fertigation).
+
+**Detail Produk:**
+
+- Nama Produk: Screen Filter Y-type 130 micron 1"
+- Kategori: Screen Filter / Y-Type Filter
+- Kode Item (Item No.): F32YS
+- Ukuran Sambungan (Connection Size): 1 Inci (BSP/NPT)
+- Tingkat Filtrasi (Filtration Grade): 130 Mikron / 120 Mesh (Merah)
+- Laju Aliran Maksimum (Max Flow): 6.0 m³/Jam
+- Tekanan Kerja Maksimum (Working Pressure): 8.0 Bar
+- Luas Area Filtrasi (Filtering Surface): 160 cm²
+- Material Utama: Bodi Polipropilena (PP), Saringan Stainless Steel Mesh
+- Dimensi (H × W × D): 173 mm × 176 mm × 93 mm
+- Berat Bersih: 0.30 kg
+
+## 2\. Screen Filter Y-Type 1.5" (F50YS)
+
+Screen Filter Y-Type 1.5" (kode item F50YS) adalah penyaring air tipe Y berukuran 1.5 inci (DN40) yang dirancang untuk kebutuhan filtrasi debit sedang pada jaringan irigasi pertanian, ruang terbuka hijau, dan penyiraman lanskap. Memiliki luas area penyaringan 265 cm², alat ini menjamin pasokan air bersih berkapasitas hingga 14.0 m³/jam dengan tingkat kerapatan penyaringan 130 mikron.
+
+**Keunggulan Produk:**
+
+- Kapasitas Aliran Sedang-Tinggi: Mampu mengalirkan debit air hingga 14 m³/jam tanpa menimbulkan efek head loss (penurunan tekanan) yang signifikan.
+- Teknologi Tenun Presisi: Screen mesh stainless steel dibuat dengan teknologi tenun canggih untuk ketahanan aus maksimum dan daya saring tinggi.
+- Pengamanan Sambungan Kedap: Dilengkapi gasket berkualitas pada tutup filter untuk menjamin kerapatan total dan mencegah kebocoran air.
+- Koneksi Dual Pressure Gauge: Memudahkan pemantauan tingkat penyumbatan filter melalui perbedaan tekanan inlet dan outlet.
+- Bebas Korosi: Seluruh komponen tahan terhadap pupuk cair, paparan sinar UV, serta kondisi air yang agak asam/basa.
+
+**Detail Produk:**
+
+- Nama Produk: Screen Filter Y-type 130 micron 1-½"
+- Kategori: Screen Filter / Y-Type Filter
+- Kode Item (Item No.): F50YS
+- Ukuran Sambungan (Connection Size): 1.5 Inci / 1-½" (BSP/NPT)
+- Tingkat Filtrasi (Filtration Grade): 130 Mikron / 120 Mesh (Merah)
+- Laju Aliran Maksimum (Max Flow): 14.0 m³/Jam
+- Tekanan Kerja Maksimum (Working Pressure): 8.0 Bar
+- Luas Area Filtrasi (Filtering Surface): 265 cm²
+- Material Utama: Bodi Polipropilena (PP), Saringan Stainless Steel Mesh
+- Dimensi (H × W × D): 230 mm × 250 mm × 120 mm
+- Berat Bersih: 0.72 kg
+
+## 3\. Screen Filter Y-Type 2" (F63YS)
+
+Screen Filter Y-Type 2" (kode item F63YS) adalah unit penyaring air berkapasitas besar berukuran 2 inci (DN50) yang ideal dipasang pada stasiun filtrasi utama (headworks) atau percabangan zona irigasi berdebit tinggi. Dengan luas penyaringan 485 cm², filter ini sanggup mengolah laju aliran hingga 25.0 m³/jam untuk melindungi penetes (drip emitter) dan micro-sprinkler dari penyumbatan.
+
+**Keunggulan Produk:**
+
+- Luas Penyaringan Ekstra Luas: Area filtrasi 485 cm² memungkinkan filter menampung lebih banyak kotoran sebelum membutuhkan pembilasan/pembersihan.
+- Performa Andal Tekanan Tinggi: Beroperasi dengan aman hingga tekanan 8 bar untuk jaringan pipa distribusi utama.
+- Sistem Buka-Tutup Cepat & Praktis: Tutup ulir ergonomis memudahkan pengguna melepas cartridge saringan saat perawatan rutin tanpa membutuhkan kunci/alat khusus.
+- Konstruksi Tangguh & Awet: Dibuat dari material polimer teknis tebal dan kawat stainless steel yang tidak mudah robek atau terdeformasi oleh tekanan air.
+- Dua Port Manometer Terintegrasi: Memungkinkan pemasangan dua pressure gauge untuk indikasi waktu pembilasan yang presisi.
+
+**Detail Produk:**
+
+- Nama Produk: Screen Filter Y-type 130 micron 2"
+- Kategori: Screen Filter / Y-Type Filter
+- Kode Item (Item No.): F63YS
+- Ukuran Sambungan (Connection Size): 2 Inci (BSP/NPT)
+- Tingkat Filtrasi (Filtration Grade): 130 Mikron / 120 Mesh (Merah)
+- Laju Aliran Maksimum (Max Flow): 25.0 m³/Jam
+- Tekanan Kerja Maksimum (Working Pressure): 8.0 Bar
+- Luas Area Filtrasi (Filtering Surface): 485 cm²
+- Material Utama: Bodi Polipropilena (PP), Saringan Stainless Steel Mesh
+- Dimensi (H × W × D): 260 mm × 290 mm × 140 mm
+- Berat Bersih: 0.98 kg
+
+## 4\. Screen Filter Y-Type 3" (F90YS)
+
+Screen Filter Y-Type 3" (kode item F90YS) adalah katup penyaring kotoran terbesar dalam seri Y-Type berukuran 3 inci (DN80) yang dirancang untuk instalasi irigasi pertanian skala luas, perkebunan, dan sistem filtrasi utama industri. Dilengkapi area penyaringan sebesar 565 cm², alat ini mampu mengalirkan debit air hingga 35.0 m³/jam secara konsisten dan efisien.
+
+**Keunggulan Produk:**
+
+- Kapasitas Debit Maksimal: Mengalirkan laju air hingga 35 m³/jam, sangat ideal untuk pipa utama dan manifold utama irigasi perkebunan.
+- Daya Saring Tinggi 130 Mikron: Menyaring partikel pasir, lumut, dan kotoran mikro hingga 130 mikron demi menjaga kelancaran emiter irigasi tetes skala besar.
+- Material Tahan Cuaca Ekstrem: Konstruksi heavy-duty polypropylene tahan terhadap gesekan mekanis, cuaca outdoor, sinar UV, dan bahan kimia fertigation.
+- Perawatan Cepat & Hemat Biaya Operasional: Pembongkaran elemen screen dilakukan dengan cepat secara manual sehingga meminimalkan waktu downtime penyiraman.
+- Pemantauan Tekanan Otomatis/Manual: Tersedia dudukan khusus untuk pemasangan indikator tekanan hidrolik inlet dan outlet.
+
+**Detail Produk:**
+
+- Nama Produk: Screen Filter Y-type 130 micron 3"
+- Kategori: Screen Filter / Y-Type Filter
+- Kode Item (Item No.): F90YS
+- Ukuran Sambungan (Connection Size): 3 Inci (BSP/NPT)
+- Tingkat Filtrasi (Filtration Grade): 130 Mikron / 120 Mesh (Merah)
+- Laju Aliran Maksimum (Max Flow): 35.0 m³/Jam
+- Tekanan Kerja Maksimum (Working Pressure): 8.0 Bar
+- Luas Area Filtrasi (Filtering Surface): 565 cm²
+- Material Utama: Bodi Polipropilena (PP), Saringan Stainless Steel Mesh
+- Dimensi (H × W × D): 330 mm × 360 mm × 168 mm
+- Berat Bersih: 2.10 kg
+
+# BAB 3 Disc Filter (Sistem Filtrasi Cakram Presisi)
+
+_DISC FILTER merupakan jajaran peralatan penyaringan air berbasis teknologi piringan/cakram berlarik (grooved disc) yang menggabungkan metode penyaringan permukaan (surface filtration) dan penyaringan kedalaman (depth filtration). Dirancang khusus untuk menangkap kotoran organik, pasir, algae, serta partikel padat dalam jumlah besar guna melindungi emiter irigasi tetes (drip irrigation) dan sprinkler dari penyumbatan. Kategori ini mencakup Y-Type Disc Filter yang ekonomis dan ringkas, serta T-Type Disc Filter berkapasitas ekstra besar untuk distribusi air utama._
+
+**Keunggulan Kategori DISC FILTER:**
+
+- Teknologi Grooved Disc (Depth Filtration): Piringan polipropilena dengan alur bertekanan tinggi menghasilkan rongga penyaringan mikroskopis berlapis yang mampu menahan kotoran padat jauh lebih banyak dibandingkan saringan jaring biasa.
+- Material Tahan Kimia & UV: Dibuat dari bahan polimer teknis berdensitas tinggi yang tahan terhadap paparan sinar matahari (UV), korosi, serta bahan kimia pupuk (fertigation).
+- Desain Pengunci Aman & Praktis: Dilengkapi sistem threaded closure dan effective closure system yang memungkinkan piringan dilonggarkan untuk dicuci tanpa risiko tercecer atau hilang.
+- Fitur Pemantauan & Pembilasan: Memiliki 2 port preset untuk pemasangan alat pengukur tekanan (pressure gauge) serta saluran pembilas (drain connection).
+
+**Aplikasi Utama:**
+
+- Sistem Irigasi Tetes (Drip Irrigation) & Micro-Sprinkler: Menjadi proteksi utama dalam mencegah penyumbatan pada emiter/penetes akibat penumpukan kotoran organik, alga, lumut, dan endapan lumpur halus.
+- Stasiun Filtrasi Utama (Headworks) & Sekunder: Dipasang pada stasiun pompa utama (headworks) maupun percabangan zona (field filter) pada pertanian lahan terbuka (open field) dan perkebunan skala sedang hingga besar.
+- Sistem Fertigasi & Rumah Kaca (Greenhouse): Menyaring air irigasi presisi dan larutan pupuk cair guna memastikan distribusi nutrisi berjalan lancar tanpa menyumbat nosel atau jalur penetes.
+- Lanskap & Penghijauan Perkotaan (Municipal & Garden Irrigation): Digunakan pada sistem penyiraman otomatis untuk taman kota, fasilitas olahraga/lapangan golf, area hijau publik, serta vegetasi jalan raya.
+- Pre-Filtrasi Air Industri & Domestik: Berfungsi sebagai unit penyaring awal (pre-filter) untuk air baku rumah tangga, instalasi pengolahan air bersih, hingga sistem sirkulasi air industry.
+
+## 1\. Screen Filter Y-Type 3" (F90YS)
+
+Disc Filter Y-Type 1" (kode item F32YD) adalah penyaring air tipe Y berukuran 1 inci yang memanfaatkan teknologi piringan berlarik (grooved disc) untuk filtrasi tingkat kedalaman. Sangat ideal digunakan pada sistem irigasi berdebit kecil hingga sedang dengan kapasitas aliran hingga 6.0 m³/jam pada tekanan kerja maksimum 8 bar.
+
+**Deskripsi Produk:**
+
+- Nama Produk: Disc Filter Y-type 130 micron 1"
+- Kategori: Disc Filter / Y-Type
+- Kode Item (Item No.): F32YD
+- Ukuran Sambungan (Connection Size): 1 Inci (BSP/NPT)
+- Tingkat Filtrasi (Filtration Grade): 130 Mikron / 120 Mesh (Elemen Merah)
+- Laju Aliran Maksimum (Max Flow): 6.0 m³/Jam
+- Tekanan Kerja Maksimum (Working Pressure): 8.0 Bar
+- Luas Area Filtrasi (Filtering Surface): 180 cm²
+- Dimensi (H × W × D): 173 mm × 176 mm × 93 mm
+- Berat Bersih: 0.39 kg
+- Keunggulan Utama: Ukuran ringkas untuk area sempit, sistem penyegelan gasket tahan bocor, serta kemudahan pembersihan piringan secara manual.
+
+## 2\. Disc Filter Y-Type 1.5" (F50YD)
+
+Disc Filter Y-Type 1.5" (kode item F50YD) dirancang untuk kebutuhan penyaringan debit sedang pada jaringan irigasi pertanian dan lanskap. Memiliki luas area penyaringan 300 cm², unit ini mampu mengalirkan air hingga 14.0 m³/jam secara efisien dengan tingkat kerapatan 130 mikron.
+
+**Deskripsi Produk:**
+
+- Nama Produk: Disc Filter Y-type 130 micron 1-½"
+- Kategori: Disc Filter / Y-Type
+- Kode Item (Item No.): F50YD
+- Ukuran Sambungan (Connection Size): 1.5 Inci / 1-½" (BSP/NPT)
+- Tingkat Filtrasi (Filtration Grade): 130 Mikron / 120 Mesh (Elemen Merah)
+- Laju Aliran Maksimum (Max Flow): 14.0 m³/Jam
+- Tekanan Kerja Maksimum (Working Pressure): 8.0 Bar
+- Luas Area Filtrasi (Filtering Surface): 300 cm²
+- Dimensi (H × W × D): 230 mm × 250 mm × 120 mm
+- Berat Bersih: 0.96 kg
+- Keunggulan Utama: Menampung kotoran lebih banyak tanpa menyebabkan penurunan tekanan (head loss) drastis, tahan bahan kimia pupuk cair.
+
+## 3\. Disc Filter Y-Type 2" (F63YD)
+
+Disc Filter Y-Type 2" (kode item F63YD) merupakan unit filtrasi berkapasitas besar berukuran 2 inci (DN50) dengan luas penyaringan 525 cm². Mampu menangani debit air hingga 25.0 m³/jam, filter ini sangat andal dipasang pada blok penyiraman utama atau stasiun filtrasi perkebunan.
+
+**Deskripsi Produk:**
+
+- Nama Produk: Disc Filter Y-type 130 micron 2"
+- Kategori: Disc Filter / Y-Type
+- Kode Item (Item No.): F63YD
+- Ukuran Sambungan (Connection Size): 2 Inci (BSP/NPT)
+- Tingkat Filtrasi (Filtration Grade): 130 Mikron / 120 Mesh (Elemen Merah)
+- Laju Aliran Maksimum (Max Flow): 25.0 m³/Jam
+- Tekanan Kerja Maksimum (Working Pressure): 8.0 Bar
+- Luas Area Filtrasi (Filtering Surface): 525 cm²
+- Dimensi (H × W × D): 260 mm × 290 mm × 140 mm
+- Berat Bersih: 1.36 kg
+- Keunggulan Utama: Konstruksi tahan banting (heavy-duty), dilengkapi port manometer ganda untuk pemantauan tingkat penyumbatan secara langsung.
+
+## 4\. Disc Filter Y-Type 3" (F90YD)
+
+Disc Filter Y-Type 3" (kode item F90YD) adalah filter tipe Y terbesar dalam jajarannya, dirancang untuk jaringan distribusi irigasi perkebunan skala luas. Dengan luas area penyaringan 600 cm², alat ini sanggup menyaring debit air tinggi hingga 35.0 m³/jam.
+
+**Deskripsi Produk:**
+
+- Nama Produk: Disc Filter Y-type 130 micron 3"
+- Kategori: Disc Filter / Y-Type
+- Kode Item (Item No.): F90YD
+- Ukuran Sambungan (Connection Size): 3 Inci (BSP/NPT)
+- Tingkat Filtrasi (Filtration Grade): 130 Mikron / 120 Mesh (Elemen Merah)
+- Laju Aliran Maksimum (Max Flow): 35.0 m³/Jam
+- Tekanan Kerja Maksimum (Working Pressure): 8.0 Bar
+- Luas Area Filtrasi (Filtering Surface): 600 cm²
+- Dimensi (H × W × D): 330 mm × 360 mm × 168 mm
+- Berat Bersih: 2.70 kg
+- Keunggulan Utama: Kapasitas kompresi cakram optimal untuk retensi partikel lumut dan organik, tahan terhadap fluktuasi tekanan tinggi di pipa utama.
+
+## 5\. Disc Filter T-Type 3" (F90TD)
+
+Disc Filter T-Type 3" (kode item F90TD) adalah unit filtrasi berperforma tinggi dengan desain bodi tipe T (T-shape structure). Desain hidrolik tipe T memungkinkan penampungan elemen filter yang lebih besar, sehingga mampu melayani debit aliran ekstra besar hingga 50.0 m³/jam pada stasiun filtrasi utama (headworks).
+
+**Deskripsi Produk:**
+
+- Nama Produk: Disc Filter T-type 130 micron 3"
+- Kategori: Disc Filter / T-Type
+- Kode Item (Item No.): F90TD
+- Ukuran Sambungan (Connection Size): 3 Inci (BSP/NPT)
+- Tingkat Filtrasi (Filtration Grade): 130 Mikron / 120 Mesh (Elemen Merah)
+- Laju Aliran Maksimum (Max Flow): 50.0 m³/Jam
+- Tekanan Kerja Maksimum (Working Pressure): 8.0 Bar
+- Material Utama: Polipropilena Rekayasa (PP) & Piringan Grooved Disc Tahan Kimia
+- Keunggulan Utama: Kapasitas aliran sangat tinggi (50 m³/jam), meminimalkan kehilangan tekanan pada jalur pipa utama (mainline), serta sangat cocok untuk penyaringan air skala besar/industri dan pertanian luas.
+
+**CHINADRIP IRRIGATION EQUIPMENT CO., LTD.**
+
+_China's Leading Brand for Drip Irrigation_
+
+**KATALOG PRODUK**
+
+**Daftar Lengkap Produk Irigasi Tetes — Edisi 2025**
+
+Disusun berdasarkan Chinadrip Catalog 2025
+
+Mencakup 6 kategori produk dan lebih dari 60 lini produk
+
+Alamat: No.69 Xintian Road, Jimei District, Xiamen, China 361022
+
+Email: <sale2@chinadrip.com> | Web: <www.chinadrip.com>
+
+WhatsApp/WeChat: +86-15980919613 (Attn: Rita So)
+
+# BAB 1 VALVE & ACCESSORIES (Pengontrol, Katup & Aksesori Sistem Irigasi)
+
+_VALVE & ACCESSORIES merupakan jajaran komponen pengontrol, pengatur hidraulik, dan pengaman jaringan irigasi yang dirancang khusus untuk memelihara stabilitas tekanan, melepaskan serta memasukkan udara secara otomatis, hingga mendukung efisiensi sistem fertigasi (fertilizer injection). Kategori ini mencakup Kinetic Air Valve (G Type kinetik berpresisi tinggi), Pressure Regulator, Venturi Fertilizer Injector, Mini Valve bertekanan hingga 6 Bar, serta Pressure Relief Valve._
+
+**Keunggulan Kategori VALVE & ACCESSORIES:**
+
+- Mekanisme Pelampung Kinetik (Kinetic Air Relief & Intake): Mampu membuang udara terperangkap secara otomatis saat proses pengisian pipa serta memasukkan udara secara instan ketika terjadi kondisi vakum untuk mencegah kerusakan akibat tekanan negatif.
+- Pengendalian Tekanan & Debit Presisi: Bekerja stabil pada rentang tekanan kerja luas (0.1–10 Bar) dengan variasi Kinetic Orifice hingga 751 mm² untuk perlindungan maksimal jaringan pipa.
+- Material Engineering Grade & Tahan Kimia: Dibuat dari polimer teknik berkualitas tinggi yang tahan paparan radiasi sinar UV, cuaca ekstrem, serta bahan kimia pupuk cair pada sistem fertigasi.
+- Pengoperasian Praktis & Hemat Energi: Bekerja memanfaatkan respon tekanan hidraulik internal sistem tanpa memerlukan konsumsi daya listrik tambahan.
+
+**Aplikasi Utama:**
+
+Digunakan sebagai komponen pengaman pada stasiun filtrasi utama (headworks), titik tertinggi (high point) jaringan pipa utama (mainline), percabangan zona irigasi tetes (drip tape/dripline), hingga sistem penyiraman micro-sprinkler di lahan pertanian terbuka dan rumah kaca (greenhouse).
+
+## 1\. G Type Kinetic Air Valve (KAV0320B)
+
+G Type Kinetic Air Valve merupakan katup pelepas dan pemasuk udara yang dirancang untuk menjaga kinerja sistem perpipaan irigasi selama proses pengisian, pengosongan, maupun pengoperasian. Produk ini bekerja dengan mekanisme pelampung (float) yang secara otomatis mengeluarkan udara yang terperangkap serta memasukkan udara ke dalam pipa ketika terjadi kondisi vakum, sehingga membantu melindungi jaringan perpipaan dari kerusakan akibat tekanan negatif maupun akumulasi udara.
+
+**Keunggulan Produk:**
+
+- Membuang udara secara otomatis saat proses pengisian pipa.
+- Memasukkan udara ketika terjadi kondisi vakum untuk melindungi jaringan perpipaan.
+- Mengurangi risiko kerusakan akibat tekanan negatif.
+- Menggunakan mekanisme pelampung yang bekerja secara otomatis.
+- Desain ringkas sehingga mudah dipasang pada sistem irigasi.
+
+**Spesifikasi Produk:**
+
+- Jenis Produk : G Type Kinetic Air Valve
+- Tekanan Kerja : 0.1–10 Bar
+- Komponen Utama : Cover, Kinetic Orifice, Seal, Float, Body
+- Tipe Koneksi : Thread / Female Thread (sesuai model)
+
+**Varian Produk:**
+
+| **Item No.** | **Ukuran** | **Berat** | **Tekanan Kerja** | **Kinetic Orifice** |
+| ------------ | ---------- | --------- | ----------------- | ------------------- |
+| KAV0320B/N   | 3/4"       | 71 g      | 0.1–10 Bar        | 311 mm²             |
+| KAV0325B/N   | 1"         | 73 g      | 0.1–10 Bar        | 311 mm²             |
+| KAV0350B/N   | 2"         | 167 g     | 0.1–10 Bar        | 751 mm²             |
+
+**Karakteristik Grafik Air Relief dan Air Intake**
+
+Grafik KAV0320/325/350 Air Relief and Intake menunjukkan hubungan antara tekanan udara (Pressure) dan kapasitas aliran udara (Air Flow) pada G Type Kinetic Air Valve selama proses pengisian pipa, pengosongan pipa, serta kondisi vakum.
+
+Sumbu horizontal menunjukkan Air Flow dengan satuan m³/h, sedangkan sumbu vertikal menunjukkan Pressure dalam satuan Bar dan PSI. Nilai debit negatif menggambarkan proses pemasukan udara (Air Intake), sementara nilai debit positif menunjukkan proses pelepasan udara (Air Relief).
+
+Grafik terdiri dari dua kurva, yaitu:
+
+- Kurva untuk model 3/4" dan 1".
+- Kurva untuk model 2".
+
+Berdasarkan grafik, semakin besar perbedaan tekanan yang terjadi, semakin besar pula kapasitas aliran udara yang dapat dilepas maupun dimasukkan oleh katup. Model 2 inci memiliki kapasitas aliran udara yang lebih tinggi dibandingkan model 3/4 inci dan 1 inci, sehingga sesuai untuk sistem perpipaan dengan kebutuhan pelepasan udara yang lebih besar.
+
+Grafik ini digunakan sebagai acuan dalam menentukan ukuran katup yang sesuai agar proses pelepasan maupun pemasukan udara berlangsung secara optimal sehingga sistem perpipaan tetap bekerja secara efisien.
+
+# BAB 2 SPRINKLER SYSTEM (Sistem Penyiraman Mikro & Mini Presisi)
+
+_SPRINKLER SYSTEM merupakan jajaran peralatan penyiraman air presisi berkinerja tinggi yang dirancang khusus untuk mendistribusikan air secara merata, efisien, dan terkontrol guna mendukung pertumbuhan tanaman serta mengoptimalkan penggunaan air. Kategori ini mencakup PC MicroSprinkler (berteknologi Pressure Compensating), Mini Frame Sprinkler, Butterfly Sprinkler, Rotary Sprinkler, hingga Misting & Fogger Nozzle (kuningan & polimer)._
+
+**Keunggulan Kategori SPRINKLER SYSTEM:**
+
+- Teknologi Pressure Compensating (PC): Menjaga debit air aktual tetap stabil dan seragam (contoh: 38–43 L/Jam pada rentang 1.5–4.0 Bar) meskipun terjadi fluktuasi tekanan air atau kontur tanah tidak rata.
+- Sistem Penyiraman Dua Tahap (2-Stage Wetting): Memiliki pembatas diameter (Diameter Limiter) yang fleksibel; Tahap 1 (diameter 2.8 m) untuk bibit/tanaman muda, dan Tahap 2 (diameter 5.6 m) untuk tanaman dewasa.
+- Desain Anti-Serangga (Insect-Proof Nozzle): Dilengkapi fitur pelindung nozzle untuk mencegah masuknya semut, serangga, atau kotoran yang berpotensi menyebabkan penyumbatan internal.
+- Distribusi Air Merata & Adaptabel: Menghasilkan butiran semprotan halus yang meminimalisir erosi tanah serta kerusakan pada dedaunan dan bunga sensitif.
+
+**Aplikasi Utama:**
+
+Digunakan pada irigasi tanaman buah (orchards), tanaman sayuran, persemaian (nursery), rumah kaca (greenhouse), lahan pertanian dengan topografi bergelombang, hingga sistem irigasi mikro permanen menggunakan pipa berulir 1/2".
+
+## 1\. PC MicroSprinkler (MSPC0135T)
+
+PC MicroSprinkler dengan kode MSPC0135T merupakan sprinkler mikro berteknologi Pressure Compensating (PC) dengan debit 35 L/Jam dan jenis koneksi Ulir 1/2" (1/2" Thread). Produk ini dirancang untuk menghasilkan debit air dan jangkauan penyiraman yang tetap stabil pada berbagai kondisi tekanan. Sangat cocok digunakan untuk irigasi tanaman buah, sayuran, nursery, serta area pertanian dengan kontur tanah yang tidak rata.
+
+**Keunggulan Produk:**
+
+- Teknologi Pressure Compensating (PC): Menjaga debit air tetap konstan pada rentang tekanan kerja.
+- Distribusi Merata: Mekanisme pengatur tekanan menghasilkan penyiraman yang presisi dan seragam.
+- Desain Anti-Serangga: Memiliki insect-proof nozzle untuk mencegah masuknya semut atau kotoran yang dapat menyebabkan penyumbatan.
+- Sistem Penyiraman Dua Tahap (2-Stage Wetting): Jangkauan penyiraman dapat disesuaikan dengan fase pertumbuhan tanaman.
+- Adaptabel: Sangat baik untuk lahan datar maupun berkontur.
+
+**Spesifikasi Produk (MSPC0135T):**
+
+- Kode Item: MSPC0135T
+- Jenis Produk: PC MicroSprinkler
+- Kapasitas Debit Nominal: 35 L/Jam
+- Jenis Koneksi: Ulir 1/2" (1/2" Thread / Tipe T)
+- Rentang Tekanan Kerja: 1,5–4,0 Bar
+- Filtrasi Minimum: ≥ 80 Mesh
+- Diameter Semprotan Tahap 1: 2,8 meter
+- Diameter Semprotan Tahap 2: 5,6 meter
+
+**Aplikasi:**
+
+- Irigasi tanaman buah (Orchard)
+- Tanaman sayuran
+- Pembibitan / Nursery
+- Lahan pertanian dengan kontur tidak rata
+- Sistem irigasi mikro permanen menggunakan instalasi pipa berulir 1/2"
+
+**Hubungan Tekanan terhadap Debit Aliran (Pressure vs Flow - 35 L/Jam):**
+
+| **Tekanan (Bar)** | **Debit Air Aktual (L/Jam)** |
+| ----------------- | ---------------------------- |
+| **1,5 Bar**       | 38 L/Jam                     |
+| **2,0 Bar**       | 40 L/Jam                     |
+| **3,0 Bar**       | 42 L/Jam                     |
+| **4,0 Bar**       | 43 L/Jam                     |
+
+**Karakteristik Tekanan:**
+
+Grafik Pressure vs Flow menunjukkan bahwa variasi tekanan dari 1,5 hingga 4,0 Bar hanya memberikan sedikit perubahan pada debit keluaran (berkisar antara 38–43 L/Jam). Hal ini memastikan penyiraman tetap efisien dan konsisten meskipun terdapat fluktuasi tekanan pada jaringan irigasi.
+
+**Sistem Penyiraman Dua Tahap (2-Stage Wetting):**
+
+- Tahap 1 (1st Stage):
+  - Diameter Penyiraman: 2,8 meter
+  - Menggunakan pembatas diameter (Diameter Limiter).
+  - Direkomendasikan untuk bibit atau tanaman muda yang membutuhkan area basah lebih kecil agar hemat air.
+- Tahap 2 (2nd Stage):
+  - Diameter Penyiraman: 5,6 meter
+  - Pembatas diameter dilepas (broken off) sehingga jangkauan penyiraman menjadi lebih luas.
+  - Digunakan saat tanaman sudah berkembang dan membutuhkan cangkupan irigasi yang lebih lebar.
+
+**Konfigurasi Instalasi:**
+
+Koneksi tipe T (1/2" Thread) memudahkan penyambungan langsung pada fitting atau jalur pipa berulir 1/2 inci. Untuk penancapan di tanah, sprinkler ini dapat dikombinasikan dengan Fiberglass Stake DN8 dan selang adaptif sesuai kebutuhan sistem dilapangan.
+
+# BAB 3 CONNECTOR & FITTINGS (Konektor & Fiting Irigasi Tetes / PE)
+
+_CONNECTOR & FITTINGS merupakan jajaran komponen penyambung, pengunci, percabangan, dan penutup ujung yang dirancang untuk mengintegrasikan pita irigasi tetes (drip tape), pipa PE, selang LayFlat, serta pipa utama PVC secara presisi. Kategori ini mencakup Lock Ring Fitting (untuk ketebalan tape 0.15–0.3 mm), Lock Nut Fitting (untuk ketebalan tape 0.15–0.6 mm), Croco Offtake, Barbed Fittings, End Line (figure-8), Holddown Support, dan T-Type Rubber Grommet._
+
+**Keunggulan Kategori CONNECTOR & FITTINGS:**
+
+- Sistem Pengunci Ganda (Lock Ring & Lock Nut): Memberikan cengkeraman mekanis yang sangat kuat dan kedap pada pipa/pita irigasi bertekanan sehingga mencegah kebocoran atau terlepasnya sambungan.
+- Koneksi Multi-Material Fleksibel: Memudahkan penyambungan silang antar-komponen, seperti offtake pipa PVC ke PE, LayFlat hose ke drip tape (tipe Croco), hingga kran pengontrol (mini valve).
+- Pemasangan Kedap dengan Rubber Grommet: Penggunaan paking karet tipe T elastis (seal presisi) memastikan sambungan offtake pada lubang bor pipa utama bebas bocor.
+- Daya Tahan Tinggi & Praktis: Dibuat dari plastik teknik berdensitas tinggi yang tahan sinar UV dan zat kimia pertanian, serta mendukung proses instalasi plug-and-play yang cepat.
+
+**Aplikasi Utama:**
+
+Digunakan pada percabangan awal (offtake), sambungan lurus (coupling), percabangan T (tee), penutup ujung saluran (end plug/end line), serta penambat jalur pipa PE/Drip Tape di lahan pertanian dan greenhouse.
+
+## 1 Lock Ring Offtake Dn17\*15 (TO021715B)
+
+Fiting ini digunakan sebagai percabangan awal (offtake) untuk menghubungkan pita irigasi tetes (drip tape) berukuran Dn17 ke jalur/pipa utama. Mekanisme pengunci cincin hijau (lock ring) berfungsi menahan ujung drip tape secara kencang dan rapat sehingga cegah kebocoran air saat sistem irigasi bertekanan bekerja.
+
+**Detail Produk :**
+
+- Nama Produk: Lock Ring Offtake
+- Kategori: Lock Ring Fitting for Drip Tape (untuk ketebalan 0.15–0.3 mm)
+- Kode Item (Item No.): TO021715B
+- Ukuran (Size): Dn17\*15
+- Isi per Kantong (Qty/Bag): 100 pcs
+- Isi per Dus/Karton (Qty/Ctn): 1.600 pcs
+
+## 2\. Barb Lock Ring Coupling Dn17\*16 (BC021617B)
+
+Fiting penyambung lurus (coupling) ini digunakan untuk menyambungkan dua pita irigasi tetes (drip tape) atau menyambung drip tape ke selang/pipa berujung barb (berduri/gerigi). Mekanisme lock ring di satu sisi menjepit drip tape dengan rapat, sedangkan sisi barb mencengkeram kuat bagian dalam pipa/selang agar koneksi stabil dan bebas bocor.
+
+**Detail Produk :**
+
+- Nama Produk: Lock Ring Coupling (Barb)
+- Kategori: Lock Ring Fitting for Drip Tape (untuk ketebalan 0.15–0.3 mm)
+- Kode Item (Item No.): BC021617B
+- Ukuran (Size): Dn17\*16
+- Isi per Kantong (Qty/Bag): 100 pcs
+- Isi per Dus/Karton (Qty/Ctn): 1.600 pcs
+
+## 3\. Lock Ring Coupling Tape Dn17 (LC0217B)
+
+Fiting penyambung lurus (coupling) ini digunakan untuk menghubungkan dua segmen pita irigasi tetes (drip tape) berukuran Dn17. Kedua sisinya dilengkapi dengan sistem pengunci lock ring untuk menjepit pita irigasi secara kuat, ideal untuk memperpanjang jalur irigasi atau menyambung pita yang terputus/rusak.
+
+**Detail Produk :**
+
+- Nama Produk: Lock Ring Coupling
+- Kategori: Lock Ring Fitting for Drip Tape (untuk ketebalan 0.15–0.3 mm)
+- Kode Item (Item No.): LC0217B
+- Ukuran (Size): Dn17
+- Isi per Kantong (Qty/Bag): 100 pcs
+- Isi per Dus/Karton (Qty/Ctn): 1.300 pcs
+
+## 4\. Lock Ring Tape Plug Dn17 (TP0317B)
+
+Fiting ini berfungsi sebagai penutup/penyumbat ujung (plug/end cap) pada jalur pipa/pita irigasi tetes (drip tape) berukuran Dn17. Mekanisme lock ring memastikan ujung drip tape terkunci rapat dan tidak lepas, mencegah air terbuang di bagian akhir saluran irigasi.
+
+**Detail Produk :**
+
+- Nama Produk: Lock Ring Tape Plug
+- Kategori: Lock Ring Fitting for Drip Tape (untuk ketebalan 0.15–0.3 mm)
+- Kode Item (Item No.): TP0317B
+- Ukuran (Size): Dn17
+- Isi per Kantong (Qty/Bag): 50 pcs
+- Isi per Dus/Karton (Qty/Ctn): 2.000 pcs
+
+## 5\. Barb Coupling Tape Dn17\*16 (BC011617B)
+
+Fiting penyambung ini digunakan untuk menghubungkan pita irigasi tetes (drip tape) berukuran Dn17 dengan selang/pipa berujung barb (berduri/gerigi) ukuran 16 mm. Sistem putar pengunci (lock nut) menjepit drip tape dengan sangat kuat, sementara ujung barb mencengkeram bagian dalam pipa/selang agar koneksi rapat dan bebas dari kebocoran.
+
+**Detail Produk :**
+
+- Nama Produk: Barbed Coupling for Tape
+- Kategori: Lock Nut Fitting for Drip Tape (untuk ketebalan 0.15–0.6 mm)
+- Kode Item (Item No.): BC011617B
+- Ukuran (Size): Dn17\*16
+- Isi per Kantong (Qty/Bag): 100 pcs
+- Isi per Dus/Karton (Qty/Ctn): 1.100 pcs
+
+## 6\. Croco Offtake Lay Flat Dn17 (CT0317B)
+
+Fiting percabangan tipe croco ini dirancang khusus untuk menghubungkan pipa elastis fleksibel (lay flat tube/hose) ke jalur pita irigasi tetes (drip tape) berukuran Dn17. Bagian kait klem (croco) akan mengunci kuat pada dinding lay flat tube, sedangkan ujung lock nut mengunci pita irigasi secara presisi dan tahan tekanan.
+
+**Detail Produk :**
+
+- Nama Produk: Croco Offtake for Lay Flat Tube
+- Kategori: Lock Nut Fitting for Drip Tape (untuk ketebalan 0.15–0.6 mm)
+- Kode Item (Item No.): CT0317B
+- Ukuran (Size): Dn17
+- Isi per Kantong (Qty/Bag): 50 pcs
+- Isi per Dus/Karton (Qty/Ctn): 700 pcs
+
+## 7\. Off take tape valve Dn17\*15 (OV031715B)
+
+Produk ini merupakan kran kecil (mini valve) tipe percabangan (offtake) yang dirancang khusus untuk mengatur, membuka, atau menutup aliran air dari saluran pipa utama menuju jalur pita irigasi tetes (drip tape) berukuran Dn17. Mampu menahan tekanan hingga 6 Bar, fiting valve ini dilengkapi pengunci hijau di satu sisi untuk menjepit drip tape secara rapat, serta gagang pemutar merah yang memudahkan kontrol debit air secara presisi pada setiap jalur tanaman.
+
+**Detail Produk :**
+
+- Nama Produk: Offtake Tape Valve
+- Kategori: Mini Valve for Drip Tape (Tekanan Maksimum: 6 Bar)
+- Kode Item (Item No.): OV031715B
+- Ukuran (Size): Dn17\*15
+- Isi per Kantong (Qty/Bag): 50 pcs
+- Isi per Dus/Karton (Qty/Ctn): 500 pcs
+
+## 8\. Tape Offtake Dn17\*15 (TO011715B)
+
+Fiting offtake ini berfungsi sebagai sambungan awal untuk menghubungkan pita irigasi tetes (drip tape) berukuran Dn17 ke jalur pipa utama. Dilengkapi dengan sistem mur pengunci (lock nut) untuk menjepit pita irigasi secara rapat agar terhindar dari kebocoran saat dialiri air bertekanan.
+
+**Detail Produk :**
+
+- Nama Produk: Tape Offtake
+- Kategori: Lock Nut Fitting for Drip Tape (untuk ketebalan 0.15–0.6 mm)
+- Kode Item (Item No.): TO011715B
+- Ukuran (Size): Dn17\*15
+- Isi per Kantong (Qty/Bag): 100 pcs
+- Isi per Dus/Karton (Qty/Ctn): 1.300 pcs
+
+## 9\. Lock Coupling Tape Dn17 (LC0117B)
+
+Fiting penyambung lurus (coupling) ini digunakan untuk menghubungkan dua segmen pita irigasi tetes (drip tape) berukuran Dn17. Kedua sisinya menggunakan mekanisme lock nut untuk menjepit pita irigasi dengan kuat, sangat cocok digunakan untuk memperpanjang barisan irigasi atau memperbaiki jalur pita yang terputus/bocor.
+
+**Detail Produk :**
+
+- Nama Produk: Lock Coupling for Tape
+- Kategori: Lock Nut Fitting for Drip Tape (untuk ketebalan 0.15–0.6 mm)
+- Kode Item (Item No.): LC0117B
+- Ukuran (Size): Dn17
+- Isi per Kantong (Qty/Bag): 100 pcs
+- Isi per Dus/Karton (Qty/Ctn): 800 pcs
+
+## 10\. Tape Plug Dn17 (TP0117B)
+
+Fiting ini berfungsi sebagai penutup/penyumbat (end plug) pada ujung saluran pita irigasi tetes (drip tape) berukuran Dn17. Pengunci tipe lock nut memastikan jalur pita tertutup rapat sehingga tekanan air tetap terjaga dan air tidak terbuang di bagian akhir saluran.
+
+**Detail Produk :**
+
+- Nama Produk: Tape Plug
+- Kategori: Lock Nut Fitting for Drip Tape (untuk ketebalan 0.15–0.6 mm)
+- Kode Item (Item No.): TP0117B
+- Ukuran (Size): Dn17
+- Isi per Kantong (Qty/Bag): 100 pcs
+- Isi per Dus/Karton (Qty/Ctn): 1.300 pcs
+
+## 11\. Off take PE pipe Dn16\*15 (OP011615)
+
+Fiting percabangan (offtake) ini digunakan untuk menghubungkan pipa PE berukuran Dn16 ke jalur pipa utama (misalnya pipa PVC) ukuran 15. Sisi barb mencengkeram erat bagian dalam pipa PE agar sambungan tidak mudah lepas dan bebas bocor.
+
+**Detail Produk :**
+
+- Nama Produk: Offtake for PE Pipe
+- Kategori: Fitting for Pipe
+- Kode Item (Item No.): OP011615
+- Ukuran (Size): Dn16\*15
+- Isi per Kantong (Qty/Bag): 100 pcs
+- Isi per Dus/Karton (Qty/Ctn): 2.800 pcs
+
+## 12\. Male Thread Connector PE Pipe Dn16\*½ (MC011612)
+
+Fiting penyambung ini memiliki satu sisi berduri (barb) untuk pipa PE Dn16 dan satu sisi ulir luar (male thread) ukuran 1/2 inci. Berfungsi untuk menghubungkan pipa PE ke fiting/kran berulir dalam (female thread)..
+
+**Detail Produk :**
+
+- Nama Produk: Male Threaded Connector
+- Kategori: Fitting for Pipe
+- Kode Item (Item No.): MC011612
+- Ukuran (Size): Dn16\*1/2"
+- Isi per Kantong (Qty/Bag): 100 pcs
+- Isi per Dus/Karton (Qty/Ctn): 1.900 pcs
+
+## 13\. Offtake Tee for PVC Pipe,Dn16 (OT0116)
+
+Fiting Tee berbentuk huruf 'T' ini dirancang sebagai sambungan percabangan dari pipa utama PVC menuju dua jalur pipa PE ukuran Dn16. Bagian offtake dipasang pada pipa PVC, sementara dua lengan barb menyambung ke pipa PE .
+
+**Detail Produk :**
+
+- Nama Produk: Offtake Tee for PVC Pipe
+- Kategori: Fitting for Pipe
+- Kode Item (Item No.): OT0116
+- Ukuran (Size): Dn16
+- Isi per Kantong (Qty/Bag): 100 pcs
+- Isi per Dus/Karton (Qty/Ctn): 1.200 pcs
+
+## 14\. Tee Connector PE pipe Dn16 (TC0116)
+
+Konektor percabangan tiga arah (Tee) ini digunakan untuk membagi aliran air pipa PE Dn16 ke dua arah cabang. Tiga sisinya dilengkapi gerigi (barb) yang mencengkeram pipa PE dengan kuat.
+
+**Detail Produk :**
+
+- Nama Produk: Tee Connector
+- Kategori: Fitting for Pipe
+- Kode Item (Item No.): TC0116
+- Ukuran (Size): Dn16
+- Isi per Kantong (Qty/Bag): 100 pcs
+- Isi per Dus/Karton (Qty/Ctn): 1.300 pcs
+
+## 15\. End Line PE Pipe Dn16 (EL0116)
+
+Fiting penutup berbentuk angka 8 (figure-8 end closure) ini digunakan untuk menutup ujung saluran pipa PE Dn16. Ujung pipa dilipat lalu dimasukkan ke dalam dua lubang fiting ini untuk mengunci aliran air di bagian akhir jalur irigasi.
+
+**Detail Produk :**
+
+- Nama Produk: End Line
+- Kategori: Fitting for Pipe
+- Kode Item (Item No.): EL0116
+- Ukuran (Size): Dn16
+- Isi per Kantong (Qty/Bag): 100 pcs
+- Isi per Dus/Karton (Qty/Ctn): 3.000 pcs
+
+## 16\. Holddown Support, Dn16 (HS0216)
+
+Pasak penahan (ground stake/holder) ini berfungsi untuk memancangkan dan menahan posisi pipa PE Dn16 agar tetap rapi di atas permukaan tanah dan tidak bergeser saat terkena angin atau tekanan air.
+
+**Detail Produk :**
+
+- Nama Produk: Holddown Support
+- Kategori: Fitting for Pipe
+- Kode Item (Item No.): HS0216
+- Ukuran (Size): Dn16
+- Isi per Kantong (Qty/Bag): 100 pcs
+- Isi per Dus/Karton (Qty/Ctn): 2.300 pcs
+
+## 17\. T-type Rubber grommet Dn16\*13 (RR011613)
+
+Grommet karet tipe 'T' ini berfungsi sebagai seal/paking karet pelapis saat memasang konektor percabangan (offtake) ke dalam lubang pipa utama PVC/PE (ukuran lubang bor 13 mm) menuju pipa/tubing Dn16. Karet ini elastis dan presisi sehingga dapat mencegah kebocoran air di sekeliling lubang sambungan saat sistem irigasi bertekanan.
+
+**Detail Produk :**
+
+- Nama Produk: Rubber Grommet (T Type)
+- Kategori: Rubber Grommet / Accessories
+- Kode Item (Item No.): RR011613
+- Ukuran (Size): Dn16\*13
+- Isi per Kantong (Qty/Bag): 100 pcs
+- Isi per Dus/Karton (Qty/Ctn): 7.000 pcs
+
+# BAB 4 DRIPPER & DRIP STAKE KITS (Penetes & Pasak Irigasi Tetes Presisi)
+
+_DRIPPER & DRIP STAKE KITS merupakan jajaran emiter/penetes air presisi dan paket pasak irigasi yang dirancang khusus untuk menyalurkan air serta nutrisi pupuk (fertigation) langsung ke zona perakaran tanaman secara perlahan dan terukur. Kategori ini mencakup Take Apart PC Dripper (dapat dibongkar-pasang), Button Dripper, serta 2-Way / 4-Way Dripper Stake Kits yang siap pasang.._
+
+**Keunggulan Kategori DRIPPER & DRIP STAKE KITS:**
+
+- Fitur Kemudahan Perawatan (Take Apart Design): Badan penetes dapat diputar dan dibuka secara manual tanpa alat khusus, memudahkan pembersihan kotoran atau endapan air secara berkala di lapangan.
+- Kompensasi Tekanan Akurat (PC Range 0.7–3.5 Bar): Memastikan debit air konstan (misalnya 4 L/Jam) di seluruh barisan saluran irigasi, sangat ideal untuk lahan miring atau bergelombang.
+- Teknologi Labyrinth Flow Path: Pasak penetes (dripper stake) dilengkapi jalur aliran berdesain labirin untuk menstabilkan debit air (contoh: 2.2 L/Jam) secara presisi ke zona akar.
+- Paket Siap Pasang (Drip Stake Kits): Dilengkapi percabangan manifold (2-Way/4-Way Connector), microtube PE 5/3 mm, dan pasak penancap untuk efisiensi dan kerapihan instalasi di lapangan..
+
+**Aplikasi Utama:**
+
+Digunakan pada sistem irigasi tetes presisi untuk tanaman pot/polybag, perkebunan greenhouse, nursery, tanaman buah (orchard), perkebunan hidroponik, dan area pertanian terbuka (open field).
+
+## 1\. 2-way stake kit with White/Black PE,Long Dripper Stake, Dn5, 5133P (W21522B)
+
+W21522B (2-Way Long Dripper Stake Kit) adalah paket instalasi irigasi tetes siap pasang yang dirancang untuk membagi aliran air dari satu titik dripper menjadi 2 titik penancapan pasak sekaligus. Kit ini menggunakan konektor percabangan 2-arah (5133P) dan microtube PE sepanjang 50 cm.
+
+Dilengkapi dengan pasak penetes tipe panjang 15 cm (2152H) yang memiliki jalur aliran labirin (Labyrinth Flow Path), produk ini mampu menstabilkan dan menyalurkan presisi debit air sebesar 2,2 L/Jam langsung ke zona perakaran tanaman pada area greenhouse, nursery, maupun tanaman pot.
+
+**Detail Produk :**
+
+- Nama Produk: 2-Way Long Dripper Stake Kit
+- Kategori: Drip Stake Kits
+- Kode Item (Item No.): W21522B
+- Komponen Pasak (Stake): 2152H (Panjang 15 cm dengan Labyrinth Flow Path)
+- Konektor (Connector): 5133P (2-Way Connector, Ukuran DN5×5)
+- Panjang Microtube: 50 cm
+- Tipe Microtube: W/B PE (Ukuran 5/3 mm)
+
+**Spesifikasi Teknis & Kinerja :**
+
+- Jenis Produk: Drip Stake Kit (2-Way Long)
+- Debit Air (Flow Rate): 2,2 L/Jam
+- Tekanan Kerja (Working Pressure): 0,2 – 2,0 Bar
+- Filtrasi Minimum: 120 Mesh
+- Material: Plastik teknik berkualitas tinggi (tahan terhadap penggunaan di lapangan)
+- Kompatibilitas: Kompatibel dengan PC Dripper (Barb & Nipple Outlet)
+
+**Keunggulan Produk :**
+
+- Paket Siap Pasang: Praktis, mempercepat waktu instalasi di lapangan.
+- Posisi Stabil: Menjaga penetes tetap kokoh pada zona perakaran tanaman.
+- Koneksi Presisi: Komponen saling presisi sehingga terhindar dari risiko bocor.
+- Komponen Fleksibel: Komponen dalam paket (kit's components) dapat disesuaikan (customized) sesuai kebutuhan proyek.
+
+## 2\. Pressure Compensationg Dripper ,Take Apart, 1/4", Black Color, 4/Lh@0.8-3.2bar, Dn5 (PCT0104)
+
+PCT0104 merupakan dripper irigasi tetes tipe Pressure Compensating (PC) model Take Apart (dapat dilepas/dibuka). Fitur utama dari dripper ini adalah kemampuannya dalam menjaga keluaran debit air tetap konstan dan seragam (sekitar 4 L/Jam) meskipun terjadi variasi atau fluktuasi tekanan air pada rentang kerja 0.7 hingga 3.5 Bar.
+
+Desain Take Apart memungkinkan dripper diputar dan dibuka bagian badannya secara manual untuk dibersihkan jika terdapat kotoran atau endapan yang menyumbat di dalamnya, sehingga mempermudah perawatan berkala di lapangan.
+
+**Detail Produk :**
+
+- Nama Produk: Take Apart PC Dripper (Pressure Compensating Dripper)
+- Kode Item (Item No.): PCT0104
+- Warna Produk: Hitam (Black Color)
+- Ukuran/Sambungan: 1/4" / Dn5
+- Debit Air Nominal: 4 L/Jam (4 L/h)
+- Rentang Tekanan Kerja (PC Range): 0.7 – 3.5 Bar (Rentang umum tipe PC: 0.5 – 4.0 Bar)
+
+**Detail Produk :**
+
+- Jenis Produk: Pressure Compensating Dripper (Take Apart)
+- Warna: Hitam (Black)
+- Ukuran Inlet/Outlet: Dn5 (1/4")
+- Debit Air (Flow Rate): 4 L/Jam
+- Kinerja Tekanan (Pressure vs Flowing):
+  - 0.7 Bar : 3.5 L/Jam
+  - 1.0 Bar : 4.1 L/Jam
+  - 1.5 Bar : 4.2 L/Jam
+  - 2.0 Bar : 4.3 L/Jam
+  - 2.5 Bar : 4.4 L/Jam
+  - 3.0 Bar : 4.1 L/Jam
+  - 3.5 Bar : 3.8 L/Jam
+
+**Keunggulan Produk**
+
+- Kompensasi Tekanan (PC): Menghasilkan debit air seragam di sepanjang barisan saluran irigasi, sangat cocok untuk lahan bergelombang atau kontur tanah tidak rata.
+- Mudah Dibersihkan (Take Apart): Dapat dibongkar-pasang dengan mudah tanpa alat khusus untuk mengatasi penyumbatan akibat partikel kotoran.
+- Material Tahan Lama: Terbuat dari bahan plastik berkualitas tinggi yang tahan terhadap paparan sinar UV, bahan kimia pupuk, dan cuaca ekstrem di lapangan.
+- Koneksi Standar: Kompatibel digunakan langsung pada punch hole pipa PE utama atau disambungkan ke microtube ukuran 1/4" (Dn5).
+
+# BAB 5 DRIPLINE & DRIPTAPE (Sistem Irigasi Tetes Presisi)
+
+_DRIPLINE & DRIPTAPE merupakan jajaran pipa dan pita irigasi tetes presisi yang dirancang khusus untuk mengalirkan air dan nutrisi pupuk (fertigation) secara langsung, merata, dan terukur ke zona perakaran tanaman. Kategori ini mencakup DripTape (pita irigasi tetes dinding tipis ekonomis untuk tanaman musiman) serta PC Dripline / Anti-Siphon (pipa tetes kompensasi tekanan berfitur anti-penyedotan kotoran untuk lahan bergelombang maupun instalasi bawah tanah / subsurface drip irrigation)._
+
+**Keunggulan ategori DRIPLINE:**
+
+- Keseragaman Debit & Penghematan Air: Menyalurkan debit air secara presisi dan konsisten di sepanjang jalur perpipaan untuk menekan kehilangan air akibat penguapan maupun limpasan.
+- Teknologi Anti-Siphon & Anti-Clogging: Mencegah partikel tanah atau lumpur tersedot masuk ke dalam emiter saat tekanan air berhenti (anti-siphon) serta dilengkapi saluran labirin turbulen yang tahan terhadap penyumbatan.
+- Material Polietilena (PE) Premium: Dibuat dari material polietilena rekayasa bermutu tinggi yang tahan terhadap paparan radiasi sinar UV, benturan mekanis, serta reaksi kimia pupuk cair (fertigation).
+- Efisiensi Fertigasi & Pengendalian Gulma: Mengoptimalkan penyerapan nutrisi langsung pada akar tanaman utama sekaligus menekan pertumbuhan gulma di luar area perakaran.
+
+**Aplikasi Utama:**
+
+Digunakan sebagai jalur pembagi dan penyalur air utama pada sistem irigasi tetes (drip irrigation) tanaman hortikultura, sayuran, buah-buahan, pertanian lahan terbuka (open field), rumah kaca (greenhouse), perkebunan jangka panjang, hingga sistem irigasi tetes bawah tanah (subsurface drip irrigation - SDI).
+
+## 1\. DripTape 16mm × 0.3mm × 20cm × 1.4 LPH (DT0116302014S)
+
+DripTape 16mm (kode item DT0116302014S) adalah pita irigasi tetes dinding tipis (thin-wall drip tape) dengan emiter pipih (flat dripper) terintegrasi yang dirancang untuk memberikan penyiraman presisi pada tanaman hortikultura dan tanaman semusim. Dengan ketebalan dinding 0.3 mm (12 mil) dan jarak tetes rapat 20 cm, pita ini menghasilkan pembasahan tanah yang kontinyu dan merata sepanjang jalur tanam.
+
+**Keunggulan Produk :**
+
+- Pola Pembasahan Kontinyu: Jarak antar-emiter 20 cm ideal untuk menciptakan garis pembasahan yang merata pada bedeng tanaman dengan jarak tanam rapat.
+- Desain Labirin Turbulen Anti-Sumbat: Emiter internal dilengkapi jalur labirin turbulen berpresisi tinggi untuk meminimalkan pengendapan kotoran dan penyumbatan partikel mikro.
+- Material Tahan UV & Fleksibel: Diproduksi dari polietilena berkualitas tinggi yang kuat, fleksibel saat dipasang di lapangan, serta tahan terhadap paparan sinar matahari langsung.
+- Pemasangan & Penggulungan Praktis: Bobot yang ringan memudahkan proses instalasi, pembongkaran, maupun penggulungan kembali setelah masa panen
+
+**Detail Produk :**
+
+- Nama Produk: DripTape 16mm × 0.3mm × 20cm × 1.4LPH
+- Kategori: Dripline / DripTape
+- Kode Item (Item No.): DT0116302014S
+- Merek / Produsen: ChinaDrip
+- Diameter Luar (Outer Diameter): 16 mm
+- Ketebalan Dinding (Wall Thickness): 0.3 mm (12 mil)
+- Jarak Antar Emiter (Dripper Spacing): 20 cm
+- Debit Aliran Emiter (Flow Rate): 1.4 Liter/Jam (LPH)
+- Tipe Emiter: Integrated Flat Dripper (Terintegrasi)
+- Material Utama: Premium Polyethylene (PE) Tahan UV & Kimia
+
+## 2\. DripTape 16mm × 0.3mm × 20cm × 1.0 LPH (DT0116302014S / Varian 1.0 LPH)
+
+DripTape 16mm 1.0 LPH (kode item DT0116302014S / 1.0L) merupakan varian pita irigasi tetes hemat debit yang dirancang khusus untuk jenis tanah dengan infiltrasi lambat (seperti tanah liat/lempung) atau untuk bentangan jalur pipa yang lebih panjang. Menghasilkan debit air rendah 1.0 Liter/Jam per emiter untuk mencegah penggenangan air berlebih di permukaan tanah.
+
+**Keunggulan Produk :**
+
+- Debit Hemat (1.0 LPH): Mencegah penumpukan air (water pooling) pada struktur tanah berat atau tanah liat serta menghemat penggunaan kapasitas air pompa.
+- Mendukung Bentangan Pipa Lebih Panjang: Laju aliran yang rendah memungkinkan pemasangan barisan pita tetes (run length) yang lebih panjang tanpa mengurangi stabilitas tekanan air di ujung pipa.
+- Presisi Pembasahan Akar: Efektif menjaga kelembapan tanah pada tingkat optimal untuk merangsang pertumbuhan akar secara alami.
+- Tahan Kimia Pupuk: Aman digunakan untuk aplikasi penyaluran pupuk cair (fertigation) secara berulang.
+
+**Detail Produk :**
+
+- Nama Produk: DripTape 16mm × 0.3mm × 20cm × 1.0LPH
+- Kategori: Dripline / DripTape
+- Kode Item (Item No.): DT0116302014S (Varian 1.0 LPH)
+- Merek / Produsen: ChinaDrip
+- Diameter Luar (Outer Diameter): 16 mm
+- Ketebalan Dinding (Wall Thickness): 0.3 mm (12 mil)
+- Jarak Antar Emiter (Dripper Spacing): 20 cm
+- Debit Aliran Emiter (Flow Rate): 1.0 Liter/Jam (LPH)
+- Tipe Emiter: Integrated Flat Dripper (Terintegrasi)
+- Material Utama: Premium Polyethylene (PE) Tahan UV & Kimia
+
+## 3\. PC100 PC Driptape Anti-Siphon Dn16 × 0.4mm × 30cm × 2.0 L/H (PCAS0116403020)
+
+PC100 Pressure Compensating Driptape Anti-Siphon (kode item PCAS0116403020) adalah pita tetes kelas premium yang memadukan teknologi Pressure Compensating (PC) dan Anti-Siphon (AS) dengan ketebalan dinding medium 0.4 mm (16 mil). Produk ini dirancang untuk lahan pertanian dengan topografi bergelombang/miring serta aplikasi irigasi bawah tanah (subsurface drip irrigation).
+
+**Keunggulan Produk :**
+
+- Teknologi Pressure Compensating (PC): Mengatur debit air tetap stabil dan seragam sebesar 2.0 L/Jam pada setiap emiter, terlepas dari fluktuasi tekanan air maupun kontur lahan yang miring/turun-naik.
+- Fitur Anti-Siphon (AS) Unggulan: Otomatis menutup lubang emiter saat sistem dimatikan, mencegah efek penyedotan (vacuum siphon) yang dapat menarik partikel lumpur/tanah dari luar masuk ke dalam pipa.
+- Ketebalan Dinding Medium (16 mil / 0.4 mm): Memberikan ketahanan ekstra terhadap gesekan, tekanan hidrolik tinggi, dan gigitan hama dibanding driptape standar.
+- Sangat Ideal untuk Subsurface Irrigation: Solusi terbaik untuk penanaman pita tetes di bawah permukaan tanah (buried installation) tanpa risiko penyumbatan akibat masuknya kotoran.
+
+**Detail Produk :**
+
+- Nama Produk: PC100 Pressure Compensating Driptape Anti-Siphon
+- Kategori: Dripline / PC Anti-Siphon Driptape
+- Kode Item (Item No.): PCAS0116403020
+- Merek / Produsen: ChinaDrip
+- Diameter Luar (Outer Diameter): Dn16 (16 mm)
+- Ketebalan Dinding (Wall Thickness): 0.4 mm (16 mil)
+- Jarak Antar Emiter (Dripper Spacing): 30 cm
+- Debit Aliran Emiter (Flow Rate): 2.0 Liter/Jam (L/H)
+- Fitur Khusus: Pressure Compensating (PC) & Anti-Siphon (AS)
+- Material Utama: Polyethylene (PE) Heavy-Duty Tahan UV & Kimia
+
+## 4\. PC100 PC Dripline Anti-Siphon Dn16 × 1.2mm × 50cm × 2.0 L/H (PCAS01161205020)
+
+PC100 Pressure Compensating Dripline Anti-Siphon (kode item PCAS01161205020) adalah pipa tetes dinding tebal (heavy-duty rigid dripline) berukuran 1.2 mm yang dirancang untuk penggunaan jangka panjang (multi-season/permanent installation). Dilengkapi teknologi PC & Anti-Siphon dengan jarak emiter 50 cm, pipa ini sangat cocok untuk tanaman perkebunan, tanaman buah, maupun sistem irigasi bawah tanah permanen..
+
+**Keunggulan Produk :**
+
+- Konstruksi Rigid Heavy-Duty (1.2 mm): Dinding pipa tebal dan kokoh tahan terhadap lalu lintas alat berat, benturan fisik, paparan cuaca ekstrem outdoor, serta gigitan hewan pengganggu.
+- Keseragaman Debit Presisi (PC System): Memastikan distribusi air 2.0 L/Jam merata sempurna di sepanjang barisan pipa hingga bentangan ratusan meter pada lahan bergelombang.
+- Perlindungan Maksimal Anti-Siphon (AS): Menyediakan pengamanan ganda terhadap penyumbatan partikel saat pipa dikosongkan (pipe draining).
+- Usia Pakai Sangat Panjang (Multi-Season): Dirancang untuk pemakaian bertahun-tahun tanpa perlu diganti setiap musim panen, meminimalkan biaya investasi jangka panjang.
+
+**Detail Produk :**
+
+- Nama Produk: PC100 Pressure Compensating Dripline Anti-Siphon
+- Kategori: Dripline / PC Heavy-Duty Dripline
+- Kode Item (Item No.): PCAS01161205020
+- Merek / Produsen: ChinaDrip
+- Diameter Luar (Outer Diameter): Dn16 (16 mm)
+- Ketebalan Dinding (Wall Thickness): 1.2 mm (Rigid Thick Wall)
+- Jarak Antar Emiter (Dripper Spacing): 50 cm
+- Debit Aliran Emiter (Flow Rate): 2.0 Liter/Jam (L/H)
+- Fitur Khusus: Pressure Compensating (PC) & Anti-Siphon (AS)
+- Material Utama: Engineering Grade Polyethylene (PE) Tahan UV & Kimia
+
+**SHANDOND HYRT WATER-SAVING IRRIGATION CO.,LTD.**
+
+_China Water Saving Irrigation_
+
+**KATALOG PRODUK**
+
+**Daftar Lengkap Produk HYRT — Edisi 2026**
+
+Disusun berdasarkan HYRT Catalog 2025
+
+# BAB 1 CONNECTOR (Konektor & Fitting Irigasi)
+
+_CONNECTOR merupakan jajaran komponen penyambung, pengunci, dan adaptor yang dirancang khusus untuk mengintegrasikan selang fleksibel (seperti LayFlat) dengan jaringan perpipaan utama, katup (valve), serta peralatan irigasi lainnya. Komponen ini mencakup End Cap (penutup ujung), Reducing Tee (percabangan tiga arah), serta Male/Female Thread Adaptor (adaptor drat luar/dalam)._
+
+**Keunggulan Kategori CONNECTOR:**
+
+- Material Engineering Grade: Dibuat dari bahan polimer berdensitas tinggi yang tahan terhadap radiasi sinar UV, gesekan mekanis, dan paparan zat kimia pertanian.
+- Sambungan Kedap & Tahan Tekanan: Mampu mencengkeram selang dengan rapat untuk mencegah kebocoran walau terjadi fluktuasi tekanan air.
+- Pemasangan Praktis: Desain plug-and-play yang tidak memerlukan perekat/lem kimia, sehingga memudahkan proses instalasi maupun bongkar-pasang saat pembilasan (flushing).
+
+**Aplikasi Utama:**
+
+Digunakan sebagai komponen penyambung pada jaringan distribusi utama dan sub-utama irigasi tetes (_drip_), sprinkler, serta penyiraman lahan pertanian terbuka maupun perkebunan.
+
+## 1\. End cap LayFlat 2" (794063
+
+End Cap LayFlat 2" (kode item 794063) merupakan fiting penutup ujung saluran yang dirancang khusus untuk pipa elastis/selang LayFlat berukuran 63 mm (2 inci). Fiting ini berfungsi untuk menyumbat aliran air di bagian akhir saluran irigasi secara rapat, menjaga tekanan hidraulik dalam jaringan perpipaan tetap stabil, serta mencegah terjadinya kebocoran air.
+
+**Keunggulan Produk:**
+
+- Pemasangan praktis dengan tingkat kerapatan tinggi tanpa membutuhkan lem tambahan.
+- Material kokoh yang tahan terhadap paparan sinar UV, cuaca ekstrem, dan cairan kimia pupuk.
+- Memudahkan proses pembilasan saluran (flushing) di bagian ujung saat perawatan berkala.
+
+**Detail Produk:**
+
+- Nama Produk: End Cap LayFlat 2"
+- Kategori: Fitting Connector For Hose & Tape
+- Kode Item (Item No.): 794063
+- Ukuran (Size): 63 mm (2 Inci)
+
+## 2\. End Cap LayFlat 3" (794090)
+
+End Cap LayFlat 3" (kode item 794090) merupakan fiting penutup ujung saluran untuk pipa elastis/selang LayFlat berukuran 90 mm (3 inci). Berfungsi sebagai penyumbat akhir pada jaringan irigasi utama berdiameter besar, fiting ini mampu menahan tekanan air hidraulik yang tinggi serta memastikan distribusi air di sepanjang jalur irigasi berjalan optimal tanpa ada kebocoran di bagian akhir.
+
+**Keunggulan Produk:**
+
+- Konstruksi dinding fiting tebal, dirancang khusus menahan tekanan air pada selang LayFlat 3 inci.
+- Tahan terhadap korosi, keausan mekanis, dan bahan kimia pertanian.
+- Memberikan penguncian yang kuat dan kedap air pada sambungan akhir saluran.
+
+**Detail Produk:**
+
+- Nama Produk: End Cap LayFlat 3"
+- Kategori: Fitting Connector For Hose & Tape
+- Kode Item (Item No.): 794090
+- Ukuran (Size): 90 mm (3 Inci)
+
+## 3\. Reducing Tee LayFlat 3"x2"x3" (79209063)
+
+Reducing Tee LayFlat 3"x2"x3" (kode item 79209063) merupakan fiting percabangan tiga arah tipe reducer yang digunakan untuk membagi aliran air dari pipa utama LayFlat 90 mm (3") menuju percabangan sub-utama berukuran 63 mm (2") dan melanjutkannya kembali ke saluran 90 mm (3"). Fiting ini dirancang presisi untuk menjaga kestabilan debit dan meminimalkan penurunan tekanan (head loss).
+
+**Keunggulan Produk:**
+
+- Desain pembagian arus presisi dari ukuran 3" ke cabang 2" lalu diteruskan ke 3".
+- Mencengkeram selang LayFlat secara kuat sehingga sambungan tidak mudah terlepas saat tekanan berfluktuasi.
+- Efisien untuk penataan distribusi air pada area lahan pertanian yang luas.
+
+**Detail Produk:**
+
+- Nama Produk: Reducing Tee LayFlat
+- Kategori: Fitting Connector For Hose & Tape
+- Kode Item (Item No.): 79209063
+- Ukuran (Size): 90 × 63 × 90 mm (3" × 2" × 3")
+
+## 4\. Female Thread Adaptor LayFlat 3" (7950903)
+
+Female Thread Adaptor LayFlat 3" (kode item 7950903) merupakan fiting adaptor penyambung yang mengonversi saluran selang LayFlat 90 mm (3 inci) ke sambungan ulir dalam (female thread) berukuran 3 inci. Fiting ini memudahkan penyambungan langsung dari jaringan selang LayFlat ke katup (valve), outlet pompa, atau komponen perpipaan ber-drat luar .
+
+**Keunggulan Produk:**
+
+- Precision threading pada ulir dalam untuk mencegah risiko kebocoran maupun drat aus (drat dol).
+- Memfasilitasi koneksi transisi yang kokoh antara selang fleksibel LayFlat dengan fiting berulir.
+- Tahan terhadap paparan sinar matahari langsung dan bahan kimia fertigasi.
+
+**Detail Produk:**
+
+- Nama Produk: Female Thread Adaptor LayFlat 3"
+- Kategori: Fitting Connector For Hose & Tape
+- Kode Item (Item No.): 7950903
+- Ukuran (Size): 90 mm × 3" (Female Thread / Drat Dalam)
+
+## 5\. Female Thread Adaptor LayFlat 2" (7950632)
+
+Female Thread Adaptor LayFlat 2" (kode item 7950632) merupakan fiting adaptor yang berfungsi menghubungkan selang LayFlat berukuran 63 mm (2 inci) ke soket atau komponen distribusi ber-drat luar (male thread) ukuran 2 inci. Fiting ini memberikan sambungan yang rapat, kuat, dan kedap air pada instalasi irigasi tingkat menengah.
+
+**Keunggulan Produk:**
+
+- Sambungan ulir dalam yang presisi dan kompatibel dengan fiting standar 2 inci.
+- Proses bongkar-pasang cepat dan praktis tanpa membutuhkan perekat khusus.
+- Konstruksi terbuat dari material engineering grade yang tahan lama dan bebas korosi.
+
+**Detail Produk:**
+
+- Nama Produk: Female Thread Adaptor LayFlat 2"
+- Kategori: Fitting Connector For Hose & Tape
+- Kode Item (Item No.): 7950632
+- Ukuran (Size): 63 mm × 2" (Female Thread / Drat Dalam)
+
+## 6\. Male Thread Adaptor LayFlat 3" (7960903)
+
+Male Thread Adaptor LayFlat 3" (kode item 7960903) adalah fiting penyambung yang mengubah jalur selang LayFlat 90 mm (3 inci) menjadi koneksi ulir luar (male thread) berukuran 3 inci. Fiting ini dirancang untuk menyambungkan selang utama LayFlat ke peralatan irigasi ber-drat dalam seperti ball valve, filter air, maupun outlet mesin pompa.
+
+**Keunggulan Produk:**
+
+- Ulir luar tebal dan kokoh, tahan terhadap gesekan saat pembongkaran rutin di lapangan.
+- Menjamin sambungan tetap rapat dan tahan terhadap tekanan operasional tinggi.
+- Ideal digunakan pada titik awal distribusi jaringan perpipaan utama pertanian.
+
+**Detail Produk:**
+
+- Nama Produk: Male Thread Adaptor LayFlat 3"
+- Kategori: Fitting Connector For Hose & Tape
+- Kode Item (Item No.): 7960903
+- Ukuran (Size): 90 mm × 3" (Male Thread / Drat Luar)
+
+## 7\. Male Thread Adaptor LayFlat 2" (7960632)
+
+Male Thread Adaptor LayFlat 2" (kode item 7960632) merupakan fiting adaptor penyambung yang mengonversi saluran selang elastis LayFlat berukuran 63 mm (2 inci) menjadi koneksi ulir luar (male thread) berukuran 2 inci. Fiting ini dirancang untuk menyambungkan selang LayFlat 2" ke komponen jaringan irigasi yang memiliki ulir dalam (female thread), seperti ball valve, filter air, soket PVC ber-drat, maupun outlet distribusi air.
+
+**Keunggulan Produk:**
+
+- Ulir luar yang presisi, tebal, dan kokoh, sehingga tahan terhadap keausan (drat dol) saat proses bongkar-pasang di lapangan.
+- Menghasilkan sambungan yang sangat rapat, kuat, dan kedap air tanpa perlu perekat/lem tambahan.
+- Terbuat dari material engineering grade tahan paparan sinar UV, cuaca ekstrem, dan bahan kimia pupuk cair/fertigasi.
+
+**Detail Produk:**
+
+- Nama Produk: Male Thread Adaptor LayFlat 2"
+- Kategori: Fitting Connector For Hose & Tape
+- Kode Item (Item No.): 7960632
+- Ukuran (Size): 63 mm × 2" (Male Thread / Drat Luar)
+
+# BAB 2 CONTROLLER (Pengontrol Irigasi Otomatis)
+
+_CONTROLLER adalah unit pengontrol otomatis cerdas berbasis mikrokontroler yang berfungsi mengatur siklus, jadwal, dan durasi penyiraman air secara presisi pada beberapa zona (multi-station). Perangkat ini mengotomatiskan pembukaan dan penutupan solenoid valve atau mesin pompa tanpa memerlukan intervensi manual setiap hari._
+
+**Keunggulan Kategori CONTROLLER:**
+
+- Manajemen Multi-Zona: Mampu mengendalikan banyak stasiun/zona irigasi secara independen dengan program penyiraman tersendiri.
+- Integrasi Sensor Cerdas: Kompatibel dengan rain sensor (sensor hujan) atau moisture sensor (sensor kelembapan tanah) untuk secara otomatis menghentikan penyiraman saat cuaca hujan.
+- Fitur Water Budget & Efisiensi: Memungkinkan penyesuaian persentase debit air secara massal sesuai dengan perubahan musim tanpa merubah jadwal dasar.
+
+**Aplikasi Utama:**
+
+Sistem otomasi irigasi pada lahan pertanian modern, greenhouse, taman kota, lanskap komersial, serta area perkebunan berskala menengah hingga luas.
+
+## 1\. Multi-Station Irrigation Controller with Internal Transformer (HY10469)
+
+Multi-Station Irrigation Controller with Internal Transformer (kode item HY10469 / HY-10469) merupakan kontroler irigasi otomatis multi-zona (multi-zone controller) yang dirancang untuk manajemen penyiraman pada lanskap taman (garden irrigation) maupun lahan pertanian (agricultural irrigation). Dilengkapi dengan transformer internal, pengontrol ini mampu mengoperasikan dan mengontrol hingga 4, 6, 9, atau 11 stasiun/zona irigasi secara independen dan presisi.
+
+**Keunggulan Produk:**
+
+- Konfigurasi Stasiun Fleksibel: Dapat disesuaikan untuk mengontrol 4, 6, 9, atau 11 stasiun irigasi sesuai skala area perkebunan atau taman.
+- Pengaturan Siklus & Durasi Presisi: Setiap stasiun mendukung hingga 6 siklus penyiraman per hari dengan durasi mulai dari 1 menit hingga 12 jam 59 menit.
+- Fitur Water Budget (10% - 200%): Memudahkan penyesuaian rasio volume air secara cepat saat perubahan musim tanpa perlu merombak program dasar.
+- Integrasi Sensor Hujan/Kelembapan: Mendukung koneksi rain sensor atau soil moisture sensor untuk secara otomatis membatalkan/melewati (skip) jadwal penyiraman saat cuaca hujan atau tanah masih cukup basah.
+- Koneksi Pompa & Master Valve: Dilengkapi port khusus untuk koneksi 1 pompa (Master Pump) dan 1 sensor.
+
+**Detail Produk:**
+
+- Nama Produk: Multi-Station Irrigation Controller with Internal Transformer
+- Kategori: Multi Zone Controllers / Irrigation Controller
+- Kode Item (Item No.): HY10469 (HY-10469)
+- Tegangan Input (Input): AC 230V / AC 110V, 35VA, 50-60Hz
+- Tegangan Output (Output): AC 24V, 0.8A
+- Kapasitas Zona: 4, 6, 9, atau 11 Stasiun (Stations)
+- Baterai Cadangan (Backup Battery): 1 × Baterai Alkaline 9V (untuk menyimpan memori jam saat listrik padam)
+- Aplikasi Utama: Irigasi Pertanian, Taman, Greenhouse, dan Ruang Terbuka Hijau
+
+# BAB 3 FERTILIZER INJECTOR (Injektor Pupuk / Fertigasi)
+
+_FERTILIZER INJECTOR merupakan perangkat penyuntik nutrisi yang berfungsi mengalirkan dan mencampurkan larutan pupuk cair secara langsung ke dalam jaringan air irigasi (fertigation). Kategori ini mencakup dua teknologi utama: Proportional Applicator (pencampur proporsional berbasis daya hidraulik) dan Venturi Injector (injektor berbasis tekanan vakum)._
+
+**Keunggulan Kategori FERTILIZER INJECTOR:**
+
+- Operasi Bebas Listrik: Murni memanfaatkan tenaga dorong dan aliran air irigasi untuk proses penyedotan pupuk, menghemat konsumsi energi.
+- Presisi & Pencampuran Merata: Memastikan setiap tanaman menerima konsentrasi pupuk dan nutrisi cair yang seragam di seluruh area lahan.
+- Ketahanan Bahan Kimia Tinggi: Dibuat dari material anti-korosi yang tahan terhadap cairan pupuk pekat, asam, dan formula kimia pertanian.
+
+**Aplikasi Utama:**
+
+Sistem fertigasi presisi pada irigasi tetes (drip irrigation), greenhouse, sistem hidroponik, dan penyiraman bibit/tanaman hortikultura.
+
+## 1\. Proportional Fertilizer Applicator 3/4" (HY2504)
+
+Proportional Fertilizer Applicator 3/4" (kode item HY2504 / HY-2504) merupakan alat pemupukan otomatis berpresisi tinggi yang bekerja memanfaatkan tenaga dorong aliran air (hydrodynamic mechanism) tanpa memerlukan pasokan listrik luar. Alat ini menyedot larutan pupuk cair dan mencampurkannya secara proporsional sesuai rasio persentase yang disetel (0.4% – 4%) langsung ke dalam saluran irigasi.
+
+**Keunggulan Produk:**
+
+- Operasi Bebas Listrik: Murni digerakkan oleh tekanan aliran air irigasi, sangat menghemat energi dan biaya operasional.
+- Rasio Dosis Akurat: Dilengkapi kenop penyetel (accurate dial) untuk mengatur rasio pemupukan dari 0.4% hingga 4.0% secara konsisten.
+- Keamanan Maksimal: Dilengkapi katup pembuang udara (bleeder valve) serta katup satu arah (check valve) untuk mencegah aliran balik larutan pupuk.
+- Material Tahan Kimia: Bodi luar terbuat dari bahan tahan korosi (corrosion resistant shell) yang awet terhadap berbagai jenis pupuk cair dan fertigasi.
+
+**Detail Produk:**
+
+- Nama Produk: Proportional Fertilizer Applicator
+- Kategori: Fertilizer Injector / Proportional Fertilizer Applicator
+- Kode Item (Item No.): HY2504 (HY-2504)
+- Ukuran Sambungan (Interface): 3/4 Inci
+- Rentang Rasio Injeksi (Scale Range): 0.4% – 4.0%
+- Rentang Aliran Air (Flow Range): 20 – 2.500 L/Jam
+- Tekanan Kerja (Working Pressure): 0.2 – 8 Bar
+- Suhu Kerja (Working Temperature): 4°C – 40°C
+
+## 2\. New Venturi Fertilizer Injector 1" (F32V)
+
+New Venturi Fertilizer Injector 1" (kode item F32V) merupakan injektor pupuk tipe Venturi generasi baru berukuran 1 inci (32 mm). Alat ini memanfaatkan prinsip tekanan vakum perbedaan aliran (venturi effect) untuk menyedot larutan pupuk cair dari tangki penampung ke dalam jaringan perpipaan utama dengan kapasitas hisap hingga 300 L/jam pada laju debit air maksimum 8 m³/jam.
+
+**Keunggulan Produk:**
+
+- Daya Hisap Efisien: Desain pipa Venturi modern yang menghasilkan penyedotan pupuk secara responsif dan stabil.
+- Set Lengkap: Dilengkapi selang hisap transparan, katup pengatur debit injeksi, dan strainer filter pencegah sumbatan.
+- Kemudahan Instalasi: Sangat fleksibel dipasang pada sistem bypass jaringan irigasi tetes (drip) maupun mikro sprinkler.
+- Tahan Tekanan & Kimia: Konstruksi bahan polimer tebal yang mampu menahan tekanan kerja hingga 8 Bar serta tahan terhadap zat kimia pupuk.
+
+**Detail Produk:**
+
+- Nama Produk: New Venturi Fertilizer Injector 1"
+- Kategori: Fertilizer Injector / Venturi Injector
+- Kode Item (Item No.): F32V
+- Ukuran Diameter (Diameter): 1 Inci (32 mm)
+- Kapasitas Hisap Pupuk (Absorption): Maks. 300 L/Jam
+- Laju Aliran Air Maksimum (Max Discharge): 8 m³/Jam
+- Tekanan Maksimum (Max Pressure): 8 Bar
+
+## 3\. New Venturi Fertilizer Injector 1.5" (F50V)
+
+New Venturi Fertilizer Injector 1.5" (kode item F50V) adalah alat penyuntik pupuk Venturi berkapasitas sedang-besar berukuran 1.5 inci (50 mm). Dirancang khusus untuk kebutuhan fertigasi lahan pertanian menengah, alat ini memiliki kemampuan hisap pupuk hingga 780 L/jam dan mampu mengalirkan debit air utama hingga 15 m³/jam.
+
+**Keunggulan Produk:**
+
+- Kapasitas Hisap Tinggi: Menyerap hingga 780 L/jam pupuk cair, sangat cepat untuk distribusi nutrisi pada area lahan yang lebih luas.
+- Bebas Komponen Bergerak: Menggunakan vakum alami sehingga bebas dari risiko aus mekanis dan minim pemeliharaan.
+- Pencampuran Merata: Memastikan nutrisi pupuk tercampur sempurna dengan air sebelum masuk ke zona penyiraman tanaman.
+- Durabilitas Tinggi: Dibuat dari material plastik engineering grade tahan paparan sinar UV dan cairan korosif.
+
+**Detail Produk:**
+
+- Nama Produk: New Venturi Fertilizer Injector 1.5"
+- Kategori: Fertilizer Injector / Venturi Injector
+- Kode Item (Item No.): F50V
+- Ukuran Diameter (Diameter): 1.5 Inci (50 mm)
+- Kapasitas Hisap Pupuk (Absorption): Maks. 780 L/Jam
+- Laju Aliran Air Maksimum (Max Discharge): 15 m³/Jam
+- Tekanan Maksimum (Max Pressure): 8 Bar
+
+**Ningbo Shangda Plastic and Hardware Co.,Itd**
+
+_Ningbo Shangda Plastic Hardware_
+
+**KATALOG PRODUK**
+
+**Daftar Lengkap Produk NINGBO SHANGDA — Edisi 2026**
+
+Disusun berdasarkan NINGBO SHANGDA Catalog 2025
+
+# BAB 1 SPRINKLER SYSTEM (Sistem Penyiraman Mikro & Mini Presisi)
+
+_SPRINKLER SYSTEM merupakan jajaran peralatan penyiraman air presisi berkinerja tinggi yang dirancang khusus untuk mendistribusikan air secara merata, efisien, dan terkontrol guna mendukung pertumbuhan tanaman serta mengoptimalkan penggunaan air. Kategori ini mencakup Micro Sprinkler (tipe semprotan mikro halus berjangkauan presisi), Mini Frame Sprinkler (tipe kerangka dengan cakupan sedang), Butterfly Sprinkler (tipe rotasi halus tekanan rendah), hingga Adjustable Sprinkler yang fleksibel._
+
+**Keunggulan Kategori SPRINKLER SYSTEM:**
+
+- Distribusi Air Presisi & Merata: Menghasilkan butiran semprotan air halus hingga sedang yang meminimalkan erosi tanah, pemadatan media tanam, serta kerusakan pada dedaunan dan bunga sensitif.
+- Efisiensi Air & Energi: Dirancang untuk beroperasi pada tekanan kerja rendah hingga menengah dengan efisiensi hidrolik tinggi, menghemat konsumsi air dan daya kerja pompa.
+- Material Engineering Grade & Tahan UV: Dibuat dari bahan polimer rekayasa berkualitas tinggi yang tahan terhadap paparan radiasi sinar UV, perubahan cuaca ekstrem, serta bahan kimia pupuk (fertigation).
+- Kemudahan Instalasi & Pengaturan: Dilengkapi dengan koneksi standar (threaded / socket) serta fitur penyesuaian debit dan radius semprotan yang memudahkan integrasi pada berbagai jaringan perpipaan.
+
+**Aplikasi Utama:**
+
+Digunakan sebagai unit penyiram utama maupun pendukung pada sistem pertanian lahan terbuka (open field), perkebunan hortikultura, rumah kaca (greenhouse), persemaian/pembibitan (nursery), penataan lanskap/taman, hingga area rumput lanskap.
+
+## 1\. Micro Sprinkler Male 1/2" Adjustable (SD1634)
+
+Micro Sprinkler Male 1/2" (kode item SD1634) merupakan katup semprotan mikro presisi dengan fitur pengaturan aliran (adjustable) yang dirancang khusus untuk kebutuhan penyiraman mikro yang membutuhkan fleksibilitas debit dan jangkauan area. Alat ini sangat efisien untuk mengairi pot tanaman, tanaman semak (shrub), bedeng pembibitan, dan area lanskap taman dengan efisiensi tinggi.
+
+**Keunggulan Produk:**
+
+- Fitur Debit Air Fleksibel (Adjustable): Debit air dapat diatur secara manual mulai dari 0 hingga 180 Liter/jam, memungkinkan kontrol presisi sesuai dengan konsumsi air spesifik tiap tanaman.
+- Jangkauan Fleksibel & Terukur: Memiliki radius semprotan berkisar antara 0.5 hingga 4.5 meter untuk efisiensi penyiraman tanpa membuang air ke area luar.
+- Tekanan Kerja Konsisten: Beroperasi optimal pada tekanan 2.0 hingga 4.0 bar, menjaga stabilitas butiran air agar tidak merusak vegetasi sensitif.
+- Material Tahan Cuaca & UV: Terbuat dari bahan polimer rekayasa (PP/POM) berkualitas tinggi yang tahan terhadap paparan sinar matahari langsung, radiasi UV, dan cairan pupuk (fertigation).
+- Kemudahan Instalasi: Dilengkapi dengan sambungan ulir luar (male thread) 1/2 inci yang dapat dipasang langsung pada fitting perpipaan standar.
+
+**Detail Produk:**
+
+- Nama Produk: Micro Sprinkler Male 1/2" Adjustable
+- Kategori: Sprinkler System / Micro Sprinkler
+- Kode Item (Item No.): SD1634
+- Ukuran Sambungan (Connection Size): 1/2 Inci (Male Thread)
+- Tingkat Pressisi (Working Pressure): 2.0 – 4.0 Bar
+- Laju Aliran Maksimum (Flux): 0 – 180 L/Jam (Adjustable)
+- Jangkauan Semprotan (Radius): 0.5 – 4.5 Meter
+- Material Utama: Polimer Rekayasa (PP/POM) Tahan UV & Kimia
+
+## 2\. Mini Frame Sprinkler Male 1/2" & 3/4" (SD1624A)
+
+Mini Frame Sprinkler (kode item SD1624A) adalah penyiram tipe kerangka (_frame_) berkinerja tinggi yang dirancang khusus untuk mendistribusikan air secara merata dan melingkar pada lahan pertanian skala menengah, perkebunan buah, serta bedeng semai. Dengan opsi koneksi ganda 1/2" dan 3/4", unit ini menawarkan fleksibilitas pemasangan yang sangat tinggi pada berbagai jaringan pipa irigasi.
+
+**Keunggulan Produk:**
+
+- Cakupan Semprotan Merata: Desain bingkai (frame) yang kokoh memastikan pola semprotan melingkar secara seimbang hingga radius 4.0 – 5.0 meter.
+- Koneksi Ganda Adaptif: Memiliki ulir kombinasi 1/2" & 3/4" Male Thread yang memudahkan integrasi ke berbagai ukuran fitting perpipaan tanpa adaptor tambahan.
+- Efisiensi Aliran Air: Menyalurkan debit air 0.5 hingga 0.8 m³/jam pada tekanan rendah-menengah (1.0 – 3.0 bar), menghemat penggunaan energi pompa.
+- Material Heavy-Duty & Tahan Korosi: Dibuat dari material polimer rekayasa yang tahan terhadap gesekan hidrolik, bahan kimia pupuk (fertigation), dan paparan radiasi sinar UV.
+- Perawatan Praktis: Struktur tanpa bagian bergerak yang rumit meminimalkan risiko penyumbatan dan mempermudah proses pembersihan.
+
+**Detail Produk:**
+
+- Nama Produk: Mini Frame Sprinkler Male 1/2" & 3/4"
+- Kategori: Sprinkler System / Mini Frame Sprinkler
+- Kode Item (Item No.): SD1624A
+- Ukuran Sambungan (Connection Size): 1/2 Inci & 3/4 Inci (Male Thread Dual Size)
+- Tekanan Kerja Maksimum (Working Pressure): 1.0 – 3.0 Bar
+- Laju Aliran Maksimum (Flux): 0.5 – 0.8 m³/Jam (500 – 800 L/Jam)
+- Jangkauan Semprotan (Radius): 4.0 – 5.0 Meter
+- Material Utama: Polimer Rekayasa (PP/POM) Tahan UV & Kimia
+
+## 3\. Butterfly Mini Sprinkler Male 1/2" (SD1622)
+
+Butterfly Mini Sprinkler Male 1/2" (kode item SD1622) merupakan unit penyiram tipe putar berbentuk kupu-kupu (butterfly design) yang dirancang khusus untuk beroperasi pada tekanan air ultra-rendah. Alat ini sangat efektif untuk mendistribusikan butiran air halus pada persemaian (nursery), rumah kaca (greenhouse), dan tanaman hortikultura yang membutuhkan penyiraman lembut tanpa merusak struktur tanah dan daun.
+
+**Keunggulan Produk:**
+
+- Operasi Tekanan Ultra-Rendah: Mampu berputar dan menyemprotkan air secara optimal mulai dari tekanan kerja sangat rendah (0.5 bar).
+- Pola Semprotan Rotasi Halus: Menghasilkan distribusi air yang merata dan lembut memutar menyerupai kepakan kupu-kupu untuk melindungi bibit dan tanaman sensitif.
+- Rentang Debit Fleksibel: Menyediakan laju aliran air 0.15 hingga 1.0 m³/jam (150 – 1000 L/jam) sesuai dengan tingkat tekanan hidrolik yang diberikan.
+- Material Tahan Kimia & UV: Diproduksi dari plastik rekayasa kualitas premium yang tahan lama terhadap paparan sinar matahari outdoor dan larutan pupuk irigasi.
+- Pemasangan Ringkas: Dilengkapi ulir luar 1/2 inci yang universal untuk pemasangan cepat pada pipe riser atau stand pipe.
+
+**Detail Produk:**
+
+- Nama Produk: Butterfly Mini Sprinkler Male 1/2"
+- Kategori: Sprinkler System / Butterfly Sprinkler
+- Kode Item (Item No.): SD1622
+- Ukuran Sambungan (Connection Size): 1/2 Inci (Male Thread)
+- Tekanan Kerja Maksimum (Working Pressure): 0.5 – 3.0 Bar
+- Laju Aliran Maksimum (Flux): 0.15 – 1.0 m³/Jam (150 – 1000 L/Jam)
+- Jangkauan Semprotan (Radius): 2.0 – 4.0 Meter
+- Material Utama: Polimer Rekayasa (PP/POM) Tahan UV & Kimia
+
+## 4\. Rotary Sprinkler Male 1/2" (SD1609)
+
+Rotary Sprinkler Male 1/2" (kode item SD1609) merupakan unit sprinkler putar (rotary) berkinerja tinggi yang dirancang khusus untuk memberikan distribusi semprotan air melingkar yang luas, seragam, dan presisi. Dilengkapi dengan opsi nozzle berkarakteristik warna (color-coded nozzles), alat ini sangat ideal untuk penyiraman tanaman pertanian lahan terbuka, perkebunan buah, persemaian skala luas, hingga area lanskap taman.
+
+**Keunggulan Produk:**
+
+- Opsi Nozzle Berkode Warna (Color-Coded): Menyediakan fleksibilitas pengaturan laju aliran (flux) dan jangkauan melalui beragam ukuran nozzle (1.85 mm hingga 3.68 mm) sesuai kebutuhan spesifik jenis tanaman.
+- Jangkauan Semprotan Luas & Merata: Mampu menyemprotkan air hingga radius 5.5–9.5 meter dengan butiran air yang terdistribusi secara seimbang di seluruh area putaran.
+- Operasi Tekanan Efisien: Beroperasi secara optimal pada tekanan kerja rendah-menengah (1.0–3.0 bar) untuk menghemat konsumsi daya dan energi pompa.
+- Material Polimer Rekayasa Tahan UV & Kimia: Dibuat dari material polimer rekayasa heavy-duty yang tahan terhadap paparan radiasi sinar UV, suhu outdoor ekstrem, serta cairan pupuk irigasi (fertigation).
+- Mekanisme Rotasi Presisi: Didesain dengan keandalan rotasi yang stabil untuk meminimalkan keausan komponen dan penyumbatan kotoran.
+
+**Detail Produk:**
+
+- ama Produk: Rotary Sprinkler Male 1/2"
+- Kategori: Sprinkler System / Rotary Sprinkler
+- Kode Item (Item No.): SD1609
+- Ukuran Sambungan (Connection Size): 1/2 Inci (Male Thread)
+- Tekanan Kerja (Working Pressure): 1.0 – 3.0 Bar
+- Laju Aliran (Flux): 200 – 750 L/Jam (tergantung varian nozzle)
+- Jangkauan Semprotan (Radius): 5.5 – 9.5 Meter
+- Spesifikasi Varian Nozzle (Ukuran 1/2")
+- Yellow (1.85 mm): 200 L/jam | Radius 5.5 m
+- Purple (2.06 mm): 250 L/jam | Radius 6.0 m
+- Green (2.44 mm): 350 L/jam | Radius 7.0 m
+- Blue (2.79 mm): 450 L/jam | Radius 8.5 m
+- Brown (3.08 mm): 550 L/jam | Radius 9.0 m
+- Orange (3.37 mm): 650 L/jam | Radius 9.0 m
+- Red (3.68 mm): 750 L/jam | Radius 9.5 m
+- Material Utama: Polimer Rekayasa (PP/POM) Tahan UV & Kimia)
+
+## 5\. Micro Sprinkler 5-Nozzle Brass Misting / Fogger (SD3042B)
+
+Micro Sprinkler 5-Nozzle (kode item SD3042B) merupakan unit pengkabutan (misting/fogging) presisi tinggi yang memadukan 5 cabang nozzle kuningan (brass) pada satu kerangka manifold. Alat ini dirancang khusus untuk kebutuhan pengkabutan halus, pengaturan kelembapan udara (humidity control), serta penurunan suhu (cooling system) pada rumah kaca (greenhouse), tempat pembibitan benih (nursery), hingga penataan lanskap.
+
+**Keunggulan Produk:**
+
+- Konfigurasi 5-Nozzle Maksimal: Menggunakan 5 titik kepala nozzle kuningan secara bersamaan untuk menghasilkan pola penyebaran embun/kabut air halus yang rapat dan merata secara 360 derajat.
+- Material Nozzle Kuningan (Brass) Presisi: Kepala nozzle terbuat dari bahan kuningan berkualitas tinggi yang tahan gesekan, tahan korosi, dan menghasilkan butiran embun halus yang konsisten.
+- Pengontrol Suhu & Kelembapan Efektif: Sangat efektif menciptakan iklim mikro yang ideal di dalam greenhouse tanpa menimbulkan tetesan air besar yang berpotensi merusak benih atau tanaman sensitif.
+- Efisiensi Tekanan Rendah-Menengah: Beroperasi optimal pada tekanan 1.0 hingga 3.0 bar untuk menghasilkan semprotan embun dengan radius 1.1 hingga 1.2 meter.
+- Konstruksi Tahan UV & Kimia: Menggunakan bahan polimer rekayasa heavy-duty pada bagian manifold yang tahan terhadap radiasi sinar UV dan cairan pupuk irigasi (fertigation).
+
+**Detail Produk:**
+
+- Nama Produk: Micro Sprinkler 5-Nozzle Brass Misting / Fogger
+- Kategori: Micro Sprinkler / Misting & Fogging System
+- Kode Item (Item No.): SD3042B
+- Jumlah Nozzle: 5 Kepala Nozzle Kuningan (Brass)
+- Tekanan Kerja (Working Pressure): 1.0 – 3.0 Bar
+- Laju Aliran (Flux): 47.4 – 87.6 L/Jam
+- Jangkauan Semprotan (Radius): 1.1 – 1.2 Meter
+- Material Utama: Nozzle Kuningan (Brass) & Manifold Polimer Rekayasa Tahan UV
+
+**PKY DRIP IRRIGATION**
+
+_PKY DRIP IRRIGATION_
+
+**KATALOG PRODUK**
+
+**Daftar Lengkap Produk PKY DRIP — Edisi 2026**
+
+Disusun berdasarkan PKY DRIP Catalog 2025
+
+# BAB 1 CONTROLLER
+
+_IRRIGATION CONTROLLER SYSTEM merupakan jajaran peralatan pengontrol penyiraman air pintar dan presisi berkinerja tinggi yang dirancang khusus untuk mengatur jadwal, durasi, serta distribusi air secara otomatis, efisien, dan terpusat guna mendukung pertumbuhan tanaman serta mengoptimalkan penggunaan sumber daya air. Kategori ini mencakup Smart WiFi Controller (tipe kontrol jarak jauh berbasis aplikasi & IoT), Digital Timer Controller (tipe otomatisasi lokal), hingga Manual Controller yang andal dan fleksibe._
+
+**Keunggulan Kategori IRRIGATION CONTROLLER SYSTEM:**
+
+- Pengontrolan Presisi & Otomatis: Memungkinkan pengaturan jadwal dan durasi penyiraman secara terukur untuk mencegah kekurangan maupun kelebihan air (overwatering).
+- Efisiensi Air & Energi Berbasis IoT: Dilengkapi fitur otomatisasi pintar seperti penundaan cuaca otomatis (smart weather delay) dan pengaturan siklus peresapan (cycle & soak) untuk menghemat konsumsi air dan daya.
+- Fleksibilitas Multi-Zona: Mampu mengendalikan berbagai zona penyiraman secara independen sesuai dengan kebutuhan debit dan jenis tanaman di tiap area.
+- Kemudahan Integrasi & Pengoperasian: Mendukung konektivitas nirkabel (WiFi), integrasi perintah suara, serta antarmuka yang ramah pengguna baik melalui aplikasi smartphone maupun kontrol panel fisik.
+
+**Aplikasi Utama:**
+
+Digunakan sebagai unit pengontrol utama pada sistem irigasi tetes (drip irrigation), sprinkler lanskap/taman, rumah kaca (greenhouse), perkebunan hortikultura, area rumput lanskap (lawn), hingga sistem pembibitan (nursery).
+
+## 1\. Smart WiFi Sprinkler Controller 8-Zone 24VAC (PKY-24V8S-W)
+
+Smart WiFi Sprinkler Controller 8-Zone 24VAC (kode item PKY-24V8S-W) merupakan unit pengontrol penyiraman pintar berbasis WiFi 2.4GHz yang dirancang khusus untuk mengelola hingga 8 zona penyiraman secara terpisah dan presisi melalui aplikasi Smart Life. Dilengkapi dengan transformer bawaan 220V–24VAC, alat ini sangat efisien untuk mengendalikan katup solenoid valve pada sistem irigasi tetes (drip irrigation) maupun sprinkler taman dengan fleksibilitas penuh.
+
+**Keunggulan Produk:**
+
+- Kontrol Jarak Jauh via Aplikasi: Mengatur dan memantau penyiraman dari mana saja menggunakan aplikasi Smart Life. Mendukung hingga 10 jadwal penyiraman terpisah.
+- Fitur Cycle & Soak: Membagi durasi penyiraman menjadi beberapa siklus pendek untuk mengoptimalkan penyerapan air tanah dan mencegah penumpukan/limpasan air (water runoff).
+- Smart Weather Delay: Menunda jadwal penyiraman secara otomatis saat kondisi cuaca hujan atau salju guna menghemat konsumsi air.
+- Integrasi Perintah Suara: Kompatibel penuh dengan Amazon Alexa dan Google Assistant untuk kemudahan pengontrolan suara secara praktis.
+- Kontrol Manual Langsung (Panel Tombol):
+- Mulai Cepat Semuanya: Tahan tombol UP selama ~5 detik untuk menyiram semua zona.
+- Batalkan Penyiraman: Tahan tombol DOWN selama ~5 detik untuk membatalkan penyiraman.
+- Mode Pairing WiFi: Tahan tombol SELECT selama ~5 detik hingga indikator WiFi berkedip cepat.
+- Reset Perangkat: Tahan tombol UP saat memasang daya hingga terdengar 2 bip.
+- Dedicated Power Transformer: Dilengkapi trafo daya 220V–24VAC 2000mA yang stabil dan aman untuk mengoperasikan hingga 8 solenoid valve irigasi secara independen.
+
+**Detail Produk:**
+
+- Nama Produk: Smart WiFi Sprinkler Controller 8-Zone 24VAC
+- Kategori: Controller / PKY Drip Irrigation / Sprinkler System
+- Kode Item (Item No.): PKY-24V8S-W
+- Kapasitas Zona (Zone Capacity): 8 Zona (Dikontrol secara independen)
+- Tegangan Input (Input Voltage): AC 220V – 230V
+- Tegangan Output (Output Voltage): AC 24V, 2000mA
+- Konektivitas (Connectivity): WiFi 2.4 GHz (Aplikasi Smart Life)
+- Integrasi Suara (Voice Control): Amazon Alexa & Google Assistant
+
+**Kelengkapan Paket:**
+
+- 1x Controller Irigasi Pintar 8-Zone (PKY-24V8S-W)
+- 1x Power Transformer (220V to 24VAC)
+- 1x Panduan Penggunaan / Manual
+
+**Z&W Automation Equipment Factory**
+
+_China Water Saving Irrigation_
+
+**KATALOG PRODUK**
+
+**Daftar Lengkap Produk Yuyao Zanchen — Edisi 2026**
+
+Disusun berdasarkan Zanchen Selenoid Catalog 2025
+
+# BAB 1 VALVE & ACCESSORIES (Pengontrol, Katup & Aksesori Sistem Irigasi)
+
+_VALVE dari Yuyao Zanchen merupakan jajaran katup kontrol elektrik (solenoid valve) dan manual berkinerja tinggi yang dirancang khusus untuk mengelola, membuka, dan menutup aliran air secara otomatis maupun presisi pada jaringan irigasi. Kategori ini berfokus pada katup solenoid bahan plastik teknik (Glass-filled Nylon & PVC) berukuran 1" hingga 3", katup kran manual, Quick Coupling Valve, serta katup pengatur tekanan hidraulik._
+
+**Keunggulan Kategori VALVE & ACCESSORIES:**
+
+- Konstruksi Heavy-Duty & Tahan Korosi: Dibuat dari material polimer rekayasa (Heavy-Duty Nylon/PVC) bertulang serat kaca (glass-filled) yang sangat tangguh menahan tekanan hidraulik tinggi, radiasi sinar UV, dan paparan kimia pupuk.
+- Fitur Flow Adjustment & Manual Bleed: Dilengkapi tuas pengatur aliran (flow control handle) untuk membatasi debit air serta sistem internal/external manual bleed yang memungkinkan pengoperasian katup secara manual tanpa daya listrik.
+- Desain Diafragma Tahan Clog & Tekanan: Menggunakan diafragma karet sintetis berkualitas tinggi yang responsif terhadap fluktuasi tekanan serta tahan terhadap air keruh atau berpasir.
+- Varian Solenoid Efisien: Kompatibel dengan berbagai tipe solenoid seperti AC 24V (paling umum untuk controller stasioner) serta DC Latching 9V-12V untuk sistem bertenaga baterai/panel surya.
+
+**Aplikasi Utama:**
+
+Digunakan sebagai katup pembagi zona (zone valve) pada otomatisasi sistem irigasi lanskap/taman kota, lapangan olahraga/golf, rumah kaca (greenhouse), serta pertanian lahan terbuka skala menengah hingga luas.
+
+## 1\. Solenoid Valve 24VAC 3/4" (076DH)
+
+Solenoid Valve 24VAC 3/4" (kode item 076DH) adalah katup kontrol elektrik berbasis pilot-operated diaphragm yang dirancang untuk mengontrol aliran air secara presisi pada sistem irigasi otomatis skala kecil hingga menengah. Dibuat dari material glass-filled nylon yang diperkuat, katup ini mampu mengalirkan debit air hingga 5.0 m³/jam dengan tekanan kerja 1.0–10.0 bar pada tegangan operasional 24VAC.
+
+**Keunggulan Produk:**
+
+- Pencegahan Water Hammer: Menerapkan fitur penutupan lambat (slow closing) untuk meredam lonjakan tekanan air dan menjaga keutuhan pipa.
+- Pengaturan Aliran & Manual Override: Dilengkapi tuas pengatur debit (flow control handle) serta sakelar manual independen untuk pengoperasian tanpa listrik.
+- Proteksi Sistem Ganda: Sistem double filtration mencegah kotoran masuk dan menyumbat inti solenoid.
+- Konstruksi Kedap Air: Kumparan solenoid terisolasi secara penuh (waterproof sealing coil) dan tahan paparan cuaca luar ruangan.
+
+**Detail Produk:**
+
+- Nama Produk: Solenoid Valve 24VAC 3/4"
+- Kategori: Solenoid Valve / Katup Solenoid Irigasi
+- Kode Item (Item No.): 076DH
+- Ukuran Port / Diameter: 3/4 Inci (DN20)
+- Tegangan Operasional (Voltage): 24VAC (50/60 Hz)
+- Kapasitas Aliran Maksimum (Max Flow): 5.0 m³/Jam
+- Tekanan Kerja (Pressure): 1.0 – 10.0 Bar
+- Material Bodi: Glass-filled Nylon (Sealed ring: NBR/EPDM)
+- Dimensi (P × L × T): 114 mm × 83 mm × 133 mm)
+
+## 2\. Solenoid Valve 24VAC 1" (101DH)
+
+Solenoid Valve 24VAC 1" merupakan katup kontrol elektrik yang dirancang untuk sistem irigasi otomatis pada area lanskap, taman, maupun ruang terbuka hijau. Dengan kapasitas aliran hingga 9,0 m³/jam dan tekanan kerja 1,0–10,0 bar, katup ini mampu memberikan pengaturan aliran air yang stabil serta mendukung pengoperasian sistem irigasi secara andal dalam berbagai kondisi.
+
+**Keunggulan Produk:**
+
+- Penutupan katup secara bertahap membantu mengurangi risiko water hammer.
+- Dilengkapi flow control handle untuk pengaturan debit air yang lebih presisi.
+- Sistem double filtration melindungi komponen internal dari partikel kotoran.
+- Memiliki fitur manual override untuk pengoperasian manual saat diperlukan.
+- Kumparan solenoid kedap air sehingga sesuai untuk penggunaan di luar ruangan.
+
+**Detail Produk:**
+
+- Jenis Produk : Solenoid Valve
+- Kategori : Solenoid Valve / Katup Solenoid Irigasi
+- Item No. : 101DH
+- Ukuran Port : 1" (DN25)
+- Tegangan Operasional : 24VAC (50/60 Hz)
+- Kapasitas Aliran Maksimum : 9,0 m³/jam
+- Tekanan Kerja : 1,0–10,0 Bar
+- Material Bodi : Glass-filled Nylon
+- Material Seal : NBR / EPDM
+- Dimensi : 115 × 84 × 135 mm
+
+## 3\. Solenoid Valve 24VAC 1.5" (151DH)
+
+Solenoid Valve 24VAC 1.5" (kode item 151DH) adalah katup kontrol elektrik berkapasitas besar berukuran 1.5 inci yang dirancang khusus untuk irigasi debit tinggi pada area perkebunan, ruang terbuka hijau luas, dan rumah kaca (greenhouse). Mampu mengalirkan debit hingga 21.0 m³/jam, katup ini menawarkan performa stabil dan tahan lama pada tekanan hingga 10 bar.
+
+**Keunggulan Produk:**
+
+- Kapasitas aliran tinggi hingga 21,0 m³/jam untuk aplikasi irigasi skala besar.
+- Sistem penutupan lambat membantu mengurangi tekanan kejut (water hammer) pada jaringan perpipaan.
+- Material glass-filled nylon memberikan kekuatan dan ketahanan terhadap lingkungan kerja.
+- Dilengkapi flow control handle untuk pengaturan debit air.
+- Memiliki fitur manual override untuk pengoperasian manual.
+- Kumparan solenoid kedap air dengan sistem double filtration untuk meningkatkan keandalan operasi.
+
+**Detail Produk:**
+
+- Jenis Produk : Solenoid Valve
+- Kategori : Solenoid Valve / Katup Solenoid Irigasi
+- Item No. : 151DH
+- Ukuran Port : 1.5" (DN40)
+- Tegangan Operasional : 24VAC (50/60 Hz)
+- Kapasitas Aliran Maksimum : 21,0 m³/jam
+- Tekanan Kerja : 1,0–10,0 Bar
+- Material Bodi : Glass-filled Nylon
+- Material Seal : NBR / EPDM
+- Dimensi : 136 × 97 × 167 mm
+
+## 4\. Solenoid Valve 24VAC 2" (201BM)
+
+Solenoid Valve 24VAC 2" (kode item 201BM) adalah katup kontrol otomatis berkapasitas debit tinggi berbasis pilot-operated diaphragm dengan desain bodi tipe Y (Y-shape valve body design). Didesain untuk mengatasi fluktuasi tekanan dan debit air yang luas pada sistem irigasi komersial dan pertanian, katup berukuran 2 inci (DN50) ini mampu mengalirkan laju air hingga 60 m³/jam dengan tekanan operasional 1.0–10.0 bar pada tegangan 24VAC.
+
+**Keunggulan Produk:**
+
+- Desain bodi tipe Y (Y-shape) meminimalkan hambatan aliran sehingga menghasilkan kapasitas debit yang tinggi.
+- Mekanisme penutupan lambat (slow closing) membantu mengurangi risiko water hammer pada sistem perpipaan.
+- Material glass-filled nylon memberikan kekuatan mekanis yang tinggi serta tahan terhadap korosi dan paparan lingkungan.
+- Dilengkapi sistem double filtration untuk melindungi komponen solenoid dari kotoran.
+- Memiliki flow control handle untuk pengaturan debit aliran air.
+- Mendukung konfigurasi internal loop maupun external loop serta dilengkapi manual override untuk pengoperasian manual.
+
+**Detail Produk:**
+
+- Jenis Produk : Solenoid Valve
+- Kategori : Solenoid Valve / Katup Solenoid Irigasi Debit Tinggi
+- Item No. : 201BM
+- Ukuran Port : 2" (DN50)
+- Tegangan Operasional : 24VAC (50/60 Hz)
+- Kapasitas Aliran Maksimum : 60 m³/jam
+- Tekanan Kerja : 1,0–10,0 Bar
+- Material Bodi : Glass-filled Nylon
+- Material Seal : NBR / EPDM
+- Dimensi : 232 × 135 × 215 mm
+
+## 5\. Solenoid Valve 24VAC 3" (301BM)
+
+Solenoid Valve 24VAC 3" merupakan katup kontrol elektrik berkapasitas tinggi dengan desain bodi tipe Y (Y-shape valve body design) yang dirancang untuk sistem irigasi berskala besar. Dengan kapasitas aliran hingga 70 m³/jam pada tekanan kerja 1,0–10,0 bar, katup ini memberikan efisiensi hidrolik yang tinggi, kehilangan tekanan yang rendah, serta performa yang andal untuk aplikasi distribusi air pada lahan pertanian, perkebunan, maupun area komersial. .
+
+**Keunggulan Produk:**
+
+- Desain bodi tipe Y (Y-shape) menghasilkan hambatan aliran yang rendah sehingga mendukung kapasitas debit tinggi.
+- Sistem penutupan lambat (slow closing) membantu mengurangi dampak water hammer pada jaringan perpipaan.
+- Dilengkapi sistem double filtration untuk menjaga kebersihan komponen inti solenoid.
+- Kumparan solenoid (solenoid coil) memiliki konstruksi kedap air untuk meningkatkan keandalan penggunaan di lapangan.
+- Memiliki flow control handle untuk pengaturan debit air secara presisi.
+- Dilengkapi manual override sehingga katup dapat dioperasikan secara manual saat diperlukan.
+
+**Detail Produk:**
+
+- Jenis Produk : Solenoid Valve
+- Kategori : Solenoid Valve / Katup Solenoid Irigasi Debit Tinggi
+- Item No. : 301BM
+- Ukuran Port : 3" (DN80)
+- Tegangan Operasional : 24VAC (50/60 Hz)
+- Kapasitas Aliran Maksimum : 70 m³/jam
+- Tekanan Kerja : 1,0–10,0 Bar
+- Material Bodi : Glass-filled Nylon
+- Material Seal : NBR / EPDM
+- Dimensi : 299 × 137 × 230 mm
+
+## 6\. Manual Pressure Reducing Valve 1.5" (151T)
+
+Manual Pressure Reducing Valve 1.5" (kode item 151T) adalah katup pengatur dan penurun tekanan air (pressure reduce valve) berbasis pilot-operated diaphragm berukuran 1.5 inci (DN40). Didesain khusus untuk menurunkan dan menstabilkan tekanan keluaran (outlet pressure) pada kisaran 0.8–6.5 bar dari tekanan masukan hingga 10 bar, katup ini berfungsi melindungi peralatan irigasi di bagian hilir (downstream) dari bahaya tekanan berlebih tanpa memerlukan konsumsi energi tambahan.
+
+**Keunggulan Produk:**
+
+- Proteksi Peralatan Hilir: Menjaga kestabilan tekanan keluaran pada 0.8–6.5 bar untuk melindungi komponen jaringan irigasi dari kerusakan akibat lonjakan tekanan.
+- Tanpa Konsumsi Energi Ekstra: Memanfaatkan mekanisme pelepasan tekanan mandiri (self pressure relief) tanpa membutuhkan daya listrik luar.
+- Pengaturan Akurat & Meredam Water Hammer: Menawarkan regulasi tekanan yang presisi dan stabil sekaligus mencegah efek benturan water hammer.
+- Kemudahan Kontrol: Dapat dioperasikan secara manual maupun dipadukan dengan kontrol otomatis via instalasi sakelar BM3WAY.
+- Material Nilon Tahan Lama: Bodi berbahan glass-filled nylon tahan cuaca dan korosi, sangat cocok untuk area pertanian maupun perbukitan.
+
+**Detail Produk:**
+
+- Nama Produk: Manual Pressure Reducing Valve 1.5"
+- Kategori: Pressure Reducing Valve / Katup Penurun Tekanan
+- Kode Item (Item No.): 151T
+- Ukuran Diameter (Orifice): 1.5 Inci (DN40)
+- Tekanan Masukan (Input Pressure): 1.0 – 10.0 Bar
+- Tekanan Keluaran (Output Pressure): 0.8 – 6.5 Bar
+- Laju Aliran Maksimum (Max Flow): 18.0 m³/Jam
+- Material Bodi: Glass-filled Nylon (Sealed ring: NBR/EPDM, Springs: SUS304)
+- Dimensi (P × L × T): 136 mm × 242 mm × 220 mm
+
+## 7\. Manual Pressure Reducing Valve 2" (201T)
+
+Manual Pressure Reducing Valve 2" (kode item 201T) adalah katup pengatur tekanan air kapasitas sedang berukuran 2 inci (DN50) yang dirancang untuk menjaga kestabilan aliran pada sistem irigasi lahan luas maupun area perbukitan. Katup ini mampu mengalirkan debit air hingga 50 m³/jam dan menurunkan tekanan kerja masukan hingga 10 bar menjadi tekanan keluaran yang aman dan terstabilkan (0.8–6.5 bar).
+
+**Keunggulan Produk:**
+
+- Stabilisasi Tekanan Lahan Berbukit: Sangat ideal untuk menjaga kestabilan tekanan pada sistem sprinkler atau drip di area bergelombang/perbukitan.
+- Kapasitas Aliran Sedang-Besar: Mampu mengalirkan debit hingga 50 m³/jam untuk mendukung zonasi irigasi komersial.
+- Sistem Efisien Energi: Mekanisme self pressure relief bekerja secara otomatis mengatur tekanan tanpa menambah beban daya listrik.
+- Konstruksi Industri Tangguh: Dibuat dari glass-filled nylon dengan pegas SUS304 stainless steel untuk daya tahan operasional jangka panjang.
+- Fleksibilitas Pengoperasian: Mendukung mode pengoperasian manual serta integrasi otomatisasi dengan aksesoris BM3WAY.
+
+**Detail Produk:**
+
+- Nama Produk: Manual Pressure Reducing Valve 2"
+- Kategori: Pressure Reducing Valve / Katup Penurun Tekanan
+- Kode Item (Item No.): 201T
+- Ukuran Diameter (Orifice): 2 Inci (DN50)
+- Tekanan Masukan (Input Pressure): 1.0 – 10.0 Bar
+- Tekanan Keluaran (Output Pressure): 0.8 – 6.5 Bar
+- Laju Aliran Maksimum (Max Flow): 50.0 m³/Jam
+- Material Bodi: Glass-filled Nylon (Sealed ring: NBR/EPDM, Springs: SUS304)
+- Dimensi (P × L × T): 232 mm × 260 mm × 220 mm
+
+## 8\. Manual Pressure Reducing Valve 3" (301T)
+
+Manual Pressure Reducing Valve 3" (kode item 301T) adalah katup penurun tekanan skala industri berukuran 3 inci (DN80) yang dirancang untuk mengatur tekanan air debit tinggi hingga 60 m³/jam. Katup ini berfungsi secara presisi mengendalikan tekanan keluaran pada kisaran 0.8–6.5 bar guna melindungi sistem penyaringan (filtration system), irigasi utama, maupun pengolahan air industri dari bahaya water hammer dan lonjakan tekanan.
+
+**Keunggulan Produk:**
+
+- Kapasitas Debit Industri: Mengalirkan debit hingga 60 m³/jam, sangat andal untuk sistem penyaringan utama dan jaringan pipa irigasi besar.
+- Regulasi Tekanan Presisi: Menjamin kestabilan tekanan keluaran 0.8–6.5 bar secara konsisten guna mencegah risiko pipa pecah atau kebocoran.
+- Perlindungan Water Hammer: Meredam lonjakan tekanan air mendadak untuk memperpanjang usia pakai jaringan perpipaan.
+- Tanpa Konsumsi Daya Ekstra: Sistem kerja hidrolik alami (self pressure relief) sehingga hemat energi dan bebas biaya listrik operasional katup.
+- Material Rekayasa Berdaya Tahan Tinggi: Memakai bodi glass-filled nylon berkualitas tinggi yang tahan bahan kimia dan paparan lingkungan luar ruangan.
+
+**Detail Produk:**
+
+- Nama Produk: Manual Pressure Reducing Valve 3"
+- Kategori: Pressure Reducing Valve / Katup Penurun Tekanan
+- Kode Item (Item No.): 301T
+- Ukuran Diameter (Orifice): 3 Inci (DN80)
+- Tekanan Masukan (Input Pressure): 1.0 – 10.0 Bar
+- Tekanan Keluaran (Output Pressure): 0.8 – 6.5 Bar
+- Laju Aliran Maksimum (Max Flow): 60.0 m³/Jam
+- Material Bodi: Glass-filled Nylon (Sealed ring: NBR/EPDM, Springs: SUS304)
+- Dimensi (P × L × T): 298 mm × 290 mm × 235 mm
+
+## 9\. Pressure Reducing Solenoid Valve 1.5" 24VAC (151TD)
+
+Pressure Reducing Solenoid Valve 1.5" 24VAC (kode item 151TD) adalah katup kontrol elektrik yang mengintegrasikan fungsi solenoid valve otomatis 24VAC dengan pengatur penurun tekanan (pressure reducing valve) berbasis pilot-operated diaphragm berukuran 1.5 inci (DN40). Alat ini mampu membuka dan menutup aliran air secara elektrik sekaligus mengendalikan serta menurunkan tekanan keluaran secara stabil pada kisaran 0.8–6.5 bar dari tekanan masukan hingga 10 bar, dengan kapasitas debit air hingga 18.0 m³/jam untuk melindungi instalasi irigasi di bagian hilir (downstream).
+
+**Keunggulan Produk:**
+
+- Kombinasi Kontrol Otomatis & Regulasi Tekanan: Mengintegrasikan pengoperasian solenoid elektrik 24VAC dengan katup penurun tekanan otomatis dalam satu unit yang efisien.
+- Proteksi Peralatan Hilir: Mengontrol dan menurunkan tekanan keluaran (0.8–6.5 bar) secara konsisten untuk mencegah kerusakan komponen irigasi akibat lonjakan tekanan.
+- Meredam Water Hammer: Proses pengaturan dan penstabilan tekanan yang akurat mencegah dampak benturan water hammer pada jaringan perpipaan.
+- Efisiensi Energi: Memanfaatkan mekanisme self pressure relief internal tanpa memerlukan konsumsi energi listrik tambahan untuk fungsi pengaturan teknis tekanannya.
+- Konstruksi Industri Tangguh: Dibuat dari bodi glass-filled nylon tahan cuaca dan korosi, dilengkapi opsi pengoperasian manual maupun otomatis via BM3WAY.
+
+**Detail Produk:**
+
+- Nama Produk: Pressure Reducing Solenoid Valve 1.5" 24VAC
+- Kategori: Pressure Reducing Solenoid Valve / Katup Solenoid Penurun Tekanan
+- Kode Item (Item No.): 151TD
+- Ukuran Diameter (Orifice): 1.5 Inci (DN40)
+- Tegangan Operasional (Voltage): 24VAC (50/60 Hz)
+- Tekanan Masukan (Input Pressure): 1.0 – 10.0 Bar
+- Tekanan Keluaran (Output Pressure): 0.8 – 6.5 Bar
+- Laju Aliran Maksimum (Max Flow): 18.0 m³/Jam
+- Material Bodi: Glass-filled Nylon (Sealed ring: NBR/EPDM, Springs: SUS304)
+- Dimensi (P × L × T): 136 mm × 242 mm × 220 mm
+
+## 10\. Pressure Reducing Solenoid Valve 2" 24VAC (201TD)
+
+Pressure Reducing Solenoid Valve 2" 24VAC (kode item 201TD) adalah katup solenoid elektrik penurun tekanan berkapasitas sedang-besar berukuran 2 inci (DN50). Dirancang khusus untuk otomatisasi irigasi lahan komersial dan area perbukitan, katup ini ditenagai daya 24VAC dan mampu mengalirkan debit air hingga 50.0 m³/jam sambil menstabilkan tekanan keluaran pada kisaran 0.8–6.5 bar untuk menjaga keutuhan sistem penyiraman.
+
+**Keunggulan Produk:**
+
+- Otomatisasi & Pengaturan Tekanan Presisi: Menggabungkan kontrol sinyal elektrik 24VAC dengan regulasi tekanan otomatis untuk efisiensi zonasi irigasi.
+- Stabilisasi Tekanan Lahan Berbukit: Sangat efektif menjaga kestabilan tekanan pada sistem sprinkler atau drip di area bergelombang/elevasi bervariasi.
+- Kapasitas Debit Sedang-Besar: Mampu menyalurkan debit air hingga 50.0 m³/jam untuk mendukung kebutuhan irigasi komersial.
+- Perlindungan Terhadap Water Hammer: Mengendalikan laju dan tekanan air secara akurat guna mencegah efek lonjakan tekanan mendadak.
+- Durabilitas Material Tinggi: Dibuat dari glass-filled nylon berkualitas tinggi dengan komponen inti berbahan stainless steel 430F dan pegas SUS304 yang tahan lama.
+
+**Detail Produk:**
+
+- Nama Produk: Pressure Reducing Solenoid Valve 2" 24VAC
+- Kategori: Pressure Reducing Solenoid Valve / Katup Solenoid Penurun Tekanan
+- Kode Item (Item No.): 201TD
+- Ukuran Diameter (Orifice): 2 Inci (DN50)
+- Tegangan Operasional (Voltage): 24VAC (50/60 Hz)
+- Tekanan Masukan (Input Pressure): 1.0 – 10.0 Bar
+- Tekanan Keluaran (Output Pressure): 0.8 – 6.5 Bar
+- Laju Aliran Maksimum (Max Flow): 50.0 m³/Jam
+- Material Bodi: Glass-filled Nylon (Sealed ring: NBR/EPDM, Springs: SUS304)
+- Dimensi (P × L × T): 232 mm × 260 mm × 220 mm
+
+## 11\. Pressure Reducing Solenoid Valve 3" 24VAC (301TD)
+
+Pressure Reducing Solenoid Valve 3" 24VAC (kode item 301TD) adalah katup solenoid elektrik penurun tekanan skala industri berukuran 3 inci (DN80) yang dirancang untuk mendukung jaringan irigasi utama berdebit tinggi hingga 60.0 m³/jam. Katup bertegangan 24VAC ini berfungsi mengontrol buka-tutup jalur secara otomatis sekaligus menurunkan tekanan masukan tinggi (hingga 10 bar) menjadi tekanan keluaran aman yang teratur (0.8–6.5 bar).
+
+**Keunggulan Produk:**
+
+- Kapasitas Debit Industri: Mengalirkan laju air hingga 60.0 m³/jam, sangat ideal untuk sistem penyaringan utama dan jaringan penyiraman skala besar.
+- Integrasi Kontrol Otomatis 24VAC: Mudah dihubungkan dengan pengontrol (controller) irigasi standar 24VAC untuk otomasi jadwal penyiraman lahan.
+- Proteksi Maksimum Peralatan Hilir: Menjamin kestabilan tekanan keluaran pada 0.8–6.5 bar guna melindungi drip tape, micro-sprinkler, dan peralatan filter dari kerusakan over-pressure.
+- Pencegahan Water Hammer & Efisiensi Energi: Meredam lonjakan tekanan air secara mandiri (self pressure relief) tanpa menambah beban biaya daya listrik.
+- Fleksibilitas Pengoperasian: Dilengkapi opsi kontrol manual dan otomatis melalui instalasi BM3WAY .
+
+**Detail Produk:**
+
+- Nama Produk: Pressure Reducing Solenoid Valve 3" 24VAC
+- Kategori: Pressure Reducing Solenoid Valve / Katup Solenoid Penurun Tekanan
+- Kode Item (Item No.): 301TD
+- Ukuran Diameter (Orifice): 3 Inci (DN80)
+- Tegangan Operasional (Voltage): 24VAC (50/60 Hz)
+- Tekanan Masukan (Input Pressure): 1.0 – 10.0 Bar
+- Tekanan Keluaran (Output Pressure): 0.8 – 6.5 Bar
+- Laju Aliran Maksimum (Max Flow): 60.0 m³/Jam
+- Material Bodi: Glass-filled Nylon (Sealed ring: NBR/EPDM, Springs: SUS304)
+- Dimensi (P × L × T): 298 mm × 290 mm × 235 mm
+
+## 12\. Pressure Relief Valve 2" (201X)
+
+Pressure Relief Valve 2" (kode item 201X) adalah katup pelepas tekanan berlebih (pressure relief valve) berbasis pilot-operated diaphragm berukuran 2 inci (DN50). Didesain untuk sistem irigasi lahan komersial dan perbukitan, alat ini secara otomatis melepaskan atau membuang tekanan saat melampaui batas maksimum yang ditentukan guna melindungi jaringan perpipaan dan peralatan irigasi dari lonjakan tekanan (water hammer) tanpa memerlukan konsumsi energi tambahan.
+
+**Keunggulan Produk:**
+
+- Pelepasan Tekanan Otomatis (Self Pressure Relief): Membuang tekanan berlebih secara otomatis saat melebihi batas maksimum untuk menjaga keamanan sistem.
+- Tanpa Konsumsi Energi Ekstra: Bekerja secara mekanis hidrolik alami tanpa menggunakan daya listrik luar untuk proses pengaturannya.
+- Proteksi Sistem & Meredam Water Hammer: Menjaga regulasi tekanan tetap stabil serta melindungi pipa dan komponen hilir dari efek benturan air.
+- Fleksibilitas Kontrol: Dapat dioperasikan secara manual maupun dihubungkan dengan pengontrol otomatis via instalasi sakelar BM3WAY.
+- Durabilitas Tinggi: Memakai bodi berbahan glass-filled nylon, pegas SUS304 stainless steel, serta seal ring NBR/EPDM yang tahan korosi dan cuaca. .
+
+**Detail Produk:**
+
+- Nama Produk: Pressure Relief Valve 2"
+- Kategori: Pressure Relief Valve / Katup Pelepas Tekanan
+- Kode Item (Item No.): 201X
+- Ukuran Diameter (Orifice): 2 Inci (DN50)
+- Tekanan Masukan (Input Pressure): 1.0 – 10.0 Bar
+- Tekanan Keluaran (Output Pressure): 0.8 – 6.5 Bar
+- Laju Aliran Maksimum (Max Flow): 50.0 m³/Jam
+- Material Bodi: Glass-filled Nylon (Sealed ring: NBR/EPDM, Springs: SUS304)
+- Dimensi (P × L × T): 232 mm × 220 mm × 220 mm
+
+## 13\. Pressure Relief Valve 3" (301X)
+
+Pressure Relief Valve 3" (kode item 301X) adalah katup pelepas tekanan berkapasitas besar berukuran 3 inci (DN80) yang dirancang untuk pengamanan sistem irigasi utama, jaringan penyaringan (filtration system), dan pengolahan air industri. Dengan kapasitas aliran hingga 60.0 m³/jam, katup ini berfungsi meredam dan melepaskan kelebihan tekanan secara otomatis tanpa daya listrik untuk mencegah bahaya over-pressure dan water hammer.
+
+**Keunggulan Produk:**
+
+- Kapasitas Aliran Debit Besar: Mengalirkan debit hingga 60.0 m³/jam, sangat cocok untuk jaringan pipa utama dan sistem filter skala besar.
+- Pelepasan Tekanan Mandiri (Self Pressure Relief): Langsung bekerja melepas tekanan saat melebihi batas aman yang ditentukan.
+- Hemat Energi: Memanfaatkan tekanan hidrolik internal secara mandiri tanpa menambah beban biaya listrik.
+- Pencegahan Water Hammer & Regulasi Stabil: Mengendalikan lonjakan tekanan secara akurat demi menjaga keutuhan jaringan perpipaan.
+- Material Rekayasa Berdaya Tahan Tinggi: Dibangun dengan material glass-filled nylon tahan kimia serta komponen SUS304 untuk pemakaian jangka panjang.
+
+**Detail Produk:**
+
+- Nama Produk: Pressure Relief Valve 3"
+- Kategori: Pressure Relief Valve / Katup Pelepas Tekanan
+- Kode Item (Item No.): 301X
+- Ukuran Diameter (Orifice): 3 Inci (DN80)
+- Tekanan Masukan (Input Pressure): 1.0 – 10.0 Bar
+- Tekanan Keluaran (Output Pressure): 0.8 – 6.5 Bar
+- Laju Aliran Maksimum (Max Flow): 60.0 m³/Jam
+- Material Bodi: Glass-filled Nylon (Sealed ring: NBR/EPDM, Springs: SUS304)
+- Dimensi (P × L × T): 298 mm × 235 mm × 235 mm
+
+# BAB 2 CONTROLLER (Pengontrol Irigasi Otomatis & Timer)
+
+_CONTROLLER dari Yuyao Zanchen merupakan jajaran unit pengontrol waktu dan jadwal penyiraman otomatis (irrigation timer/controller) yang berfungsi mengatur kerja katup solenoid secara terprogram, efisien, dan akurat. Kategori ini mencakup AC Multi-Station Controller (4, 6, 8 hingga 12 zona), DC Battery Operated Controller tahan air, Tap Water Timer untuk keran luar ruangan, hingga Smart WiFi/Bluetooth Controller._
+
+**Keunggulan Kategori VALVE & ACCESSORIES:**
+
+- Pemrograman Fleksibel & Presisi: Menyediakan pengaturan frekuensi penyiraman harian, mingguan, interval hari, hingga durasi penyiraman per zona mulai dari hitungan detik, menit, hingga jam.
+- Teknologi Pintar & Sensor Interaktif: Kompatibel dengan koneksi Rain Sensor (sensor hujan) untuk menghentikan jadwal penyiraman secara otomatis saat hujan turun, serta opsi integrasi aplikasi smartphone pada tipe WiFi/Bluetooth.
+- Desain Tahan Cuaca (Weatherproof Enclosure): Dilengkapi casing pelindung tahan air dan sinar matahari (IP65/IP68 rating) sehingga aman dipasang pada area luar ruangan (outdoor).
+- Manajemen Daya Efisien: Menggunakan konsumsi daya yang sangat rendah, aman dari lonjakan listrik, serta dilengkapi memori internal untuk menyimpan program penyiraman saat terjadi mati listrik..
+
+**Aplikasi Utama:**
+
+Digunakan sebagai otak pengendali otomatisasi penyiraman pada taman perumahan (residential garden), area lanskap komersial, kompleks olahraga, greenhouse, hingga pembibitan tanaman (nursery).
+
+## 1\. Controller valve 220VAC INPUT, 24VAC OUTPUT, 8-STATION (YSC-24V8S)
+
+Pressure Relief Valve 3" (kode item 301X) adalah katup pelepas tekanan berkapasitas besar berukuran 3 inci (DN80) yang dirancang untuk pengamanan sistem irigasi utama, jaringan penyaringan (filtration system), dan pengolahan air industri. Dengan kapasitas aliran hingga 60.0 m³/jam, katup ini berfungsi meredam dan melepaskan kelebihan tekanan secara otomatis tanpa daya listrik untuk mencegah bahaya over-pressure dan water hammer.
+
+**Keunggulan Produk:**
+
+- Kapasitas Aliran Debit Besar: Mengalirkan debit hingga 60.0 m³/jam, sangat cocok untuk jaringan pipa utama dan sistem filter skala besar.
+
+**Detail Produk:**
+
+- Nama Produk: Pressure Relief Valve 3"

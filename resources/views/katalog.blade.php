@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Katalog Peralatan Irigasi - Mitra Irigasi')
+@section('title', 'Katalog Peralatan Irigasi - Sprinkler, Drip & Solenoid Valve')
+@section('meta_description', 'Katalog lengkap peralatan irigasi pertanian modern dari Mitra Irigasi. Drip emitter, selang PE, impact sprinkler, solenoid valve, controller otomatis & injektor pupuk.')
+@section('meta_keywords', 'katalog irigasi, harga alat irigasi, sprinkler pertanian, selang drip, solenoid valve 24v, injektor venturi, mitra irigasi')
 
 @section('content')
 @php

@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Panduan & Edukasi Teknik Irigasi - Mitra Irigasi')
+@section('title', 'Panduan & Edukasi Teknik Irigasi Pertanian - Mitra Irigasi')
+@section('meta_description', 'Modul tutorial & video panduan pemasangan irigasi tetes (drip), sprinkler, solenoid valve, dan otomatisasi pengairan lahan pertanian dari Mitra Irigasi.')
+@section('meta_keywords', 'panduan irigasi, tutorial irigasi tetes, cara pasang sprinkler, DIY irigasi pertanian, edukasi pengairan, mitra irigasi')
 
 @section('content')
 <div x-data="guidesApp()" class="py-10 bg-slate-50 min-h-screen">
