@@ -44,7 +44,7 @@
     <!-- STRUCTURED DATA (JSON-LD) -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
+      "@@context": "https://schema.org",
       "@type": "Organization",
       "name": "Mitra Irigasi",
       "url": "https://mitra-irigasi.com",
@@ -65,7 +65,7 @@
     </script>
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
+      "@@context": "https://schema.org",
       "@type": "WebSite",
       "name": "Mitra Irigasi",
       "url": "https://mitra-irigasi.com",

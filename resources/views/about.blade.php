@@ -7,7 +7,7 @@
 @push('scripts')
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
+  "@@context": "https://schema.org",
   "@type": "AboutPage",
   "name": "Tentang Mitra Irigasi",
   "description": "Spesialis teknologi dan perlengkapan irigasi presisi untuk petani dan pengelola kebun di seluruh Indonesia.",
